@@ -8,11 +8,11 @@ export const StartingPage = () => {
      <div className = 'start'>
          <img id="startlogo"src="https://assets.stickpng.com/thumbs/5847f9cbcef1014c0b5e48c8.png" alt="ehh"></img>
           
-         <Link to="/contactus">
+         <Link to="/aboutus">
             <button type='button' className='startingPageAbout startingButton'>About Us</button>
          </Link>
 
-         <Link to="/">
+         <Link to="/buyonline">
             <button type='button' className='startingPageBuy startingButton'>Buy Online</button>
          </Link>
 
