@@ -8,6 +8,10 @@ import News from './Components/News/News';
 import ContactUs from './Components/ContactUs/ContactUs';
 import Home from './Components/Home/Home';
 import Errorpage from "./Components/ErrorPage/ErrorPage";
+import Clients from './Components/Clients/Clients';
+import Careers from './Components/Careers/Careers';
+import BuyOnline from './Components/BuyOnline/BuyOnline';
+import AboutUs from './Components/AboutUs/AboutUs';
 
 const router = createBrowserRouter([
   {
@@ -28,8 +32,20 @@ const router = createBrowserRouter([
     element: <ContactUs />
   },
   {
-    path: "/Home",
-    element: <h1>This is Home</h1>
+    path: "/clients",
+    element: <Clients />
+  },
+  {
+    path: "/carrers",
+    element: <Careers/>
+  },
+  {
+    path: "/buyonline",
+    element: <BuyOnline />
+  },
+  {
+    path: "/aboutus",
+    element: <AboutUs />
   },
 ]);
 
