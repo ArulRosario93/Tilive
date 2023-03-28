@@ -1,0 +1,58 @@
+.EnLargeNews{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    /* align-items: center; */
+    overflow: hidden;
+}
+
+.EnLargeNewsImage{
+    flex: 2;
+    overflow: hidden;
+}
+
+.EnLargeNewsDescrip{
+    overflow-y: scroll;
+    flex: 5;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.89);
+}
+
+.EnLargeNewsHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 65px 40px;
+}
+.EnLargeNewsHeadingwithshortDesHead{
+    font-family: 'Cinzel', serif;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+.EnLargeNewsHeadingwithshortDesDes{
+    font-family:'Be Vietnam Pro', sans-serif;
+    font-size: smaller;
+}
+.EnLargeNewsHeadingwithDate{
+    font-family: 'Cinzel', serif;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.EnLargeNewsBody{
+    padding: 25px 40px;
+    overflow-y: scroll;
+    /* white-space: nowrap; */
+}
+.EnLargeNewsBodyHead{
+    font-family: 'Cinzel', serif;
+    font-size: x-large;
+    text-decoration: underline;
+}
+.EnLargeNewsBodyDes{
+    padding: 30px 15px 15px;
+    font-family:'Be Vietnam Pro', sans-serif;
+    font-size: small;
+    font-weight: lighter;
+}
