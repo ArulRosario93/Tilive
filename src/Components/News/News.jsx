@@ -26,8 +26,17 @@ const News = () => {
                 News
             </h1> */}
 
-            <EnLargeNews />
+           <div className='container'> 
+            <img className="xyz" src="https://images.sw.cdn.siemens.com/siemens-disw-assets/public/
+            3sjyywgMdKCHepAuf1rhP6/en-US/tecnomatix-factory-line-design-shero-2560x1440.jpg?auto=f
+            ormat,compress&w=1920&q=60"/>
+                
+                <div className="news">
+                    <div className="text">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+            </div>
+           </div>
 
+           {/* //src={newsItems[0].image} */}
 
         </div>
     )

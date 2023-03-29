@@ -12,6 +12,7 @@ import Clients from './Components/Clients/Clients';
 import Careers from './Components/Careers/Careers';
 import BuyOnline from './Components/BuyOnline/BuyOnline';
 import AboutUs from './Components/AboutUs/AboutUs';
+import EnLargeNews from './Components/News/EnlargeNews/EnlargeNews';
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
   {
     path: "/aboutus",
     element: <AboutUs />
+  },
+  {
+    path: "/news/event",
+    element: <EnLargeNews />
   },
 ]);
 
