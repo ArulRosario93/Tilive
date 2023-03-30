@@ -22,24 +22,48 @@ const newsItems = [
 const News = () => {
     return (
         <div className='News'>
-            {/* <h1 className='NewsHeading'>
+            <h1 className='NewsHeading'>
                 News
-            </h1> */}
+            </h1>
+            
+            {/* {
+                newsItems.map(() => {
+                    return(
+                        <div className='container'> 
+                        
+                            <div className='imgdiv'>
+                                <img className="xyz" src="https://www.memezero.com/media/memes/WN384A.jpg" alt="vj na"/>
+                            </div>
+                            
+                            <div className="news">
+                                <p className="text">Lorem ipsum dolor sit amet, cons
+                                ectetur adipiscing elit, sed do eiusmod tempor incididunt ut labo
+                                re et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                            </div>
+                   </div>
+                    )
+                })
+            } */}
 
-           <div className='container'> 
-            <img className="xyz" src="https://images.sw.cdn.siemens.com/siemens-disw-assets/public/
-            3sjyywgMdKCHepAuf1rhP6/en-US/tecnomatix-factory-line-design-shero-2560x1440.jpg?auto=f
-            ormat,compress&w=1920&q=60"/>
-                
-                <div className="news">
-                    <div className="text">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
-            </div>
-           </div>
-
-           {/* //src={newsItems[0].image} */}
-
-        </div>
+            <div className='container'> 
+                        
+                            <div className='imgdiv'>
+                                <img className="xyz" src="https://www.memezero.com/media/memes/WN384A.jpg" alt="vj na"/>
+                            </div>
+                            
+                            <div className="news">
+                                <p className="text">Lorem ipsum dolor sit amet, cons
+                                ectetur adipiscing elit, sed do eiusmod tempor incididunt ut labo
+                                re et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                            </div>
+                   </div>
+        </div> 
     )
 }
+
 
 export default News;

@@ -13,11 +13,12 @@ import Careers from './Components/Careers/Careers';
 import BuyOnline from './Components/BuyOnline/BuyOnline';
 import AboutUs from './Components/AboutUs/AboutUs';
 import EnLargeNews from './Components/News/EnlargeNews/EnlargeNews';
+import App from './App';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <App />,
     errorElement: <Errorpage />
   },
   {

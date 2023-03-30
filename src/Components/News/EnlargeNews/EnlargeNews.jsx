@@ -2,25 +2,26 @@ import React from "react";
 import "./EnlargeNews.css";
 import { Carousel } from 'react-responsive-carousel';
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Link } from "react-router-dom";
 
 const EnLargeNews = () => {
     return(
         <div className="EnLargeNews">
             <div className="EnLargeNewsImage">
-            <Carousel autoPlay={true} className="carousel" >
-                    <div style={{background: "red", height: '100vh'}}>
-                        <img style={{objectFit: 'cover'}} src="https://media.istockphoto.com/id/846859964/photo/robots-welding-in-a-car-factory.jpg?s=612x612&w=0&k=20&c=YLDHM61cwwC7xPnzP8nlBEbmJLB1sqgMr9W6B1m2WBk=" />
-                        {/* <p className="legend">Legend 1</p> */}
-                    </div>
-                    <div style={{background: "blue", height: '100vh'}}>
-                        <img style={{objectFit: 'cover'}} src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Seagate_Wuxi_China_Factory_Tour.jpg/1365px-Seagate_Wuxi_China_Factory_Tour.jpg" />
-                        {/* <p className="legend">Legend 2</p> */}
-                    </div>
-                    <div style={{background: "green", height: '100vh'}}>
-                        <img style={{objectFit: 'cover'}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGJ641sbZf92TD3WVT19uKU8LWd4iobgO1Cf43nWBqgtR08mfedm6tTXxhWwjP-Ma7loY&usqp=CAU" />
-                        {/* <p className="legend">Legend 3</p> */}
-                    </div>
+
+            <Link to="/aboutus">
+                <Carousel autoPlay={true} showArrows={false} showIndicators={false} showStatus={false} className="carousel" infiniteLoop={true}>
+                            <div style={{background: "red", height: '100vh'}}>
+                                <img style={{objectFit: 'cover'}} src="https://media.istockphoto.com/id/846859964/photo/robots-welding-in-a-car-factory.jpg?s=612x612&w=0&k=20&c=YLDHM61cwwC7xPnzP8nlBEbmJLB1sqgMr9W6B1m2WBk=" />
+                            </div>
+                            <div style={{background: "blue", height: '100vh'}}>
+                                <img style={{objectFit: 'cover'}} src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Seagate_Wuxi_China_Factory_Tour.jpg/1365px-Seagate_Wuxi_China_Factory_Tour.jpg" />
+                            </div>
+                            <div style={{background: "green", height: '100vh'}}>
+                                <img style={{objectFit: 'cover'}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGJ641sbZf92TD3WVT19uKU8LWd4iobgO1Cf43nWBqgtR08mfedm6tTXxhWwjP-Ma7loY&usqp=CAU" />
+                            </div>
                 </Carousel>
+            </Link>
             </div>
             <div></div>
             <div className="EnLargeNewsDescrip">

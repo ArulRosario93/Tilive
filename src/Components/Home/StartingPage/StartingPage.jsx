@@ -16,23 +16,23 @@ export const StartingPage = () => {
             <button type='button' className='startingPageBuy startingButton'>Buy Online</button>
          </Link>
 
-         <Link to="careers">
+         <Link to="/careers">
             <button type='button' className='startingPageCareers startingButton'>Careers</button>
          </Link>
 
-         <Link to="clients">
+         <Link to="/clients">
             <button type='button' className='startingPageClients startingButton'>Clients</button>
          </Link>
 
-         <Link to="contactus">
+         <Link to="/contactus">
             <button type='button' className='startingPageContact startingButton'>Contact Us</button>
          </Link>
 
-         <Link to="news">
+         <Link to="/news">
             <button type='button' className='startingPageNews startingButton'>News</button>
          </Link>
 
-         <Link to="products&services">
+         <Link to="/products&services">
             <button type='button' className='startingPageProd startingButton'>Products & Services</button>
          </Link>
      </div>
