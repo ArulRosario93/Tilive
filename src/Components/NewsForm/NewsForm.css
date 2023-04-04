@@ -1,0 +1,97 @@
+.newsform{
+    height: 100vh;
+}
+
+.newsformhead{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    padding: 40px 0px;
+    font-size: large;
+}
+.newsformdivider{
+    height: 70px;
+    width: 2px;
+    margin-top: 50px;
+    background-color: black;
+}
+.newsformformflex{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+.newsformeventdes{
+    text-align: center;
+    flex: 1;
+}
+.newsformeventdesp{
+    font-size: smaller;
+    font-family:'Be Vietnam Pro', sans-serif;
+    font-weight: 100;
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 8px;
+}
+.newsformimg{
+    text-align: center;
+    /* margin-top: 10px; */
+    flex: 1;
+}
+.newsformeventdesEventName{
+    width: 380px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.newsformeventdesEventCap{
+    width: 380px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.newsformeventdesEventDes{
+    width: 380px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.newsformeventdesinput{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    padding-left: 5px;
+    /* border: 0.1px solid black; */
+}
+
+.newsformbutton{
+    margin: auto;
+    width: 25vw;
+    /* margin-bottom: 5vh; */
+}
+.newsformbuttonhead{
+    padding: 15px 20px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: large;
+    font-family: 'Cinzel', serif;
+    font-weight: 100;
+}
+.newsformimgCarousel{
+    /* width: 100%; */
+    height: 200px;
+    /* background-color: black; */
+    text-align: center;
+    /* background-color: aqua; */
+}
+.newsformimgCarouselIn{
+    margin:auto;
+    /* width: 250px; */
+    /* background-color: rgb(245, 245, 245); */
+    /* max-height: 100px; */
+    /* width: 150px; */
+}
+.newsformimgCarouselImg{
+    max-height: 200px;
+    /* height: 220px; */
+    object-fit: contain;
+}

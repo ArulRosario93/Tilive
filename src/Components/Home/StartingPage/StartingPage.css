@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;400&display=swap');
+
+.startingButton{
+    color: black;
+    background-color: transparent;
+    border-color: transparent;
+    font-family:'Be Vietnam Pro', sans-serif;
+    font-size: 20;
+    float:right;
+    transition: text-decoration 1s ease;
+    text-decoration: 3px underline transparent;
+    cursor: pointer;
+    padding: 5px;
+}
+.start{
+    padding: 10px;
+}
+.startingButton:hover{
+    text-decoration: 3px underline rgb(8, 0, 0);
+}
+#startlogo{
+    height: 30px;
+    width: 30px;
+}
+.startingPageContainer{
+    padding: 20px 30px;
+}

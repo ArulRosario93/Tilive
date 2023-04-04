@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap');
+
+.NewsHeading{
+    padding: 15px;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    text-decoration: underline;
+    margin: 30px 0px;
+  }
+  .xyz{
+    padding: 0;
+    width: 26vw;
+    height: 380px;
+    cursor: pointer;
+    object-fit: cover;
+    /* background-color: brown; */
+  }
+  .news {
+    position:absolute;
+    color: azure;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 26vw;
+    background-color: rgba(0, 0, 0, 0.801);
+    height: 380px;
+    opacity:0;
+    text-align: left;
+  }
+  .container{
+    position: relative;
+    width: 26vw;
+    height: 380px;
+    margin: 40px;
+    float: left;
+  }
+  .container:hover .news {
+    transition: 0.4s;
+    opacity:1;
+  }
+  
+  .text {
+    word-wrap: break-word;
+    width: 260px;
+    height:350px;
+    display: flex;
+    /* transition: 1s; */
+   align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+  }
+
+.NewsItem{
+  /* position: relative; */
+  margin: 15px 30px;
+  float: left;
+  width: 350px;
+  height: 350px;
+}
+.newsDescription{
+  padding: 50px 25px;
+}
+.newsDescriptionHead{
+  font-size: medium;
+  font-family:'Be Vietnam Pro', sans-serif;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.newsDescriptionP{
+  font-size: small;
+  padding: 15px 0px;
+  font-family:'Be Vietnam Pro', sans-serif;
+  font-weight: 500;
+}
+.NewsContainer{
+  /* padding: 25px; */
+  margin: auto;
+  /* position: relative; */
+  display: block;
+  margin-bottom: 50px;
+  background-color: blue;
+  text-align: center;
+}
+.containerBottom{
+  padding: 0%;
+  font-size: xx-large;
+  position: absolute;
+  /* display: none; */
+}
