@@ -1,6 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import EnLargeNews from './EnlargeNews/EnlargeNews';
 import "./News.css";
+import { Carousel } from 'react-responsive-carousel';
+import gg from "./gg.mp4";
+
+import { firebasee } from '../../firebase';
+
+import { Firestore, collection, getDocs } from "firebase/firestore";
+import { useEffect } from 'react';
+import { Link, Params } from 'react-router-dom';
+
+// import firebase from "firebase";
 
 const newsItems = [
     {
@@ -20,47 +30,83 @@ const newsItems = [
 ]
 
 const News = () => {
+
+    const [docs, setDocs] = useState([]);
+
+    const [desContent, setDesContent] = useState("");
+        
+        const handleClick = async () => {
+            const aa  = await getDocs(collection(firebasee, "tilive_data"));
+            setDocs(aa.docs);
+            console.log(aa.docs);
+        }
+
+        useEffect(() => {
+            handleClick();
+        }, []);
+
     return (
         <div className='News'>
             <h1 className='NewsHeading'>
                 News
             </h1>
+
+            <br />
             
-            {/* {
-                newsItems.map(() => {
+            <div className='NewsContainer'>
+
+            {
+                docs.map((item, i) => {
+
+                    const data = item._document?.data?.value?.mapValue?.fields;
+
+                    const eventCaption = data?.eventCaption;
+                    const eventDescription = data?.eventDescription;
+                    const eventName = data?.eventName;
+                    const linkURl = data?.fileLink?.arrayValue?.values;
+
+                    const stateChange = {
+                        eventCaption: eventCaption,
+                        eventDescription: eventDescription,
+                        eventName: eventName,
+                        linkURl: linkURl,
+                    }
+
+                    var des = "";
+
+
+                    des = data?.eventDescription?.stringValue;
+
+                    if (des.length > 650) {
+                        des = des.slice(0, 650) + "...";
+                    }
+
                     return(
-                        <div className='container'> 
-                        
-                            <div className='imgdiv'>
-                                <img className="xyz" src="https://www.memezero.com/media/memes/WN384A.jpg" alt="vj na"/>
-                            </div>
-                            
-                            <div className="news">
-                                <p className="text">Lorem ipsum dolor sit amet, cons
-                                ectetur adipiscing elit, sed do eiusmod tempor incididunt ut labo
-                                re et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                            </div>
-                   </div>
+                        <Link to={`event`} state={{stateChange}}>
+
+                        <div className='container' key={i}> 
+
+                                <div className='imgdiv'>
+                                    <img className="xyz" src={linkURl?.[0]?.stringValue} alt="Factory Image"/>
+                                </div>
+                                
+                                <div className="news">
+                                    <div className='newsDescription'>
+                                        <h3 className="newsDescriptionHead">Description</h3>
+                                        <p className="newsDescriptionP">{des}</p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div className='containerBottom'>
+                                    <h1>_</h1>
+                                </div>
+                        </div>
+                        </Link>
                     )
                 })
-            } */}
-
-            <div className='container'> 
-                        
-                            <div className='imgdiv'>
-                                <img className="xyz" src="https://www.memezero.com/media/memes/WN384A.jpg" alt="vj na"/>
-                            </div>
-                            
-                            <div className="news">
-                                <p className="text">Lorem ipsum dolor sit amet, cons
-                                ectetur adipiscing elit, sed do eiusmod tempor incididunt ut labo
-                                re et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                            </div>
-                   </div>
+            }
+                </div>
         </div> 
     )
 }

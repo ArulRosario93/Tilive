@@ -14,6 +14,16 @@ import BuyOnline from './Components/BuyOnline/BuyOnline';
 import AboutUs from './Components/AboutUs/AboutUs';
 import EnLargeNews from './Components/News/EnlargeNews/EnlargeNews';
 import App from './App';
+import NewsForm from './Components/NewsForm/NewsForm';
+
+// useEffect(() => {
+//   try {
+//     addDoc(ref, data);
+//     console.log("Runnning Try Statement");
+//   } catch (error) {
+//     console.log("Error Found");
+//   }
+// }, []);
 
 const router = createBrowserRouter([
   {
@@ -52,6 +62,10 @@ const router = createBrowserRouter([
   {
     path: "/news/event",
     element: <EnLargeNews />
+  },
+  {
+    path: "/newsform",
+    element: <NewsForm stateChange="yoyo"/>,
   },
 ]);
 
