@@ -14,6 +14,7 @@ import BuyOnline from './Components/BuyOnline/BuyOnline';
 import AboutUs from './Components/AboutUs/AboutUs';
 import EnLargeNews from './Components/News/EnlargeNews/EnlargeNews';
 import NewsForm from './Components/NewsForm/NewsForm';
+import Loader from './Components/Loader/Loader';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/news",
+    // loader: <Loader />,
+    loader: () => {
+      return(
+        <Loader />
+      )
+    },
     element: <News />
   },
   {
@@ -52,6 +59,10 @@ const router = createBrowserRouter([
   {
     path: "/news/event",
     element: <EnLargeNews />
+  },
+  {
+    path: "/news/allnews",
+    element: <h1>Alll News</h1>
   },
   {
     path: "/newsform",

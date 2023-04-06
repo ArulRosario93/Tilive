@@ -1,0 +1,43 @@
+.WeAre{
+    /* height: 100vh; */
+    padding: 100px 0px;
+}
+
+.WeAreHead{
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Cinzel', serif;
+    color: white;
+}
+
+.WeAreMainContent{
+    /* background-color: aqua; */
+    /* height: ; */
+    text-align: center;
+}
+
+.WeAreMainContentImg{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    z-index: 1;
+}
+
+.WeAreMainContentImg img{
+    border-radius: 100px;
+    width: 150px;
+    top: -9px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid black;
+}
+
+.WeAreMainContentDes{
+    position: relative;
+    z-index: 0;
+    /* top: -30px; */
+    margin: auto;
+    width: 80%;
+    padding: 70px 30px;
+    border: 1px solid black;
+}

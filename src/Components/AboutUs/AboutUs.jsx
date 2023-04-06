@@ -1,9 +1,12 @@
 import React from "react";
+import AboutUsHome from "./AboutUsHome/AboutUsHome";
+import WeAre from "./WeAre/WeAre";
 
 const AboutUs = () => {
     return(
-        <div>
-            <h1>This is AboutUs</h1>
+        <div className="AboutUs">
+            <AboutUsHome />
+            <WeAre />
         </div>
     )
 }

@@ -1,0 +1,32 @@
+.loader{
+    background-color: white;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+}
+.loaderloader{
+    overflow: hidden;
+    width: 0vw;
+    height: 100vh;
+    animation-name: loader;
+    position: absolute;
+    right: 0;
+    background-color: black;
+    animation-iteration-count: calc(2);
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    top: 0;
+}
+
+@keyframes loader{
+    0%{
+        overflow: hidden;
+        width: 5vw;
+        right: 0;
+    }
+    100%{
+        width: 100vw;
+        right: 100%;
+    }
+}

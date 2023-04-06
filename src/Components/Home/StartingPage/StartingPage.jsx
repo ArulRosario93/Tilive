@@ -2,13 +2,14 @@ import React from "react";
 import './StartingPage.css';
 import { Link } from 'react-router-dom';
 
-export const StartingPage = () => {
+export const StartingPage = ({ want }) => {
    return (
     <div className="startingPageContainer">
      <div className = 'start'>
          <img id="startlogo"src="https://assets.stickpng.com/thumbs/5847f9cbcef1014c0b5e48c8.png" alt="ehh"></img>
           
-         <Link to="/aboutus">
+          {
+            want? <><Link to="/aboutus">
             <button type='button' className='startingPageAbout startingButton'>About Us</button>
          </Link>
 
@@ -34,7 +35,8 @@ export const StartingPage = () => {
 
          <Link to="/products&services">
             <button type='button' className='startingPageProd startingButton'>Products & Services</button>
-         </Link>
+         </Link></>: null
+          }
      </div>
     </div>
    )

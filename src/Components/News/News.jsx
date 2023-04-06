@@ -3,12 +3,16 @@ import EnLargeNews from './EnlargeNews/EnlargeNews';
 import "./News.css";
 import { Carousel } from 'react-responsive-carousel';
 import gg from "./gg.mp4";
-
 import { firebasee } from '../../firebase';
 
 import { Firestore, collection, getDocs } from "firebase/firestore";
 import { useEffect } from 'react';
 import { Link, Params } from 'react-router-dom';
+
+import { StartingPage } from '../Home/StartingPage/StartingPage';
+import NewsContainer from './NewsContainer/NewsContainer';
+import NewsHome from './NewsHome/NewsHome';
+import NewsHomeTopNews from './NewsHomeTopNews/NewsHomeTopNews';
 
 // import firebase from "firebase";
 
@@ -29,87 +33,22 @@ const newsItems = [
     },
 ]
 
-const News = () => {
-
-    const [docs, setDocs] = useState([]);
-
-    const [desContent, setDesContent] = useState("");
-        
-        const handleClick = async () => {
-            const aa  = await getDocs(collection(firebasee, "tilive_data"));
-            setDocs(aa.docs);
-            console.log(aa.docs);
-        }
-
-        useEffect(() => {
-            handleClick();
-        }, []);
-
+const News = () => {    
     return (
         <div className='News'>
-            <h1 className='NewsHeading'>
+        <StartingPage want={false}/>
+
+            {/* <h1 className='NewsHeading'>
                 News
-            </h1>
-
+            </h1> */}
+            <NewsHome />
+            <NewsHomeTopNews />
             <br />
-            
-            <div className='NewsContainer'>
 
-            {
-                docs.map((item, i) => {
-
-                    const data = item._document?.data?.value?.mapValue?.fields;
-
-                    const eventCaption = data?.eventCaption;
-                    const eventDescription = data?.eventDescription;
-                    const eventName = data?.eventName;
-                    const linkURl = data?.fileLink?.arrayValue?.values;
-
-                    const stateChange = {
-                        eventCaption: eventCaption,
-                        eventDescription: eventDescription,
-                        eventName: eventName,
-                        linkURl: linkURl,
-                    }
-
-                    var des = "";
-
-
-                    des = data?.eventDescription?.stringValue;
-
-                    if (des.length > 650) {
-                        des = des.slice(0, 650) + "...";
-                    }
-
-                    return(
-                        <Link to={`event`} state={{stateChange}}>
-
-                        <div className='container' key={i}> 
-
-                                <div className='imgdiv'>
-                                    <img className="xyz" src={linkURl?.[0]?.stringValue} alt="Factory Image"/>
-                                </div>
-                                
-                                <div className="news">
-                                    <div className='newsDescription'>
-                                        <h3 className="newsDescriptionHead">Description</h3>
-                                        <p className="newsDescriptionP">{des}</p>
-                                    </div>
-                                    
-                                </div>
-
-                                <div className='containerBottom'>
-                                    <h1>_</h1>
-                                </div>
-                        </div>
-                        </Link>
-                    )
-                })
-            }
-                </div>
-        </div> 
+            <h2>News</h2>
+            <NewsContainer />
+        </div>
     )
 }
-
 
 export default News;

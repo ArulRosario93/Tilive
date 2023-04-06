@@ -1,9 +1,10 @@
 import React from "react";
+import "./Home.css";
 import { StartingPage } from "./StartingPage/StartingPage";
 const Home = () => {
     return(
-        <div>
-           <StartingPage/>
+        <div className="Home">
+           <StartingPage want={true}/>
         </div>
     )
 }

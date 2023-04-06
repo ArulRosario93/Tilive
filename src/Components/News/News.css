@@ -22,14 +22,14 @@
     bottom: 0;
     left: 0;
     right: 0;
-    display: flex;
-    align-items: center;
+    display: none;
     /* justify-content: center; */
     width: 26vw;
     background-color: rgba(0, 0, 0, 0.801);
     height: 380px;
     opacity:0;
     text-align: left;
+
   }
   .container{
     position: relative;
@@ -40,6 +40,8 @@
   }
   .container:hover .news {
     transition: 0.4s;
+    display: flex;
+    align-items: center;
     opacity:1;
   }
   
@@ -90,4 +92,15 @@
   font-size: xx-large;
   position: absolute;
   /* display: none; */
+}
+
+.containerimgdiv{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  font-size: medium;
+  flex-direction: column;
+  font-family: 'Cinzel', serif;
+  color: black;
 }
