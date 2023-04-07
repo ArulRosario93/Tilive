@@ -45,6 +45,7 @@ const NewsForm = () => {
                 eventName: eventName,
                 eventCaption: eventCaption,
                 eventDescription: eventDescription,
+                timeStamp: firebase.firestore.FieldValue.serverTimestamp(),
                 fileLink: [],
             };
             // const collectionRef = firebasee.firestore().collection("tilive_data");
@@ -170,15 +171,29 @@ const NewsForm = () => {
                     <div className="newsformdivider"></div>
                     <div className="newsformimg">
                         <input multiple accept="image/*,video/*" onChange={(e) => handleFileChange(e)} type="file" id="file-input" />
-                        {/* <br /> */}
 
                         {
-                            file.length > 0? <div className="newsformimgCarousel"><Carousel className="newsformimgCarouselIn" showIndicators={false} selectedItem={false} showStatus={false} infiniteLoop showThumbs={false}>
+                            file.length > 0? <div className="newsformimgCarousel" style={{}}><Carousel className="newsformimgCarouselIn" showIndicators={true} selectedItem={false} showStatus={false} infiniteLoop showThumbs={false}>
 
                                 {
                                     file.map((item, i) => {
+
+                                        var itemNow = `${file[i]}`;
+
+                                        var typeImg = false;
+
+                                        if(seletedFiles[i].type == "video/mp4"){
+                                            console.log(seletedFiles[i].type);
+                                            typeImg = false;
+                                        }else{
+                                            typeImg = true;
+                                            console.log('FAAALSEE');
+                                        }
+                                        
                                         return(
-                                            <img src={file[i]} className="newsformimgCarouselImg" alt="file Selected" width="250px" height="250px"/>
+                                                typeImg? <img src={file[i]} className="newsformimgCarouselImg" alt="file Selected" width="250" height="200"/>: <video width="350" height="200" controls >
+                                                    <source src={file[i]} type="video/mp4"/>
+                                                </video>
                                         )
                                     })
                                 }

@@ -14,12 +14,12 @@
 .EnLargeNewsImage{
     background-color: black;
     flex: 2;
-    /* margin-f: 0%; */
     transition-duration: 0.5s;
     position: fixed;
     transition-property: initial;
     left: 0;
     overflow:auto;
+    /* width: 350px; */
 }
 
 .EnLargeNewsImage .carousel div{

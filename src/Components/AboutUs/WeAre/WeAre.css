@@ -1,13 +1,15 @@
 .WeAre{
-    /* height: 100vh; */
+    height: 110vh;
     padding: 100px 0px;
 }
 
 .WeAreHead{
+    margin-bottom: 55px;
     text-align: center;
     font-size: x-large;
+    font-weight: 100;
     font-family: 'Cinzel', serif;
-    color: white;
+    color: black;
 }
 
 .WeAreMainContent{
@@ -17,27 +19,38 @@
 }
 
 .WeAreMainContentImg{
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     margin: auto;
     z-index: 1;
 }
 
 .WeAreMainContentImg img{
-    border-radius: 100px;
-    width: 150px;
-    top: -9px;
-    height: 150px;
+    border-radius: 90px;
+    width: 180px;
+    /* top: -9px; */
+    height: 180px;
     object-fit: cover;
-    border: 5px solid black;
+    border: 10px solid white;
 }
 
 .WeAreMainContentDes{
     position: relative;
-    z-index: 0;
-    /* top: -30px; */
+    top: -80px;
+    z-index: -1;
     margin: auto;
-    width: 80%;
-    padding: 70px 30px;
+    width: 88%;
+    padding: 19vh 10vh 10vh;
     border: 1px solid black;
+}
+.WeAreMainContentDes p{
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    /* font-weight: 3px; */
+    font-size: smaller;
+    letter-spacing: 0.3px;
+    word-spacing: 1px;
+    font-family:'Be Vietnam Pro', sans-serif;
+    /* font-family: 'Cinzel', serif; */
+    font-weight: 400;
 }

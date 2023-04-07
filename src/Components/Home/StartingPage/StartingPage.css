@@ -24,7 +24,8 @@
 }
 .startingPageContainer{
     padding: 20px 30px;
-    position: fixed;
+    position:absolute;
+    background: transparent;
     top: 0;
     width: 100%;
 }

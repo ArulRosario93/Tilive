@@ -15,6 +15,7 @@ import AboutUs from './Components/AboutUs/AboutUs';
 import EnLargeNews from './Components/News/EnlargeNews/EnlargeNews';
 import NewsForm from './Components/NewsForm/NewsForm';
 import Loader from './Components/Loader/Loader';
+import { doc } from 'firebase/firestore';
 
 const router = createBrowserRouter([
   {
@@ -70,7 +71,17 @@ const router = createBrowserRouter([
   },
 ]);
 
+// const myElement = document.getElementsByClassName("AboutUsHomeDesHead");
+
+// window.addEventListener('scroll', () => {
+//   myElement.style.transform = "translate(-50%, 100px)";
+//   setTimeout(() => {
+//     myElement.style.transform = `translate(-50%, -50%)`;
+//   }, 300);
+// });
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />

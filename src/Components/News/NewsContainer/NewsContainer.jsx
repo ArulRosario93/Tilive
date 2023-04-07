@@ -1,4 +1,4 @@
-import { collection, getDocs } from "firebase/firestore";
+import { QueryOrderByConstraint, collection, getDocs } from "firebase/firestore";
 import React, { useState, useEffect } from 'react';
 import { Link, Params } from 'react-router-dom';
 import { firebasee } from '../../../firebase';
@@ -7,8 +7,6 @@ import { Fade } from "react-reveal";
 const NewsContainer = () => {
 
     const [docs, setDocs] = useState([]);
-
-    const [desContent, setDesContent] = useState("");
         
         const handleClick = async () => {
             const aa  = await getDocs(collection(firebasee, "tilive_data"));
@@ -20,12 +18,11 @@ const NewsContainer = () => {
             handleClick();
         }, []);
 
-
     return(
         <div className='NewsContainer'>
 
             {
-                docs.slice(0,6).map((item, i) => {
+                docs.slice(0, docs.length > 5? 6: docs.length).map((item, i) => {
 
                     const data = item._document?.data?.value?.mapValue?.fields;
 
@@ -33,7 +30,8 @@ const NewsContainer = () => {
                     const eventDescription = data?.eventDescription;
                     const eventName = data?.eventName;
                     const linkURl = data?.fileLink?.arrayValue?.values;
-
+                
+                
                     const stateChange = {
                         eventCaption: eventCaption,
                         eventDescription: eventDescription,
@@ -48,6 +46,18 @@ const NewsContainer = () => {
                     if (des.length > 650) {
                         des = des.slice(0, 650) + "...";
                     }
+
+                    var itemNow = `${linkURl[0]?.stringValue}`;
+
+                    console.log(itemNow);
+                    const currentType = itemNow.slice(itemNow.lastIndexOf(".") +1, itemNow.lastIndexOf(".") + 4);
+                                
+
+                    var typeImg = true;
+
+                    if(currentType == "mp4"){
+                        typeImg = false;
+                    }
                     
 
                     return(
@@ -55,7 +65,7 @@ const NewsContainer = () => {
 
                         <Fade bottom>
                         {
-                                    i == 5? <Link to={`/news/allnews`} state={{stateChange}}>
+                                    i == 6? <Link to={`/news/allnews`} state={{stateChange}}>
                             <div className='container' key={i}> 
                                 <div className='containerimgdiv' style={{textAlign: 'center'}}>
                                     <h1 className="containerImgdivHead1"> &gt; </h1>
@@ -76,7 +86,12 @@ const NewsContainer = () => {
                         </Link>:<Link to={`event`} state={{stateChange}}>
                             <div className='container' key={i}> 
                             <div className='imgdiv'>
-                                <img className="xyz" src={linkURl?.[0]?.stringValue} alt="Factory Image"/>
+                            {
+                                typeImg?
+                                <img className="xyz" src={linkURl?.[0]?.stringValue} alt="Factory Image"/>: <video className="xyz" width="100%" height="auto">
+                                        <source src={linkURl?.[0]?.stringValue} type="video/mp4"/>
+                                    </video>
+                            }
                             </div>
 
                             <div className="news">
