@@ -1,0 +1,78 @@
+.AllNews{
+}
+
+.AllNewsContainer{
+    /* padding: 6vh; */
+    text-align: center;
+    /* margin-bottom: 2vh; */
+}
+
+.AllNewsContainerHead{
+    color: rgb(0, 0, 0);
+    font-family: 'Cinzel', serif;
+}
+
+.AllNewsContainerGrid{
+    /* background-color: blueviolet; */
+    padding: 5vh 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.AllNewsContainerGridEach{
+    position: relative;
+    margin: auto;
+    width: 350px;
+    /* transition: 1.4s; */
+    height: 350px;
+    background-color: aquamarine;
+}
+
+.AllNewsContainerGridEachDiv{
+    display: none;
+    padding: 25px 20px;
+    margin: auto;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.871);
+}
+
+.AllNewsContainerGridEachImg{
+    width: 350px;
+    height: 350px;
+}
+
+.AllNewsContainerGridEach:hover .AllNewsContainerGridEachDiv{
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.AllNewsContainerGridEachDivDesHead{
+    text-align: left;
+    font-family: 'Cinzel', serif;
+    font-size: medium;
+    /* color: rgba(2, 2, 2, 0.952); */
+    color: rgba(255, 255, 255, 0.952);
+}
+
+.AllNewsContainerGridEachDivDesP{
+    word-wrap: break-word;
+    color: rgb(0, 0, 0);
+    color: aliceblue;
+    text-align: left;
+}
+
+/* @keyframes slower{
+    100%{
+        tr
+    }
+} */
+
+@keyframes slower {
+    100%{
+        display: block;
+    }
+}

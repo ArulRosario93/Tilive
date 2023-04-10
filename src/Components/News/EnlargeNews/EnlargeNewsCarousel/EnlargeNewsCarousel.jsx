@@ -20,7 +20,7 @@ const EnlargeNewsCarousel = ({ images, largeImage, setLargeImage }) => {
     }
 
     console.log(images);
-    
+
     useEffect(() => {
         setFiles(images);
         console.log("GOT IT" + files);
@@ -32,7 +32,7 @@ const EnlargeNewsCarousel = ({ images, largeImage, setLargeImage }) => {
                 files.length > 0?
                 files.map((item, i) => {
                     return(
-                        <EnlargeNewsCarouselFile item={item} largeImage={largeImage} onChangeCaptured={currentItem} i={i}/>)
+                        <EnlargeNewsCarouselFile item={item} largeImage={largeImage} onChangeCaptured={currentItem} i={i} />)
                     }                
                 ): <div></div>
             }

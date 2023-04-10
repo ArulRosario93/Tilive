@@ -13,7 +13,6 @@
     height: 380px;
     cursor: pointer;
     object-fit: cover;
-    /* background-color: brown; */
   }
   .news {
     position:absolute;
@@ -29,7 +28,6 @@
     height: 380px;
     opacity:0;
     text-align: left;
-
   }
   .container{
     position: relative;

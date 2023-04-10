@@ -1,0 +1,20 @@
+.AllNewsCreativeContainer{
+    padding: 10vh 8vh;
+    background-color: aqua;
+}
+
+.AllNewsContainerStartsHere{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.AllNewsContainerStartsHereDes{
+    flex: 1;
+    background-color: rgb(0, 0, 0);
+}
+
+.AllNewsContainerStartsHereImg{
+    flex: 1;
+    background-color: brown;
+}

@@ -4,7 +4,7 @@ import { StartingPage } from "./StartingPage/StartingPage";
 const Home = () => {
     return(
         <div className="Home">
-           <StartingPage want={true}/>
+           <StartingPage want={true} />
         </div>
     )
 }

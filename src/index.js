@@ -15,7 +15,10 @@ import AboutUs from './Components/AboutUs/AboutUs';
 import EnLargeNews from './Components/News/EnlargeNews/EnlargeNews';
 import NewsForm from './Components/NewsForm/NewsForm';
 import Loader from './Components/Loader/Loader';
-import { doc } from 'firebase/firestore';
+import { createBrowserHistory } from 'history';
+import AllNews from './Components/News/AllNews/AllNews';
+
+const history = createBrowserHistory();
 
 const router = createBrowserRouter([
   {
@@ -30,11 +33,7 @@ const router = createBrowserRouter([
   {
     path: "/news",
     // loader: <Loader />,
-    loader: () => {
-      return(
-        <Loader />
-      )
-    },
+    loader: () =>  <Loader />,
     element: <News />
   },
   {
@@ -62,8 +61,8 @@ const router = createBrowserRouter([
     element: <EnLargeNews />
   },
   {
-    path: "/news/allnews",
-    element: <h1>Alll News</h1>
+    path: "/allnews",
+    element: <AllNews />
   },
   {
     path: "/newsform",
@@ -71,14 +70,7 @@ const router = createBrowserRouter([
   },
 ]);
 
-// const myElement = document.getElementsByClassName("AboutUsHomeDesHead");
-
-// window.addEventListener('scroll', () => {
-//   myElement.style.transform = "translate(-50%, 100px)";
-//   setTimeout(() => {
-//     myElement.style.transform = `translate(-50%, -50%)`;
-//   }, 300);
-// });
+// window.onload()
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

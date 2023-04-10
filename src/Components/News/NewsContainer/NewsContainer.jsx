@@ -61,11 +61,9 @@ const NewsContainer = () => {
                     
 
                     return(
-                        
-
                         <Fade bottom>
                         {
-                                    i == 6? <Link to={`/news/allnews`} state={{stateChange}}>
+                                    i == 5? <Link to={`/allnews`} state={{stateChange}}>
                             <div className='container' key={i}> 
                                 <div className='containerimgdiv' style={{textAlign: 'center'}}>
                                     <h1 className="containerImgdivHead1"> &gt; </h1>
@@ -74,15 +72,9 @@ const NewsContainer = () => {
                                 </div>
 
                             <div className="news">
-                                {/* <div className='newsDescription'>
-                                <Fade bottom>
-                                    <h3 className="newsDescriptionHead">Description</h3>
-                                    <p className="newsDescriptionP">{des}</p>
-                                </Fade>
-                                </div> */}
-                                
-                            </div>
-                            </div>
+                            
+                        </div>
+                        </div>
                         </Link>:<Link to={`event`} state={{stateChange}}>
                             <div className='container' key={i}> 
                             <div className='imgdiv'>
