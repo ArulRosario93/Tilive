@@ -27,7 +27,7 @@
     background-color: rgba(0, 0, 0, 0.801);
     height: 380px;
     opacity:0;
-    text-align: left;
+    text-align: left; 
   }
   .container{
     position: relative;
@@ -73,7 +73,7 @@
 .newsDescriptionP{
   font-size: small;
   padding: 15px 0px;
-  font-family:'Be Vietnam Pro', sans-serif;
+    font-family:'Be Vietnam Pro', sans-serif;
   font-weight: 500;
 }
 .NewsContainer{

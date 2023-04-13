@@ -1,10 +1,12 @@
 .loader{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     height: 100vh;
     position: relative;
     overflow: hidden;
     width: 100vw;
+    animation-timing-function: ease;
 }
+
 .loaderloader{
     overflow: hidden;
     width: 0vw;
@@ -12,11 +14,23 @@
     animation-name: loader;
     position: absolute;
     right: 0;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     animation-iteration-count: calc(2);
     animation-duration: 1s;
     animation-timing-function: ease;
     top: 0;
+}
+
+@keyframes loaderbg{
+    0%{
+        background-color: rgb(255, 255, 255);
+        width: 100vw;   
+    }
+
+    100%{
+        width: 0vw;
+        background-color: transparent;
+    }
 }
 
 @keyframes loader{
@@ -28,5 +42,6 @@
     100%{
         width: 100vw;
         right: 100%;
+        background-color: rgb(0, 0, 0);
     }
 }

@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./EnlargeNews.css";
-import { Carousel } from 'react-responsive-carousel';
-import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { Link, useLocation } from "react-router-dom";
-import vidHEre from "../gg.mp4";
+import { useLocation } from "react-router-dom";
 import EnlargeNewsCarousel from "./EnlargeNewsCarousel/EnlargeNewsCarousel";
+import { Fade } from "react-reveal";
 
 const EnLargeNews = () => {
 
@@ -13,37 +11,43 @@ const EnLargeNews = () => {
     var [images, setImages] = useState([]);
     const [ largeImage, setLargeImage ] = useState(false);
 
+    const docs1 = location.state?.docs1;
+    const docs2 = location.state?.docs2;
+    const docs3 = location.state?.docs3;
 
-    const data = location.state?.stateChange;
+    const data = docs1 == null? docs2 == null? docs3 == null? location?.state?.stateChange: docs3: docs2: docs1;
     var linkURLFound = [];
 
     var bgImage = "https://firebasestorage.googleapis.com/v0/b/upload-img-vid.appspot.com/o/files%2FWN384A.jpg?alt=media&token=3be0c6f6-efa3-4b08-b654-cae5829e177e";
-    
-    useEffect(() => {  
+
+    useEffect(() => {
         setImages(data?.linkURl)
         console.log(images[0]?.stringValue);
         var bbgImage = images[0]?.stringValue;
         bgImage = bbgImage;
-    }, [images])
+    }, [images]);
 
     return(
         <div className="EnLargeNews" style={bgImage? {backgroundImage: `url("${bgImage}")`}: null}>
-            <div className="EnLargeNewsImage" style={largeImage? { width: '100vw' }: {width: '350px'}}>
-                <EnlargeNewsCarousel images={images} largeImage={largeImage} setLargeImage={setLargeImage}/>
-            </div>
-            <div></div>
+            {/* <Fade> */}
+                <div className="EnLargeNewsImage" style={largeImage? { width: '100vw' }: {width: '350px'}}>
+                    <EnlargeNewsCarousel images={images} largeImage={largeImage} setLargeImage={setLargeImage}/>
+                </div>
+            {/* </Fade> */}
+            <div></div> 
             <div className="EnLargeNewsDescrip">
                 <div className="EnLargeNewsHeader">
                     <div className="EnLargeNewsHeadingwithshortDes">
-                        <h1 className="EnLargeNewsHeadingwithshortDesHead">{data?.eventName?.stringValue}</h1>
-                        <p className="EnLargeNewsHeadingwithshortDesDes">{data?.eventCaption?.stringValue}</p>
+                        <h1 className="EnLargeNewsHeadingwithshortDesHead">{data?.eventName?.stringValue ? data?.eventName?.stringValue: data?.eventName}</h1>
+                        <p className="EnLargeNewsHeadingwithshortDesDes">{data?.eventCaption?.stringValue ? data?.eventCaption?.stringValue: data?.eventCaption}</p>
                     </div>
                     <div className="EnLargeNewsHeadingwithDate">27/03</div>
                 </div>
-
-                <div className="EnLargeNewsBody">
-                    <h2 className="EnLargeNewsBodyHead">Description</h2>
-                    <p className="EnLargeNewsBodyDes"><pre className="EnLargeNewsBodyDesPre">{data?.eventDescription?.stringValue}</pre></p></div>
+                {/* <Fade bottom> */}
+                    <div className="EnLargeNewsBody">
+                        <h2 className="EnLargeNewsBodyHead">Description</h2>
+                        <p className="EnLargeNewsBodyDes"><pre className="EnLargeNewsBodyDesPre">{data?.eventDescription?.stringValue? data?.eventDescription?.stringValue: data?.eventDescription}</pre></p></div>
+                {/* </Fade> */}
             </div>
         </div>
     )

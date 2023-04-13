@@ -11,10 +11,16 @@ const EnlargeNewsCarouselVid = ({ item, onChangeCaptured, i, largeImage }) => {
 
     useEffect(() => {
 
+        console.log("COMING IN VIDEO" + " " + largeImage);
+
         if(largeImage){
             setUse(false);
         }
-        
+
+        if (!largeImage) {
+            setUse(true )
+        }
+
         if(onChangeCaptured == i){
             setTimeout(() => {
                 vidRef?.current?.play();
@@ -26,8 +32,8 @@ const EnlargeNewsCarouselVid = ({ item, onChangeCaptured, i, largeImage }) => {
     }, [onChangeCaptured, largeImage]);
 
     return(
-        <div style={{width: '100%'}}>
-            <video loop ref={vidRef} muted={use} id="EnlargeNewsCarouselVid" width="100%" height="auto">
+        <div style={{width: '100%'}} className="EnlargeNewsCarouselVidHere">
+            <video loop ref={vidRef} muted={use} id="EnlargeNewsCarouselVid" width="100%">
                     <source src={item?.stringValue} type="video/mp4"/>
             </video>
         </div>

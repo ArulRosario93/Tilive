@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // import CSS styles
+
 import EnlargeNewsCarouselFile from "./EnlargeNewsCarouselFile/EnlargeNewsCarouselFile";
 
 const EnlargeNewsCarousel = ({ images, largeImage, setLargeImage }) => {
@@ -27,7 +29,7 @@ const EnlargeNewsCarousel = ({ images, largeImage, setLargeImage }) => {
     }, [images])
 
     return(
-        <Carousel selectedItem={0} onClickItem={() => handleClick()} onChange={(i) => onChangeCaptured(i)} showArrows={true} showIndicators={false} showStatus={true} className="carousel" infiniteLoop>
+        <Carousel selectedItem={0} onClickItem={() => handleClick()} onChange={(i) => onChangeCaptured(i)} showArrows={true} showIndicators={false} showStatus={true} className="carouselFound" infiniteLoop>
             {
                 files.length > 0?
                 files.map((item, i) => {

@@ -8,7 +8,7 @@ export const StartingPage = ({ want }) => {
    return (
     <div className="startingPageContainer">
      <div className = 'start'>
-         <Link to="/">
+         <Link to={"/"}>
             <button style={{outline: "none", background: 'transparent', border: 'none', cursor: '-moz-initial'}}><img id="startlogo" style={{borderRadius: '50px'}} width="100px" height="100px" src="https://t3.ftcdn.net/jpg/02/05/46/30/360_F_205463037_cXsFsDC65v6ZlZlqoDYabosy0sZnwReO.jpg" alt="ehh"></img></button>
          </Link>
           {
@@ -36,7 +36,7 @@ export const StartingPage = ({ want }) => {
             <button type='button' className='startingPageNews startingButton'>News</button>
          </Link>
 
-         <Link to="/products&services">
+         <Link to="/productsservices">
             <button type='button' className='startingPageProd startingButton'>Products & Services</button>
          </Link></>: null
           }

@@ -40,6 +40,7 @@ const EnlargeNewsCarouselFile = ({ item, largeImage, onChangeCaptured, i }) => {
         typeIMg = false;
         ii = i;
     }
+    
     return(
         <div style={{ height: '100vh'}}>
             {

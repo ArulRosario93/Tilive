@@ -13,6 +13,7 @@ import { StartingPage } from '../Home/StartingPage/StartingPage';
 import NewsContainer from './NewsContainer/NewsContainer';
 import NewsHome from './NewsHome/NewsHome';
 import NewsHomeTopNews from './NewsHomeTopNews/NewsHomeTopNews';
+import { Fade } from 'react-reveal';
 
 // import firebase from "firebase";
 
@@ -36,17 +37,21 @@ const newsItems = [
 const News = () => {    
     return (
         <div className='News'>
-        <StartingPage want={false}/>
+            {/* <Fade> */}
+                <StartingPage want={false}/>
 
             {/* <h1 className='NewsHeading'>
                 News
             </h1> */}
-            <NewsHome />
-            <NewsHomeTopNews />
-            <br />
+                <NewsHome />
+                {/* <Fade> */}
+                    <NewsHomeTopNews />
+                {/* </Fade> */}
+                <br />
 
-            <h2>News</h2>
-            <NewsContainer />
+                <h2>News</h2>
+                <NewsContainer />
+            {/* </Fade> */}
         </div>
     )
 }

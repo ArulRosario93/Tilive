@@ -1,0 +1,38 @@
+.ProductsServicesContainer{
+    height: 80vh;
+    margin: 16vh 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+.ProductsServicesContainerDes{
+    flex: 1;
+}
+
+.ProductsServicesContainerDesP{
+    width: 90%;
+    /* background-color: aqua; */
+    font-weight: 400;
+}
+
+.ProductsServicesContainerImg{
+    width: 100%;
+    margin: auto;
+    flex: 1;
+    height: 60vh;
+}
+
+.ProductsServicesContainerImg img{
+    object-fit: cover;
+    height: 60vh;
+    width: 100%;
+}
+
+.ProductsServicesContainerViewInDetail button{
+    padding: 7px 12px;
+    /* width: auto; */
+    /* background-color: bisque; */
+}
