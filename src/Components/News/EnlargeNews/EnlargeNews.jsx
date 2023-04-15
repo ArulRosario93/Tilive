@@ -45,8 +45,11 @@ const EnLargeNews = () => {
                 </div>
                 {/* <Fade bottom> */}
                     <div className="EnLargeNewsBody">
-                        <h2 className="EnLargeNewsBodyHead">Description</h2>
+                        <h2 className="EnLargeNewsBodyHead">{data?.purchaseNow == true? "About The Product": "Description"}</h2>
                         <p className="EnLargeNewsBodyDes"><pre className="EnLargeNewsBodyDesPre">{data?.eventDescription?.stringValue? data?.eventDescription?.stringValue: data?.eventDescription}</pre></p></div>
+                    {
+                        data?.purchaseNow == true? <div className="EnLargeNewsBodyPurchaseNow"><h2 className="EnLargeNewsBodyPurchaseNowHead">Purchase Now</h2></div>: <div></div>
+                    }
                 {/* </Fade> */}
             </div>
         </div>

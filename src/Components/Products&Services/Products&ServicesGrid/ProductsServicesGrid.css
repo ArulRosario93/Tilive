@@ -1,0 +1,109 @@
+.ProductsServicesGrid{
+    height: 100vh;
+    margin-bottom: 6vh;
+    padding: 10vh 6vw;
+}
+
+.ProductsServicesGridHead{
+    text-align: center;
+    /* padding: 2vh 20px; */
+    font-family: 'Cinzel', serif;   
+}
+
+.ProductsServicesGridHere{
+    margin-top: 50px;
+    /* background-color: blueviolet; */
+    /* padding: 5vh 15px; */
+    text-align: center;
+    display: grid;
+    align-items:baseline;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.ProductsServicesGridHereEach{
+    margin: auto;
+    align-self: start;
+    position: relative;
+    transition: 0.7s;
+    height: 60vh;
+    width: 70%;
+}
+
+.ProductsServicesGridHereEachImg{
+    height: 55vh;
+    width: 100%;
+    transition: .7s;
+    /* background-color: black; */
+}
+
+.ProductsServicesGridHereEachImg img{
+    height: 55vh;
+    transition: .7s;
+    object-fit: cover;
+    width: 100%;
+}
+
+.ProductsServicesGridHereEachNameP{
+    font-size: medium;
+    font-weight: 600;
+    font-family:'Be Vietnam Pro', sans-serif;
+    text-decoration: underline;
+}
+
+.ProductsServicesGridHereEachAbsolute{
+    /* transition: 1.5s; */
+    position: absolute;
+    display: none;
+    /* background-color: rgba(0, 0, 0, 0.568); */
+    color: aliceblue;
+    top: 0;
+    width: 100%;
+}
+
+.ProductsServicesGridHereEachAbsoluteInside{
+    /* transition: .7s; */
+    height: 65vh;
+    /* background-color: rgba(0, 0, 0, 0.582); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.ProductsServicesGridHereEachAbsoluteInsideHead{
+    font-family: 'Cinzel', serif;   
+    font-size: x-large;
+}
+
+.ProductsServicesGridHereEachAbsoluteInsideHeadP{
+    font-size: smaller;
+    font-family:'Be Vietnam Pro', sans-serif;
+    text-decoration: underline;
+}
+
+.ProductsServicesGridHereEach:hover{
+    height: 65vh;
+    width: 80%;
+}
+
+.ProductsServicesGridHereEach:hover .ProductsServicesGridHereEachAbsolute{
+    /* transition: 1s; */
+    /* background-color: rgba(0, 0, 0, 0.603); */
+    display: block;
+}
+
+.ProductsServicesGridHereEach:hover .ProductsServicesGridHereEachImg img{   
+
+    height: 65vh;
+    width: 100%;
+}
+
+.ProductsServicesGridHereEachName{
+    transition: .4s;
+}
+
+.ProductsServicesGridHereEach:hover .ProductsServicesGridHereEachName{
+    display: none;
+}
+

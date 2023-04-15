@@ -1,0 +1,26 @@
+.ClientsWhyUs{
+    /* height: 110vh; */
+    background-color: rgb(209, 0, 0);
+    margin: 8vh auto;
+    /* width: 100%; */
+}
+
+.ClientsWhyUsHead{
+    font-size: 40px;
+    color: black;
+}
+
+.ClientsWhyUsPIn{
+    padding: 18vh 0px;
+    width: 70%;
+    margin: auto;
+}
+
+.ClientsWhyUsP{
+    letter-spacing: 1px;
+    font-size: medium;
+    font-weight: 500;
+    word-spacing: 2px;
+    color: rgba(0, 0, 0, 0.459);
+    /* background-color: black; */
+}

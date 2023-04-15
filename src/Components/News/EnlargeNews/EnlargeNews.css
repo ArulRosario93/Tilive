@@ -90,3 +90,19 @@
 .EnlargeNewsCarouselVidHere video {
     height: 100vh;
 } 
+
+.EnLargeNewsBodyPurchaseNow{
+    
+    width: 100%;
+}
+
+.EnLargeNewsBodyPurchaseNowHead{
+    margin: auto;
+    font-size: smaller;
+    font-family:'Be Vietnam Pro', sans-serif;
+    padding: 15px 35px;
+    width: max-content;
+    background-color: rgba(255, 255, 255, 0.911);
+    color: rgba(22, 22, 22, 0.918);
+    border-radius: 5px;
+}

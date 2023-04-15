@@ -1,0 +1,52 @@
+.ClientsHome{
+    background-color: cadetblue;
+    height: 100vh;
+}
+
+.ClientsHomeImg{
+    position: relative;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.ClientsHomeImg img{
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.ClientsHomeDes{
+    position: absolute;
+    top: 45vh;
+    left: 8vw;
+    width: 70%;
+}
+
+.ClientsHomeDesHeadThird{
+    color: aliceblue;
+    font-size: small;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.ClientsHomeDesHeadOne{
+    color: antiquewhite;
+    padding: 0px 8px;
+    margin: 0%;
+    background-color: red;
+    width: max-content;
+    font-style: italic;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.ClientsHomeDesP{
+    font-weight: 600;
+    width: 70%;
+}
+
+.ClientsHomeDesPSpan{
+    font-size: large;
+    word-spacing: 1px;
+    color: azure;
+}

@@ -1,17 +1,45 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./ProductsServicesContainer.css";
 
+import { getDocs, collection } from "firebase/firestore";
+import { firebasee } from "../../../firebase";
+import { Link } from "react-router-dom";
+
 const ProductsServicesContainer = () => {
+
+    const [docs, setDocs] = useState([]);
+        
+    const handleClick = async () => {
+        const aa  = await getDocs(collection(firebasee, "products"));
+        setDocs(aa.docs[0]?._document?.data?.value?.mapValue?.fields);
+        console.log(aa.docs[0]?._document?.data?.value?.mapValue?.fields);
+    }
+
+    useEffect(() => {
+        handleClick();
+    }, []);
+
+    
+    var stringValue = `${docs?.productDescription?.stringValue}`;
+
+    var stateChange = {
+        eventCaption: "",
+        eventDescription: stringValue,
+        eventName: docs?.productName,
+        linkURl: docs?.LinkUrl?.arrayValue?.values,
+        purchaseNow: true
+    }
+
     return(
         <div className="ProductsServicesContainer">
             <div className="ProductsServicesContainerDes">
-                <h2 className="ProductsServicesContainerDesHead">Turing Machine</h2>
+                <h2 className="ProductsServicesContainerDesHead">{docs?.productName?.stringValue}</h2>
                 <br /><br />
-                <p className="ProductsServicesContainerDesP">A Turing machine is a mathematical model of computation describing an abstract machine that manipulates symbols on a strip of tape according to a table of rules. Despite the model's simplicity, it is capable of implementing any computer algorithm.A Turing machine is a mathematical model of computation describing an abstract machine that manipulates symbols on a strip of tape according to a table of rules. Despite the model's simplicity, it is capable of implementing any computer algorithm.A Turing machine is a mathematical model of computation describing an abstract machine that manipulates symbols on a strip of tape according to a table of rules. Despite the model's simplicity, it is capable of implementing any computer algorithm.</p>
+                <p className="ProductsServicesContainerDesP">{stringValue.substring(0, 750) + "..."}</p>
                 <br /><br />
-                <div className="ProductsServicesContainerViewInDetail"><button>View In Detail</button></div>
+                <div className="ProductsServicesContainerViewInDetail"><Link to={"/news/event"} state={{stateChange}}><button>View In Detail</button></Link></div>
             </div>
-            <div className="ProductsServicesContainerImg"><img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Turing_Machine_Model_Davey_2012.jpg"/></div>
+            <div className="ProductsServicesContainerImg"><img src={docs?.LinkUrl?.arrayValue?.values[0]?.stringValue}/></div>
         </div>
     )
 }
