@@ -14,7 +14,7 @@
     animation-name: loader;
     position: absolute;
     right: 0;
-    background-color: rgb(0, 0, 0);
+    background-color: blueviolet;
     animation-iteration-count: calc(2);
     animation-duration: 1s;
     animation-timing-function: ease;
@@ -42,6 +42,6 @@
     100%{
         width: 100vw;
         right: 100%;
-        background-color: rgb(0, 0, 0);
+        background-color: blueviolet;
     }
 }

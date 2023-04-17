@@ -1,0 +1,94 @@
+.ContactUsForm{
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+    padding: 5vh 15vh;
+}
+
+.handleCapture{
+    padding-bottom: 10vh;
+}
+
+.handleCaptureForm{
+    /* background-color: rgb(247, 247, 247); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10vh 0px 5vh;
+}
+.handleCaptureFormNameInp{
+    width: 30vw;
+    padding: 20px;
+}
+
+.handleCaptureFormLeft input{
+    outline: none;
+    border: 0.1px solid rgba(0, 0, 0, 0.712);
+}
+
+.handleCaptureFormRight textarea{
+    padding: 10px;
+    width: 40vw;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.692);
+    outline: none;
+}
+
+.handleCaptureFormNamep{
+    font-size: small;
+    margin-bottom: 5px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.handleCaptureFormMailp{
+    /* color: blueviolet; */
+    font-size: small;
+    margin-bottom: 5px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.handleCaptureFormNump{
+    font-size: small;
+    /* color: blueviolet; */
+    margin-bottom: 5px;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+}
+.handleCaptureFormTextAreaP{
+    font-size: small;
+    /* color: blueviolet; */
+    margin-bottom: 5px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.handleCaptureFormTextArea textarea{
+    resize: none;
+    background-color: white;
+}
+
+.handleCaptureFormMailInp{
+    width: 30vw;
+    padding: 20px;
+}
+
+.handleCaptureFormNumInp{
+    width: 30vw;
+    padding: 20px;
+}
+
+.handleCaptureFormSubmit{
+    padding: 10px 45px;
+    border: 2px solid blueviolet;
+    width: max-content;
+    margin: 0px 25vh;
+    background-color: blueviolet;
+}
+
+.handleCaptureFormSubmitButton{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+}

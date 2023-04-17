@@ -33,6 +33,8 @@
 
 .ProductsServicesContainerViewInDetail button{
     padding: 7px 12px;
+    border: 2px solid blueviolet;
+    border-radius: 2px;
     /* width: auto; */
-    /* background-color: bisque; */
+    background-color: transparent;
 }

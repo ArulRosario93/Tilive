@@ -1,0 +1,6 @@
+.ClientFotter{
+    padding: 13vh 0px;
+    position: relative;
+    z-index: 11;
+    background-color: beige;
+}
