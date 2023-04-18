@@ -1,0 +1,34 @@
+.CareersHome{
+    height: 120vh;
+    position: relative;
+}
+
+.CareersHomeImg{
+    height: 110vh;
+    width: 100%;
+}
+
+.CareersHomeImg img{
+    height: 110vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.CareersHomeDes{
+    position: absolute;
+    top: 46vh;
+    left: 15vw;
+    z-index: 10;
+}   
+
+.CareersHomeDesInHead{
+    color: white;
+    /* font-family: 'Raleway', sans-serif; */
+    font-size: xx-large;
+}
+
+
+.CareersHomeDesInP{
+    font-family: 'Raleway', sans-serif; 
+    color: white;
+}

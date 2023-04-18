@@ -37,13 +37,16 @@ const AllNewsContainer = () => {
         handleClick();
     }, []);
 
+    var des = `${docs?.eventDescription?.stringValue}`;
+    var desfinal = des.length > 500? des.substring(0, 500) + "...": des.substring(0, 500);
+
     return(
         <div className="AllNewsCreativeContainer">
             <div className="AllNewsContainerStartsHere">
                 <div className="AllNewsContainerStartsHereDes">
                     <h2 className="AllNewsContainerStartsHereDesHead">{docs?.eventName?.stringValue}</h2>
                     <br />
-                    <p className="AllNewsContainerStartsHereDesP">{docs?.eventDescription?.stringValue}</p>
+                    <p className="AllNewsContainerStartsHereDesP">{desfinal}</p>
                     <div className="NewsHomeTopNewsContentDesViewMore"><Link to={"/news/event"} state={{stateChange}}><button>View More Detail</button></Link></div>
                 </div>
                 <div className="AllNewsContainerStartsHereImg">

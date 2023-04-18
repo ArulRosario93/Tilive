@@ -5,7 +5,7 @@ const CompanySecret = () => {
 
     const [position, setPosition] = useState(34); // Initial position is 0
     const moveAmount = 10; // Adjust this value to change the amount of movement
-  
+
     useEffect(() => {
       function handleScroll() {
         setPosition(window.pageYOffset/40 + 34);
@@ -13,7 +13,7 @@ const CompanySecret = () => {
         console.log("this is pageOFFset" + window.pageYOffset);
         // console.log(moveAmount);
       }
-  
+      
       window.addEventListener('scroll', handleScroll);
   
       return () => {
@@ -24,7 +24,9 @@ const CompanySecret = () => {
     return(
         <div className="CompanySecret">
             {/* <div className="CompanySecretBG"><img src="https://previews.123rf.com/images/vbvv77/vbvv771601/vbvv77160100039/50905108-vector-abstract-small-black-dots-background.jpg"/></div> */}
-            <div className="CompanySecretBG"><img src="https://thumbs.dreamstime.com/b/abstract-white-background-small-black-spots-abstract-white-background-small-black-spots-183662720.jpg"/></div>
+            {/* <div className="CompanySecretBG"> */}
+              {/* <img src="https://thumbs.dreamstime.com/b/abstract-white-background-small-black-spots-abstract-white-background-small-black-spots-183662720.jpg"/> */}
+            {/* </div> */}
 
             <div className="CompanySecretHead" style={{padding: `${position}px 10px`}}>
 

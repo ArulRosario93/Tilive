@@ -7,7 +7,7 @@
 .ProductsServicesGridHead{
     text-align: center;
     /* padding: 2vh 20px; */
-    font-family: 'Cinzel', serif;   
+    font-family: 'Raleway', sans-serif;
 }
 
 .ProductsServicesGridHere{
@@ -47,7 +47,7 @@
 .ProductsServicesGridHereEachNameP{
     font-size: medium;
     font-weight: 600;
-    font-family:'Be Vietnam Pro', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-decoration: underline;
 }
 
@@ -72,13 +72,13 @@
 }
 
 .ProductsServicesGridHereEachAbsoluteInsideHead{
-    font-family: 'Cinzel', serif;   
+    font-family: 'Raleway', sans-serif;
     font-size: x-large;
 }
 
 .ProductsServicesGridHereEachAbsoluteInsideHeadP{
     font-size: smaller;
-    font-family:'Be Vietnam Pro', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-decoration: underline;
 }
 

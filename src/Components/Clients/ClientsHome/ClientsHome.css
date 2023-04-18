@@ -25,6 +25,7 @@
 .ClientsHomeDesHeadThird{
     color: aliceblue;
     font-size: small;
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     letter-spacing: 1px;
 }
@@ -34,6 +35,7 @@
     padding: 0px 8px;
     margin: 0%;
     background-color: blueviolet;
+    font-family: 'Raleway', sans-serif;
     width: max-content;
     font-style: italic;
     font-size: 50px;
@@ -46,7 +48,10 @@
 }
 
 .ClientsHomeDesPSpan{
-    font-size: large;
+    font-size: small;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
     word-spacing: 1px;
     color: azure;
 }

@@ -8,7 +8,7 @@
     text-align: center;
     font-size: x-large;
     font-weight: 100;
-    font-family: 'Cinzel', serif;
+    font-family: 'Raleway', sans-serif;
     color: black;
 }
 
@@ -48,9 +48,9 @@
     color: rgb(0, 0, 0);
     /* font-weight: 3px; */
     font-size: smaller;
-    letter-spacing: 0.3px;
-    word-spacing: 1px;
-    font-family:'Be Vietnam Pro', sans-serif;
+    letter-spacing: 1px;
+    /* word-spacing: 1px; */
+    font-family: 'Raleway', sans-serif;
     /* font-family: 'Cinzel', serif; */
     font-weight: 400;
 }

@@ -4,7 +4,7 @@
 .topNewsHead{
     font-size: xx-large;
     text-align: center;
-    font-family: 'Cinzel', serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .NewsHomeTopNews{
@@ -44,18 +44,19 @@
 
 .NewsHomeTopNewsContentDesMainHead{
     font-size: xx-large;
-    font-family: 'Cinzel', serif;
+    font-family: 'Raleway', sans-serif;
     text-decoration: underline;
 }
 
 .NewsHomeTopNewsContentDesHead{
     font-size: smaller;
     padding-left: 2px;
-    font-family:'Be Vietnam Pro', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .NewsHomeTopNewsContentDesP{
     font-size: medium;
+    font-family: 'Raleway', sans-serif;
     word-spacing: 1px;
 }
 
@@ -68,6 +69,7 @@
 }
 
 .NewsHomeTopNewsContentDesViewMore button{
+    font-family: 'Raleway', sans-serif;
     padding: 8px 16px;
     /* margin-left: 30px; */
     border: 1px solid black;

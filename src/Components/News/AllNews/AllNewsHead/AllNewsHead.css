@@ -5,6 +5,7 @@
 }
 
 .AllNewsHeadCarousel{
+    background-color: rgba(0, 0, 0, 0.959);
     height: 100vh;
     width: 100%;
 }
@@ -17,7 +18,6 @@
     top: 43vh;
     /* background-color: aquamarine; */
     display: flex;
-    transition: 1s;
     height: 40vh;
     justify-content: center;
     flex-direction: column;

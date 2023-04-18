@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./EnlargeNews.css";
 import { useLocation } from "react-router-dom";
 import EnlargeNewsCarousel from "./EnlargeNewsCarousel/EnlargeNewsCarousel";
-import { Fade } from "react-reveal";
 
 const EnLargeNews = () => {
 

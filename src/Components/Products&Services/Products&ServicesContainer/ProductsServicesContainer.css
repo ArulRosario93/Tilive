@@ -17,12 +17,21 @@
     /* background-color: aqua; */
     font-weight: 400;
 }
-
+.ProductsServicesContainerDesHead{
+    font-family: 'Raleway', sans-serif;
+}
 .ProductsServicesContainerImg{
     width: 100%;
     margin: auto;
     flex: 1;
     height: 60vh;
+}
+
+.ProductsServicesContainerDesP{
+    /* font-family: 'Raleway', sans-serif;
+    font-size: small;
+    font-weight: 100; */
+    /* font-weight: 400; */
 }
 
 .ProductsServicesContainerImg img{
@@ -36,5 +45,6 @@
     border: 2px solid blueviolet;
     border-radius: 2px;
     /* width: auto; */
+    font-family: 'Raleway', sans-serif;
     background-color: transparent;
 }

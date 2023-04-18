@@ -42,11 +42,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/clients",
-    element: <Clients />
+    element: <Careers/>
   },
   {
     path: "/careers",
-    element: <Careers/>
+    element: <Clients />
   },
   {
     path: "/buyonline",

@@ -5,7 +5,7 @@
 .AllNews3GridHead{
     font-weight: 600;
     padding: 25px 10px;
-    font-family: 'Cinzel', serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .AllNewsContainer{
@@ -17,7 +17,7 @@
 
 .AllNewsContainerHead{
     color: rgb(0, 0, 0);
-    font-family: 'Cinzel', serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .AllNewsContainerGrid{
@@ -80,7 +80,7 @@
 
 .AllNewsContainerGridEachDivDesHead{
     text-align: left;
-    font-family: 'Cinzel', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: medium;
     /* color: rgba(2, 2, 2, 0.952); */
     color: rgba(255, 255, 255, 0.952);
@@ -90,6 +90,7 @@
     word-wrap: break-word;
     color: rgb(0, 0, 0);
     color: aliceblue;
+    font-family: 'Raleway', sans-serif;
     text-align: left;
 }
 

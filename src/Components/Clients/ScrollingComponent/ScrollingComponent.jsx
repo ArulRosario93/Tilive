@@ -11,7 +11,7 @@ function ScrollingComponent({ handleChange, firstImage, secondImage, thirdImage,
   const [image2, setImage2] = useState(false);
   const [image3, setImage3] = useState(false);
 
-    const [scrollHeight, setScrollHeight] = useState(60);
+  const [scrollHeight, setScrollHeight] = useState(60);
 
   useEffect(() => {    
     const handleScroll = () =>  {

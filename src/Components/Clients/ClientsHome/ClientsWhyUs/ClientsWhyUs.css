@@ -6,8 +6,9 @@
 }
 
 .ClientsWhyUsHead{
-    font-size: 40px;
+    font-size: 50px;
     color: black;
+    font-family: 'Raleway', sans-serif;
 }
 
 .ClientsWhyUsPIn{
@@ -16,11 +17,11 @@
     margin: auto;
 }
 
-.ClientsWhyUsP{
+.ClientsWhyUsPP{
+    font-family: 'Raleway', sans-serif;
     letter-spacing: 1px;
     font-size: medium;
-    font-weight: 500;
-    word-spacing: 2px;
+    font-weight: 600;
+    word-spacing: 1px;
     color: rgba(0, 0, 0, 0.459);
-    /* background-color: black; */
 }

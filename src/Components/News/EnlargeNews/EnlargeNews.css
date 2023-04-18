@@ -46,17 +46,18 @@
     padding: 85px 75px 40px 40px; 
 }
 .EnLargeNewsHeadingwithshortDesHead{
-    font-family: 'Cinzel', serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: bolder;
     font-size: xx-large;
     text-decoration: underline;
 }
 .EnLargeNewsHeadingwithshortDesDes{
-    font-family:'Be Vietnam Pro', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: medium;
     font-weight: 200;
     word-spacing: 0px;
 }
+
 .EnLargeNewsHeadingwithDate{
     font-family: 'Cinzel', serif;
     font-weight: bolder;
@@ -68,7 +69,7 @@
     /* white-space: nowrap; */
 }
 .EnLargeNewsBodyHead{
-    font-family: 'Cinzel', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: x-large;
     text-decoration: underline;
 }
@@ -92,14 +93,14 @@
 } 
 
 .EnLargeNewsBodyPurchaseNow{
-    
+    margin-bottom: 2vh;
     width: 100%;
 }
 
 .EnLargeNewsBodyPurchaseNowHead{
     margin: auto;
     font-size: smaller;
-    font-family:'Be Vietnam Pro', sans-serif;
+    font-family: 'Raleway', sans-serif;
     padding: 15px 35px;
     width: max-content;
     background-color: rgba(255, 255, 255, 0.911);

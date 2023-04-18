@@ -34,7 +34,7 @@
     left: 6vw;
     z-index: 10;
     /* background-color: aqua; */
-    color: rgba(32, 32, 32, 0.829);
+    color: rgb(241, 241, 241);
     /* left: 50%; */
 }
 
@@ -45,12 +45,23 @@
     /* height: 1; */
 }
 
+.ScrollingComponentDesHead{
+    font-family: 'Raleway', sans-serif;
+    /* font-size: xx-large; */
+    letter-spacing: 1px;
+}
+.ScrollingComponentDesP{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    font-size: small;
+}
+
 .ScrollingComponentDesD{
     padding: 0px 25px;
 }
 .ScrollingComponentViewInDetail{
     padding: 5px 9px;
-    background-color: transparent;
+    /* background-color: blueviolet; */
     color: rgba(238, 238, 238, 0.849);
     width: max-content;
     border: 2px solid blueviolet;
@@ -58,6 +69,7 @@
 }
 
 .ScrollingComponentViewInDetail button{
+    font-family: 'Raleway', sans-serif;
     outline: none;
     background-color: transparent;
     color: aliceblue;

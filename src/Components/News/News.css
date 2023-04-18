@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;400&family=Raleway:wght@300;400;600&display=swap');
 
 .NewsHeading{
     padding: 15px;
@@ -66,14 +66,14 @@
 }
 .newsDescriptionHead{
   font-size: medium;
-  font-family:'Be Vietnam Pro', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 500;
   text-decoration: underline;
 }
 .newsDescriptionP{
   font-size: small;
   padding: 15px 0px;
-    font-family:'Be Vietnam Pro', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 500;
 }
 .NewsContainer{

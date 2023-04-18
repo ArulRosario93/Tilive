@@ -129,6 +129,16 @@ const AllNews3Grid = () => {
         handleEvent3();
     }, [currentItem]);
 
+
+    var doc1Des = `${docs1?.eventDescription}`;
+    var doc1finalDes = doc1Des.substring(0, 120) + "...";
+
+    var doc2Des = `${docs2?.eventDescription}`;
+    var doc2finalDes = doc2Des.substring(0, 120) + "...";
+    
+    var doc3Des = `${docs3?.eventDescription}`;
+    var doc3finalDes = doc3Des.substring(0, 120) + "...";
+
     return(
         <div className="AllNews3Grid">
         <h1 className="AllNews3GridHead">Latest Events From Tilive</h1>
@@ -143,7 +153,7 @@ const AllNews3Grid = () => {
                                             <Fade bottom>
                                                 <h2 className="AllNewsContainerGridEachDivDesHead">Description:</h2>
                                                 <br />
-                                                <p className="AllNewsContainerGridEachDivDesP">{docs1?.eventDescription}</p>
+                                                <p className="AllNewsContainerGridEachDivDesP">{doc1finalDes}</p>
                                             </Fade>
                                         </div>
                                     </div>
@@ -157,7 +167,7 @@ const AllNews3Grid = () => {
                             <Fade bottom>
                                             <h2 className="AllNewsContainerGridEachDivDesHead">Description:</h2>
                                             <br />
-                                            <p className="AllNewsContainerGridEachDivDesP">{docs1?.eventDescription}</p>
+                                            <p className="AllNewsContainerGridEachDivDesP">{doc1finalDes}</p>
                             </Fade>
                                         </div>
                                     </div>
@@ -174,7 +184,7 @@ const AllNews3Grid = () => {
                         <Fade bottom>
                                         <h2 className="AllNewsContainerGridEachDivDesHead">Description:</h2>
                                         <br />
-                                        <p className="AllNewsContainerGridEachDivDesP">{docs2?.eventDescription}</p>
+                                        <p className="AllNewsContainerGridEachDivDesP">{doc2finalDes}</p>
                         </Fade>
                                     </div>
                                 </div>
@@ -187,7 +197,7 @@ const AllNews3Grid = () => {
                                             <Fade bottom>
                                                 <h2 className="AllNewsContainerGridEachDivDesHead">Description:</h2>
                                                 <br />
-                                                <p className="AllNewsContainerGridEachDivDesP">{docs2?.eventDescription}</p>
+                                                <p className="AllNewsContainerGridEachDivDesP">{doc2finalDes}</p>
                                             </Fade>
                                         </div>
                                     </div>
@@ -202,7 +212,7 @@ const AllNews3Grid = () => {
                         <Fade bottom>
                                         <h2 className="AllNewsContainerGridEachDivDesHead">Description:</h2>
                                         <br />
-                                        <p className="AllNewsContainerGridEachDivDesP">{docs3?.eventDescription}</p>
+                                        <p className="AllNewsContainerGridEachDivDesP">{doc3finalDes}</p>
                         </Fade>
                                     </div>
                                 </div>
@@ -215,7 +225,7 @@ const AllNews3Grid = () => {
                             <Fade bottom>
                                             <h2 className="AllNewsContainerGridEachDivDesHead">Description:</h2>
                                             <br />
-                                            <p className="AllNewsContainerGridEachDivDesP">{docs3?.eventDescription}</p>
+                                            <p className="AllNewsContainerGridEachDivDesP">{doc3finalDes}</p>
                             </Fade>
                                         </div>
                                     </div>

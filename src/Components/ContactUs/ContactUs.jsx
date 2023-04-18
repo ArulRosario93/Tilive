@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import ContactUsHome from "./ContactUsHome/ContactUsHome";
 import ContactUsForm from "./ContactUsForm/ContactUsForm";
+import Loader from "../Loader/Loader";
 
 const ContactUs = () => {
+
+    const [loader, setLoader] = useState(false);
+
+    setTimeout(() => {
+        setLoader(true);
+    }, 2000)
+
     return(
-        <div>
+        loader? <div>
             <ContactUsHome />
             <ContactUsForm />
-        </div>
+        </div>: <Loader />
     )
 }   
 

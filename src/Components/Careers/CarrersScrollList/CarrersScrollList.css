@@ -1,0 +1,66 @@
+.CarrersScrollList{
+    height: 100vh;
+    position: relative;
+    background-color: blueviolet;
+    margin-bottom: 200vh;
+}
+
+.CarrersScrollListImg{
+    width: 100%;
+    height: 100vh;  
+    top: 0;
+    left: 0;  
+    background-color: aqua;
+    position: absolute;
+}
+
+.CarrersScrollListImgDes{
+    position: absolute;
+    top: 60vh;
+    width: max-content;
+    left: 0;
+    color: white;
+    text-align: center;
+    right: 0;
+    margin: 0 auto;
+}
+
+.CarrersScrollListImgDesFixed{
+    width: 100%;
+    height: 100vh;  
+    top: 0;
+    left: 0;  
+    position: fixed;
+}
+
+.CarrersScrollListImgDesFixed img{
+    width: 100%;
+    height: 100vh;
+    /* position: fixed; */
+    object-fit: cover;
+}
+
+.CarrersScrollListImgDesHead{
+    font-family: 'Raleway', sans-serif;
+}
+
+.CarrersScrollListImg img{
+    width: 100%;
+    height: 100vh;
+    /* position: fixed; */
+    object-fit: cover;
+}
+
+.CarrersScrollListImgDesP{
+    color: white;
+    /* font-family: 'Raleway', sans-serif; */
+    width: 60vw;
+}
+
+.CarrersScrollListImgDesLocationP{
+    padding: 6px 5vw;
+    width: max-content;
+    border-radius: 2px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.884);
+}
