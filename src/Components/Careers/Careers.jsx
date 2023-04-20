@@ -4,6 +4,7 @@ import CarrersScrollList from "./CarrersScrollList/CarrersScrollList";
 import Loader from "../Loader/Loader";
 import { firebasee } from "../../firebase";
 import { getDocs, collection } from "firebase/firestore";
+import ScrollingComponent from "../Clients/ScrollingComponent/ScrollingComponent";
 
 const Careers = () => {
 
@@ -16,19 +17,47 @@ const Careers = () => {
     var hhToDivHeight;
     
     const [docs, setDocs] = useState([]);
+    const [docFound, setDocFound] = useState([]);
 
     const handleClick = async () => {
-        const aa  = await getDocs(collection(firebasee, "tilive_data"));
+        const aa  = await getDocs(collection(firebasee, "clients"));
         setDocs(aa.docs);
-        console.log(aa.docs);
     }
 
+    const handleDocArray = () => {
+        console.log(docs?.length);
+        console.log("Found");
+
+        var docFoundHere = [];
+
+        const updateArraythere = docs?.map((item) => {
+
+            console.log(item)
+
+            var doc1 = {
+                eventName: item?._document?.data?.value?.mapValue?.fields?.clientName?.stringValue,
+                eventDescription: item?._document?.data?.value?.mapValue?.fields?.aboutClient?.stringValue,
+                linkURl: item?._document?.data?.value?.mapValue?.fields?.fileLink?.arrayValue?.values[0].stringValue,
+                timestamp: item?._document?.data?.value?.mapValue?.fields?.timestamp?.stringValue,
+            }
+            docFoundHere.push(doc1);
+        })
+                
+        setDocFound(docFoundHere);
+    }
+    
     useEffect(() => {
+        
+        handleClick();
+        
+        console.log(docs);
+
+        handleDocArray();
+        
         setTimeout(() => {
             setLoader(true);
         }, 2000);
             
-        handleClick();
 
         window.scrollTo({
             top: 0,
@@ -57,7 +86,11 @@ const Careers = () => {
         loader?
         <div className="Careers" onScroll={handleScroll}>
             <CareersHome />
-            <div ref={ref}><CarrersScrollList heightFound={heightFound !=0? heightFound: 2000} docs={docs}/></div>
+            <div ref={ref}>
+                <ScrollingComponent  heightStartsHere={heightFound != 0? heightFound : 1000} firstImage={docFound[0]?.linkURl} secondImage={docFound[1]?.linkURl} thirdImage={docFound[2]?.linkURl} firstHead={docFound[0]?.eventName} firstDes={docFound[0]?.eventDescription} secondHead={docFound[1]?.eventName} secondDes={docFound[0]?.eventDescription} thirdHead={docFound[2]?.eventName} thirdDes={docFound[2]?.eventDescription} firstLink="" secondLink="" thirdLink="" />
+                {/* <ScrollingComponent  heightStartsHere={heightFound != 0? heightFound : 2000} firstImage={docFound[0]?.linkURl} secondImage={docFound[1]?.linkURl} thirdImage={docFound[2]?.linkURl} firstHead={docFound[0]?.eventName} firstDes={docFound[0]?.eventDescription} secondHead={docFound[1]?.eventName} secondDes={docFound[1]?.eventDescription} thirdHead={docFound[2]?.eventName} thirdDes={docFound[2]?.eventDescription} firstLink="" secondLink="" thirdLink="" /> */}
+            </div>
+            {/* <div ref={ref}><CarrersScrollList heightFound={heightFound !=0? heightFound: 2000} docs={docs}/></div> */}
         </div>: <Loader />
     )
 }

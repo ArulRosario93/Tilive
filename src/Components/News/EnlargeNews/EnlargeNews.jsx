@@ -21,9 +21,6 @@ const EnLargeNews = () => {
 
     useEffect(() => {
         setImages(data?.linkURl)
-        console.log(images[0]?.stringValue);
-        var bbgImage = images[0]?.stringValue;
-        bgImage = bbgImage;
     }, [images]);
 
     return(

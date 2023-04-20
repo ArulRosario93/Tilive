@@ -9,71 +9,116 @@ const CarrersScrollList = ({ heightFound, docs }) => {
 
     const [measureHeight, setMeasureHeight] = useState(100);
 
-    const [currentContainer, setCurrentContainer] = useState(3);
+    // var docFound = [];
 
-    var docLength = docs?.length;
+    const [docFound, setDocFound] = useState([]);
 
-    useEffect(() => {    
-        
-        const handleScroll = () => {        
+    const [currentContainer, setCurrentContainer] = useState(0);
 
-            if(window.scrollY > heightFound){
-                var heightHere = window.scrollY - heightFound;
-                setClassName("CarrersScrollListImgDesFixed");
-                console.log(window.scrollY);
-                console.log("FOUND");
-                setMeasureHeight(66 - heightHere/11);
-            }else{
-                setClassName("CarrersScrollListImg");
+    const handleDocArray = () => {
+        console.log(docs?.length);
+        console.log("Found");
+
+        var docFoundHere = [];
+
+        const updateArraythere = docs?.map((item) => {
+
+            console.log(item)
+
+            var doc1 = {
+                eventName: item?._document?.data?.value?.mapValue?.fields?.clientName?.stringValue,
+                eventDescription: item?._document?.data?.value?.mapValue?.fields?.aboutClient?.stringValue,
+                linkURl: item?._document?.data?.value?.mapValue?.fields?.fileLink?.arrayValue?.values[0].stringValue,
             }
+            
+            docFoundHere.push(doc1);
+
+        })
+                
+        setDocFound(docFoundHere);
+    }
+
+    useEffect(() => {
+
+        handleDocArray();
+        console.log(docFound);
+        const handleScroll = () => {
+
+            docFound.map((item, i) => {
+
+                if (window.scrollY > heightFound + 1800) {
+                    var heightHere = window.scrollY - heightFound - 1800;
+
+                    var heii = 68 - heightHere/11;
+                    // currentContainer++;
+                    var floorIT = Math.round(heii);
+                    setCurrentContainer(5);
+                    setClassName("CarrersScrollListImgDesFixed");
+                    setMeasureHeight(floorIT);
+                    console.log(floorIT);
+                    console.log("COming ONNNNN1");
+                }  
+                else if (window.scrollY > heightFound + 1200) {
+                    var heightHere = window.scrollY - heightFound - 1200;
+
+                    var heii = 68 - heightHere/11;
+                    // currentContainer++;
+                    var floorIT = Math.round(heii);
+                    setCurrentContainer(3);
+                    setClassName("CarrersScrollListImgDesFixed");
+                    setMeasureHeight(floorIT);
+                    console.log(floorIT);
+                    console.log("COming ONNNNN1");
+                }else if (window.scrollY > heightFound + 650) {
+                    var heightHere = window.scrollY - heightFound - 650;
+
+                    var heii = 66 - heightHere/11;
+                    // currentContainer++;
+                    var floorIT = Math.round(heii);
+                    setCurrentContainer(2);
+                    setClassName("CarrersScrollListImgDesFixed");
+                    setMeasureHeight(floorIT);
+                    console.log(floorIT);
+                    console.log("COming ONNNNN1");
+                } else if (window.scrollY > heightFound + 250) {
+                    // currentContainer++;
+                    var heightHere = window.scrollY - heightFound - 250;
+
+                    var heii = 66 - heightHere/11;
+                    
+                    var floorIT = Math.round(heii);
+                    setCurrentContainer(1);
+                    setClassName("CarrersScrollListImgDesFixed");
+                    setMeasureHeight(floorIT);
+                    console.log("COming ONNNNN2");
+                } else if (window.scrollY > heightFound ) {
+                    var heightHere = window.scrollY - heightFound + 100;
+
+                    var heii = 63 - heightHere/11;
+
+                    var floorIT = Math.round(heii);
+                    setCurrentContainer(0);
+                    setClassName("CarrersScrollListImgDesFixed");
+                    setMeasureHeight(floorIT);
+                    console.log("COming ONNNNN2");
+                } else{
+                    setClassName("CarrersScrollListImg");
+                }
+            })
         }
 
         window.addEventListener('scroll', () => {
             window.addEventListener("scroll", handleScroll);
             return () => window.removeEventListener("scroll", handleScroll);
-        });    
-    }, [heightFound]);
+        });   
 
-    const scrollList = () => {
-
-        for (let index = 0; index < docs.length; index++) {
-            const element = docs[index];
-            
-            var eventName = element?._document?.data?.value?.mapValue?.fields?.eventName?.stringValue;
-            var eventDescription = element?._document?.data?.value?.mapValue?.fields?.eventDescription?.stringValue;
-            var eventCaption = element?._document?.data?.value?.mapValue?.fields?.eventCaption?.stringValue;
-            var linkURl = element?._document?.data?.value?.mapValue?.fields?.fileLink?.arrayValue?.values;
-            
-
-        }
-    }
+    }, [heightFound, docs]);
 
     return(
-        <div className="CarrersScrollList">
+        <div className="CarrersScrollList" style={{marginBottom: `${docFound.length * 45}vh`}}>
             {
                 <div className={className}>
-                {
-                    docs?.map((item, i) => {
-
-                        var eventName = item?._document?.data?.value?.mapValue?.fields?.eventName?.stringValue;
-                        var eventDescription = item?._document?.data?.value?.mapValue?.fields?.eventDescription?.stringValue;
-                        var eventCaption = item?._document?.data?.value?.mapValue?.fields?.eventCaption?.stringValue;
-                        var linkURl = item?._document?.data?.value?.mapValue?.fields?.fileLink?.arrayValue?.values;
-
-                        var stateChange = {
-                            eventName: eventName,
-                            eventDescription:  eventDescription,
-                            eventCaption: eventCaption,
-                            linkURl: linkURl,
-                        };
-                        console.log("Found IT");
-                        if(i == 3){
-                            return(
-                                <CarrersEachScroll measureHeight={measureHeight} key={i} image={linkURl[0]?.stringValue} Head={eventName} Des={eventDescription} />
-                            )
-                        }
-                    })
-                }
+                    <CarrersEachScroll measureHeight={measureHeight} image={docFound[currentContainer]?.linkURl} Head={docFound[currentContainer]?.eventName} Des={docFound[currentContainer]?.eventDescription} />
                 </div>
             }
         </div>

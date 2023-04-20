@@ -11,7 +11,7 @@ const EnlargeNewsCarousel = ({ images, largeImage, setLargeImage }) => {
         console.log(document.getElementById("EnlargeNewsCarouselVid"));
     }
 
-    const [files, setFiles] = useState(["aog eou"]);
+    const [files, setFiles] = useState([]);
 
     const [currentItem, setCurrentItem] = useState(0);
 
@@ -21,12 +21,11 @@ const EnlargeNewsCarousel = ({ images, largeImage, setLargeImage }) => {
         return currentItem;
     }
 
-    console.log(images);
-
     useEffect(() => {
         setFiles(images);
+        console.log("GOT IT" + images);
         console.log("GOT IT" + files);
-    }, [images])
+    }, [images, files])
 
     return(
         <Carousel selectedItem={0} onClickItem={() => handleClick()} onChange={(i) => onChangeCaptured(i)} showArrows={true} showIndicators={false} showStatus={true} className="carouselFound" infiniteLoop>

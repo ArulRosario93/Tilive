@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Fade } from "react-reveal";
 
 const CarrersEachScroll = ({ measureHeight, image, Head, Des }) => {
+
+    const [heightFound, setHeightFound] = useState();
+
+    useEffect(() => {
+        setHeightFound(measureHeight);
+    }, [measureHeight, image, Head, Des])
+
     return(
+            <Fade>
         <div>
             <img src={image}/>
             <Fade>
-                <div className="CarrersScrollListImgDes" style={{top: `${measureHeight}vh`}}>
+                <div className="CarrersScrollListImgDes" style={{top: `${heightFound}vh`}}>
                     <h1 className="CarrersScrollListImgDesHead">{Head}</h1>
                     <br />
                     <p className="CarrersScrollListImgDesP">{Des}
@@ -18,6 +26,7 @@ const CarrersEachScroll = ({ measureHeight, image, Head, Des }) => {
                 </div>
             </Fade>
         </div>
+            </Fade>
     )
 }
 

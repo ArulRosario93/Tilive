@@ -47,7 +47,7 @@ const AllNewsContainer = () => {
                     <h2 className="AllNewsContainerStartsHereDesHead">{docs?.eventName?.stringValue}</h2>
                     <br />
                     <p className="AllNewsContainerStartsHereDesP">{desfinal}</p>
-                    <div className="NewsHomeTopNewsContentDesViewMore"><Link to={"/news/event"} state={{stateChange}}><button>View More Detail</button></Link></div>
+                    <div className="NewsHomeTopNewsContentDesViewMore"><Link to={"/moredetail"} state={{stateChange}}><button>View More Detail</button></Link></div>
                 </div>
                 <div className="AllNewsContainerStartsHereImg">
                     {

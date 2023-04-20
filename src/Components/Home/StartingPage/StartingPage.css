@@ -14,6 +14,8 @@
 }
 .start{
     padding: 10px;
+    position: relative;
+    height: 90vh;
 }
 .startingButton:hover{
     text-decoration: 3px underline rgb(255, 255, 255);
@@ -21,12 +23,115 @@
 #startlogo{
     height: 50px;
     width: 50px;
+    position: fixed;
 }
+
 .startingPageContainer{
     padding: 20px 30px;
     position:absolute;
     background: transparent;
     top: 0;
+    left: 5;
+    margin: auto;
     width: 100%;
-    z-index: 10;
+    z-index: 99;
+}
+
+.dropdown{
+    background-color:transparent;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  font-family:'Be Vietnam Pro', sans-serif;
+  border: none;
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the dropdown content when the user hovers over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+  
+}
+
+/* Style the sub-dropdown button */
+.sub-dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-family:'Be Vietnam Pro', sans-serif;
+}
+
+/* Style the sub-dropdown content */
+.sub-dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 100%;
+}
+
+/* Show the sub-dropdown content when the user hovers over the sub-dropdown button */
+.sub-dropdown:hover .sub-dropdown-content {
+  display: block;
+}
+
+.sub-dropdown:hover{
+    background-color: rgba(0, 0, 0, 0.405);
+    /*text-decoration: 3px underline rgb(255, 255, 255);*/
+}
+
+.sub-dropdown{
+    background-color:rgba(73, 73, 76, 0.46);
+    font-family:'Be Vietnam Pro', sans-serif;
+}
+
+.insubdropbtn{
+    background-color: transparent;
+    color:red;
+}
+
+.dropdown button{
+    outline: none;
+    border: none;
+}
+
+.insubdropbtn{
+  background-color: rgba(0, 0, 0, 0.405);;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-family:'Be Vietnam Pro', sans-serif;
+  width:fill;
+}
+.insubdropbtn:hover{
+  background-color: rgba(0, 0, 0, 0.705);
+}
+#floating_btn{
+  position: absolute;
+}
+
+.start #float_contact{
+  bottom: 0;
+  right:0; 
+  margin: 55px 30px;
+  padding: 15px;
+  border-radius: 40px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.74);
+  border-color: transparent;
+  font-size: large;
+  color: white;
+}
+.start #float_contact:hover {
+  transform: scale(1.1);
+  /*text-decoration: 2px underline white;*/
 }

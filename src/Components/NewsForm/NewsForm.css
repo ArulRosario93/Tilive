@@ -2,6 +2,44 @@
     height: 100vh;
 }
 
+.newsformPre{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12vh 0px 20vh;
+}
+
+.newsformHead{
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+.NewForminputButton{
+    border-radius: 2px;
+    padding: 25px;
+    margin-top: 10px;
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    width: 100%;
+}
+
+.NewForminput{
+    outline: none;
+    /* border: none; */
+    font-size: medium;
+    width: 25vw;
+    height: 6vh;
+    padding: 25px;
+}
+.newsformPreP{
+    /* background-color: aqua;   */
+    text-align: left;
+    padding: 25px 30px 15px;
+}
+
 .newsformhead{
     text-align: center;
     font-family: 'Cinzel', serif;
@@ -19,7 +57,7 @@
     display: flex; 
     flex-direction: row;
     justify-content: center;
-    align-items: start;
+    align-items: safe;
 }
 .newsformeventdes{
     text-align: center;
@@ -38,6 +76,7 @@
     /* margin-top: 10px; */
     flex: 1;
 }
+
 .newsformeventdesEventName{
     width: 380px;
     margin: auto;

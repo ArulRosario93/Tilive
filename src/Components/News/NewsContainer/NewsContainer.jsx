@@ -72,10 +72,10 @@ const NewsContainer = () => {
                                 </div>
 
                             <div className="news">
-                            
+
+                            </div>
                         </div>
-                        </div>
-                        </Link>:<Link to={`event`} state={{stateChange}}>
+                        </Link>:<Link to={`/moredetail`} state={{stateChange}}>
                             <div className='container' key={i}> 
                             <div className='imgdiv'>
                             {

@@ -143,9 +143,8 @@ const AllNews3Grid = () => {
         <div className="AllNews3Grid">
         <h1 className="AllNews3GridHead">Latest Events From Tilive</h1>
         <div className="AllNewsContainerGrid">
-
                         {
-                            fileType1 ? <Link to={"/news/event"} state={{docs1}}>
+                            fileType1 ? <Link to={"/moredetail"} state={{docs1}}>
                                 <div className="AllNewsContainerGridEach">
                                         <img className="AllNewsContainerGridEachImg" src={docs1?.linkURl[0]?.stringValue}/>
                                     <div className="AllNewsContainerGridEachDiv">
@@ -158,8 +157,8 @@ const AllNews3Grid = () => {
                                         </div>
                                     </div>
                                 </div> 
-                            </Link>: <Link to={"/news/event"} state={{docs1}}><div className="AllNewsContainerGridEach">
-                                <video width="100%" height="auto" >
+                            </Link>: <Link to={"/moredetail"} state={{docs1}}><div className="AllNewsContainerGridEach">
+                                <video width="350px" height="auto" >
                                     <source src={docs1.linkURl[0]?.stringValue} type="video/mp4"/>
                                 </video>
                                     <div className="AllNewsContainerGridEachDiv">
@@ -177,7 +176,7 @@ const AllNews3Grid = () => {
                         
                     
                         {
-                            fileType2 ? <Link to={"/news/event"} state={{docs2}}><div className="AllNewsContainerGridEach">
+                            fileType2 ? <Link to={"/moredetail"} state={{docs2}}><div className="AllNewsContainerGridEach">
                                     <img className="AllNewsContainerGridEachImg" alt="Src Img" src={docs2?.linkURl[0]?.stringValue}/>
                                 <div className="AllNewsContainerGridEachDiv">
                                     <div className="AllNewsContainerGridEachDivDes">
@@ -188,7 +187,7 @@ const AllNews3Grid = () => {
                         </Fade>
                                     </div>
                                 </div>
-                                    </div> </Link>: <Link to={"/news/event"} state={{docs2}}><div className="AllNewsContainerGridEach">
+                                    </div> </Link>: <Link to={"/moredetail"} state={{docs2}}><div className="AllNewsContainerGridEach">
                                         <video className="AllNewsContainerGridEachVid" width="350px" height="350px">
                                             <source src={docs2?.linkURl[0]?.stringValue} type="video/mp4"/>
                                         </video>
@@ -205,7 +204,7 @@ const AllNews3Grid = () => {
                             </Link>
                         }
                         {
-                            fileType3 ? <Link to={"/news/event"} state={{docs3}}><div className="AllNewsContainerGridEach">
+                            fileType3 ? <Link to={"/moredetail"} state={{docs3}}><div className="AllNewsContainerGridEach">
                                     <img className="AllNewsContainerGridEachImg" src={docs3?.linkURl[0]?.stringValue}/>
                                 <div className="AllNewsContainerGridEachDiv">
                                     <div className="AllNewsContainerGridEachDivDes">
@@ -216,8 +215,8 @@ const AllNews3Grid = () => {
                         </Fade>
                                     </div>
                                 </div>
-                            </div> </Link>: <Link to={"/news/event"} state={{docs3}}><div className="AllNewsContainerGridEach">
-                                    <video width="100%" height="auto" >
+                            </div> </Link>: <Link to={"/moredetail"} state={{docs3}}><div className="AllNewsContainerGridEach">
+                                    <video width="350px" height="auto" >
                                         <source src={docs3?.linkURl[0]?.stringValue} type="video/mp4"/>
                                     </video>
                                 <div className="AllNewsContainerGridEachDiv">

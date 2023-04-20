@@ -20,9 +20,9 @@ const EnlargeNewsCarouselFile = ({ item, largeImage, onChangeCaptured, i }) => {
         }
     }
 
-    var linkURl = `${item?.stringValue}`;
+    var linkURl = `${item?.stringValue? item?.stringValue: item}`;
 
-    // console.log(linkURl);
+    console.log(linkURl);
     // console.log(linkURl.slice(linkURl.lastIndexOf(".") +1, linkURl.lastIndexOf(".") + 4));
 
     const CurrentType = linkURl.slice(linkURl.lastIndexOf(".") +1, linkURl.lastIndexOf(".") + 4);
@@ -45,7 +45,7 @@ const EnlargeNewsCarouselFile = ({ item, largeImage, onChangeCaptured, i }) => {
         <div style={{ height: '100vh'}}>
             {
                 linkURl.length > 1?
-                typeIMg? <img style={ largeImage? {objectFit: 'contain'}: {objectFit: 'cover'} } src={item?.stringValue}/>: <EnlargeNewsCarouselVid item={item} largeImage={largeImage} onChangeCaptured={onChangeCaptured} i={ii}/>
+                typeIMg? <img style={ largeImage? {objectFit: 'contain'}: {objectFit: 'cover'} } src={linkURl}/>: <EnlargeNewsCarouselVid item={item} largeImage={largeImage} onChangeCaptured={onChangeCaptured} i={ii}/>
                 : <div></div>
             }
         </div>

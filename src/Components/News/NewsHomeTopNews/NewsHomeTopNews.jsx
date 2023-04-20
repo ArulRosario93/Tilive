@@ -51,7 +51,7 @@ const NewsHomeTopNews = () => {
                     <br />
                     <p className="NewsHomeTopNewsContentDesP">{docs?.eventDescription?.stringValue}</p>
                 
-                    <Fade><div className="NewsHomeTopNewsContentDesViewMore"><Link to={"/news/event"} state={{stateChange}}><button>View In Detail</button></Link></div></Fade>
+                    <Fade><div className="NewsHomeTopNewsContentDesViewMore"><Link to={"/moredetail"} state={{stateChange}}><button>View In Detail</button></Link></div></Fade>
                 </div>
             </div>
             <div className="NewsHomeTopNewsImage">

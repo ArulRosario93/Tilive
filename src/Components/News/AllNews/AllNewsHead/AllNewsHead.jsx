@@ -94,6 +94,8 @@ const AllNewsHead = () => {
     const handleClickDes = () => {
         setChange(!change);
 
+        console.log("Clicked")
+
         setAnyChange(true);
         setStringForP(string.substring(0, change? string.length: 0));
     }

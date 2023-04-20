@@ -37,7 +37,7 @@ const ProductsServicesContainer = () => {
                 <br /><br />
                 <p className="ProductsServicesContainerDesP">{stringValue.substring(0, 750) + "..."}</p>
                 <br /><br />
-                <div className="ProductsServicesContainerViewInDetail"><Link to={"/news/event"} state={{stateChange}}><button>View In Detail</button></Link></div>
+                <div className="ProductsServicesContainerViewInDetail"><Link to={"/moredetail"} state={{stateChange}}><button>View In Detail</button></Link></div>
             </div>
             <div className="ProductsServicesContainerImg"><img src={docs?.LinkUrl?.arrayValue?.values[0]?.stringValue}/></div>
         </div>

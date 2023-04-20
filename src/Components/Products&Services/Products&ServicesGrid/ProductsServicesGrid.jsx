@@ -51,7 +51,7 @@ const ProductsServicesGrid = () => {
             <div className="ProductsServicesGridHere">
 
                 <div className="ProductsServicesGridHereEach">
-            <Link to={"/news/event"} state={{ docs1 }}>
+            <Link to={"/moredetail"} state={{ docs1 }}>
                     <div className="ProductsServicesGridHereEachImg">
                         <img src={docs[1]?._document?.data?.value?.mapValue?.fields?.LinkUrl?.arrayValue?.values[0]?.stringValue}/>
                     </div>
@@ -74,7 +74,7 @@ const ProductsServicesGrid = () => {
 
 
                 <div className="ProductsServicesGridHereEach">
-                <Link to={"/news/event"} state={{ docs2 }}>
+                <Link to={"/moredetail"} state={{ docs2 }}>
 
                     <div className="ProductsServicesGridHereEachImg">
                         <img src={docs[2]?._document?.data?.value?.mapValue?.fields?.LinkUrl?.arrayValue?.values[0]?.stringValue}/>
@@ -95,7 +95,7 @@ const ProductsServicesGrid = () => {
                     </Link>
                 </div>
                 <div className="ProductsServicesGridHereEach">
-                <Link to={"/news/event"} state={{ docs3 }}>
+                <Link to={"/moredetail"} state={{ docs3 }}>
 
                     <div className="ProductsServicesGridHereEachImg">
                         <img src={docs[3]?._document?.data?.value?.mapValue?.fields?.LinkUrl?.arrayValue?.values[0]?.stringValue}/>

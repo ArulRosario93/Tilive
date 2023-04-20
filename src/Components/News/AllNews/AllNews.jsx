@@ -35,7 +35,7 @@ const AllNews = () => {
         <>
             {
                 loader? <Loader />: <div className="AllNews">
-                    <StartingPage want={false}/>
+                    {/* <StartingPage want={false}/> */}
 
                     <div className="AllNewsContainer">
                         {/* <h1 className="AllNewsContainerHead">News & Events</h1> */}
