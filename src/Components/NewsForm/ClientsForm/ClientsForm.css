@@ -2,3 +2,7 @@
     height: 100vh;
     background-color: wheat;
 }
+
+.newsformbuttonhead label{
+    margin-left: 10px;
+}

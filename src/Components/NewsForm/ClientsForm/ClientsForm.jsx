@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useId } from "react";
 import "../NewsForm.css";
+import "./ClientsForm.css";
 
 import { firebasee, storage } from "../../../firebase";
 
@@ -144,6 +145,16 @@ const ClientsForm = () => {
         <div className="newsForm">
             <div className="newsformhead"><h1>Clients Form</h1></div>
             <div className="newsformform">
+            <div className="newsFormLabel">
+                <label>Note:</label>
+                <br/>
+                <label>For Product File You Select A Dark Theme Image As A First File</label>
+                <br/>
+                <label>And Then It can Have Multiple Pictures/Videos</label>
+                <br/>
+                <br/>   
+                <br/>
+            </div>
                 <div className="newsformformflex">
                     <div className="newsformeventdes">
                         <div className="newsformeventdesEventName">
@@ -193,7 +204,7 @@ const ClientsForm = () => {
                     </div>
                 </div>
                 <div className="newsformbutton">
-                    <button className="newsformbuttonhead" onClick={validate} >Submit Form</button>
+                    <button className="newsformbuttonhead" onClick={validate} ><p>Submit Form</p></button>
                 </div>
                 <br />
                 <br />

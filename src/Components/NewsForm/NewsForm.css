@@ -57,12 +57,17 @@
     display: flex; 
     flex-direction: row;
     justify-content: center;
-    align-items: safe;
+    align-items: flex-start;
 }
 .newsformeventdes{
     text-align: center;
     flex: 1;
 }
+
+.newsFormLabel{
+    margin-left: 10px;
+}
+
 .newsformeventdesp{
     font-size: smaller;
     font-family:'Be Vietnam Pro', sans-serif;
@@ -102,19 +107,30 @@
 
 .newsformbutton{
     margin: auto;
-    width: 25vw;
+    width: 25%;
     /* margin-bottom: 5vh; */
 }
-.newsformbuttonhead{
+.newsformbuttonhead{    
+    outline: none;
+    border: none;
+    background: transparent;
     padding: 15px 20px;
     width: 100%;
     text-align: center;
-    background-color: black;
+    margin: auto;
     color: white;
     font-size: large;
     font-family: 'Cinzel', serif;
     font-weight: 100;
 }
+
+.newsformbuttonhead p {
+    padding: 15px 35px;
+    width: max-content;
+    margin: auto;
+    background: blueviolet;
+}
+
 .newsformimgCarousel{
     width: 100%;
     height: 200px;

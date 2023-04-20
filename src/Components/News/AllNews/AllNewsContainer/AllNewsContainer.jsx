@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./AllNewsContainer.css";
 
-import { getDocs, collection } from "firebase/firestore";
+import { getDocs, collection, orderBy, query } from "firebase/firestore";
 import { firebasee } from "../../../../firebase";
 import { Link } from "react-router-dom";
+
 
 const AllNewsContainer = () => {
 
@@ -11,7 +12,12 @@ const AllNewsContainer = () => {
     // const [fileType, setfileType] = useState(true);
 
     const handleClick = async () => {
-        const aa  = await getDocs(collection(firebasee, "tilive_data"));
+        const query1 = await collection(firebasee, "tilive_data");
+
+        const bb = await query(query1, orderBy('timeStamp', 'desc'));
+
+        const aa = await getDocs(bb); 
+
         setDocs(aa.docs[5]?._document?.data?.value?.mapValue?.fields);
         console.log(aa.docs[5]?._document?.data?.value?.mapValue?.fields);
     }

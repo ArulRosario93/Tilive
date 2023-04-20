@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
 
-import { getDocs, collection } from "firebase/firestore";
+import { getDocs, collection, orderBy, query } from "firebase/firestore";
 import { firebasee } from "../../../../firebase";
 
 const AllNews3Grid = () => {
@@ -21,10 +21,13 @@ const AllNews3Grid = () => {
     const [anyChange, setAnyChange] = useState(false);
 
     const handleEvent1 = async () => {
-        const aa  = await getDocs(collection(firebasee, "tilive_data"));        
+        const query1 = await collection(firebasee, "tilive_data");
+
+        const bb = await query(query1, orderBy('timeStamp', 'desc'));
+
+        const aa = await getDocs(bb); 
 
         if(aa?.docs[1]?._document?.data?.value?.mapValue?.fields){
-            // const item = aa?.docs[0]?._document?.data?.value?.mapValue?.fields;
 
             const data = aa?.docs[1]?._document?.data?.value?.mapValue?.fields;
 
@@ -58,8 +61,11 @@ const AllNews3Grid = () => {
     }, 500);
 
     const handleEvent2 = async () => {
-        const aa  = await getDocs(collection(firebasee, "tilive_data"));        
+const query1 = await collection(firebasee, "tilive_data");
 
+        const bb = await query(query1, orderBy('timeStamp', 'desc'));
+
+        const aa = await getDocs(bb); 
         if(aa?.docs[2]?._document?.data?.value?.mapValue?.fields){
             // const item = aa?.docs[0]?._document?.data?.value?.mapValue?.fields;
 
@@ -91,8 +97,11 @@ const AllNews3Grid = () => {
     }
 
     const handleEvent3 = async () => {
-        const aa  = await getDocs(collection(firebasee, "tilive_data"));     
+        const query1 = await collection(firebasee, "tilive_data");
 
+        const bb = await query(query1, orderBy('timeStamp', 'desc'));
+
+        const aa = await getDocs(bb); 
         if(aa?.docs[3]?._document?.data?.value?.mapValue?.fields){
             // const item = aa?.docs[0]?._document?.data?.value?.mapValue?.fields;
 
@@ -174,7 +183,6 @@ const AllNews3Grid = () => {
                             </Link>
                         }
                         
-                    
                         {
                             fileType2 ? <Link to={"/moredetail"} state={{docs2}}><div className="AllNewsContainerGridEach">
                                     <img className="AllNewsContainerGridEachImg" alt="Src Img" src={docs2?.linkURl[0]?.stringValue}/>

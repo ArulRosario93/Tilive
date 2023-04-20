@@ -11,7 +11,7 @@ export const StartingPage = ({ want }) => {
          <Link to={"/"}>
             <button id="floating_btn"style={{outline: "none", background: 'transparent', border: 'none', cursor: '-moz-initial'}}><img id="startlogo" style={{borderRadius: '50px'}} width="100px" height="100px" src="https://t3.ftcdn.net/jpg/02/05/46/30/360_F_205463037_cXsFsDC65v6ZlZlqoDYabosy0sZnwReO.jpg" alt="ehh"></img></button>
          </Link>
-         <button id="float_contact">Contact us</button>
+         <Link to={"/contactus"}><button id="float_contact">Contact us</button></Link>
           {
             want? <>
             
@@ -90,7 +90,9 @@ export const StartingPage = ({ want }) => {
          <Link to="/aboutus">
             <button type='button' className='startingPageAbout startingButton'>About Us</button>
          </Link>
-         
+         <Link to="/newsform">
+            <button type='button' className='startingPageAbout startingButton'>Administrator</button>
+         </Link>
          
          </>: null
           }

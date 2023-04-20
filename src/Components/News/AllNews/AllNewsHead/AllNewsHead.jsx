@@ -9,12 +9,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // import CSS st
 
 import ReactBootstrapCarousel from "react-bootstrap-carousel";
 
-import { getDocs, collection } from "firebase/firestore";
+import { getDocs, collection, query, orderBy } from "firebase/firestore";
 import { firebasee } from "../../../../firebase";
 import EnlargeNewsCarouselFile from "../../EnlargeNews/EnlargeNewsCarousel/EnlargeNewsCarouselFile/EnlargeNewsCarouselFile";
 import EnlargeNewsCarouselVid from "../../EnlargeNews/EnlargeNewsCarousel/EnlargeNewsCarouselFile/EnlargeNewsCarouselVid/EnlargeNewsCarouselVid";
-
-
 
 const AllNewsHead = () => {
 
@@ -25,10 +23,12 @@ const AllNewsHead = () => {
     const [anyChange, setAnyChange] = useState(false);
 
     const handleEvent = async () => {
-        const aa  = await getDocs(collection(firebasee, "tilive_data"));        
 
-        console.log("Coming1");
-        console.log(aa?.docs[0]?._document?.data?.value?.mapValue?.fields);
+        const query1 = await collection(firebasee, "tilive_data");
+
+        const bb = await query(query1, orderBy('timeStamp', 'desc'));
+
+        const aa = await getDocs(bb); 
 
         if(aa?.docs[0]?._document?.data?.value?.mapValue?.fields){
             // const item = aa?.docs[0]?._document?.data?.value?.mapValue?.fields;

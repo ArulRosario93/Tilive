@@ -204,7 +204,7 @@ const NewsFormForm = () => {
                     </div>
                 </div>
                 <div className="newsformbutton">
-                    <button className="newsformbuttonhead" onClick={validate} >Submit Form</button>
+                    <button className="newsformbuttonhead" onClick={validate} ><p>Submit Form</p></button>
                 </div>
                 <br />
                 <br />

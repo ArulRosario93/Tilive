@@ -1,15 +1,22 @@
-import { QueryOrderByConstraint, collection, getDocs } from "firebase/firestore";
+import { Query, QueryOrderByConstraint, collection, getDocs, orderBy, query } from "firebase/firestore";
 import React, { useState, useEffect } from 'react';
 import { Link, Params } from 'react-router-dom';
 import { firebasee } from '../../../firebase';
+import 'firebase/firestore';
 import { Fade } from "react-reveal";
 
 const NewsContainer = () => {
 
     const [docs, setDocs] = useState([]);
-        
+
         const handleClick = async () => {
-            const aa  = await getDocs(collection(firebasee, "tilive_data"));
+
+            const query1 = await collection(firebasee, "tilive_data");
+
+            const bb = await query(query1, orderBy('timeStamp', 'desc'));
+
+            const aa = await getDocs(bb); 
+
             setDocs(aa.docs);
             console.log(aa.docs);
         }
@@ -20,9 +27,9 @@ const NewsContainer = () => {
 
     return(
         <div className='NewsContainer'>
-
+        
             {
-                docs.slice(0, docs.length > 5? 6: docs.length).map((item, i) => {
+                docs.slice(1, docs.length > 6? 7: docs.length).map((item, i) => {
 
                     const data = item._document?.data?.value?.mapValue?.fields;
 

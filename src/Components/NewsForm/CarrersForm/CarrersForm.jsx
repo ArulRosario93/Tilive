@@ -147,6 +147,16 @@ const CarrersForm = () => {
     return(
         <div className="newsForm">
             <div className="newsformhead"><h1>Carrers Form</h1></div>
+            <div className="newsFormLabel">
+                <label>Note:</label>
+                <br/>
+                <label>For Product File You Select A Dark Theme Image As A First File</label>
+                <br/>
+                <label>And Then It can Have Multiple Pictures/Videos</label>
+                <br/>
+                <br/>   
+                <br/>
+            </div>
             <div className="newsformform">
                 <div className="newsformformflex">
                     <div className="newsformeventdes">
@@ -197,12 +207,13 @@ const CarrersForm = () => {
                     </div>
                 </div>
                 <div className="newsformbutton">
-                    <button className="newsformbuttonhead" onClick={validate} >Submit Form</button>
+                    <button className="newsformbuttonhead" onClick={validate} ><p>Submit Form</p></button>
                 </div>
                 <br />
                 <br />
                 <br />
             </div>
+
         </div>
     )
 }

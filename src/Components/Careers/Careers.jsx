@@ -3,7 +3,7 @@ import CareersHome from "./CareersHome/CareersHome";
 import CarrersScrollList from "./CarrersScrollList/CarrersScrollList";
 import Loader from "../Loader/Loader";
 import { firebasee } from "../../firebase";
-import { getDocs, collection } from "firebase/firestore";
+import { getDocs, collection, query, orderBy } from "firebase/firestore";
 import ScrollingComponent from "../Clients/ScrollingComponent/ScrollingComponent";
 
 const Careers = () => {
@@ -20,7 +20,12 @@ const Careers = () => {
     const [docFound, setDocFound] = useState([]);
 
     const handleClick = async () => {
-        const aa  = await getDocs(collection(firebasee, "clients"));
+        const query1 = await collection(firebasee, "clients");
+
+        const bb = await query(query1, orderBy('timeStamp', 'desc'));
+
+        const aa = await getDocs(bb);        
+    
         setDocs(aa.docs);
     }
 

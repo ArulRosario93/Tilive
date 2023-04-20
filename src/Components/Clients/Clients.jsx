@@ -6,7 +6,7 @@ import ClientFotter from "./ClientFotter/ClientFotter";
 import Loader from "../Loader/Loader";
 import { StartingPage } from "../Home/StartingPage/StartingPage";
 import { firebasee } from "../../firebase";
-import { getDocs, collection } from "firebase/firestore";
+import { getDocs, collection, orderBy, query } from "firebase/firestore";
 import CarrersScrollList from "../Careers/CarrersScrollList/CarrersScrollList";
 
 const Clients = () => {
@@ -23,7 +23,11 @@ const Clients = () => {
     const [docFound, setDocFound] = useState([]);
 
     const handleClick = async () => {
-        const aa  = await getDocs(collection(firebasee, "carrers"));
+        const query1 = await collection(firebasee, "carrers");
+
+        const bb = await query(query1, orderBy('timeStamp', 'desc'));
+
+        const aa = await getDocs(bb);
         setDocs(aa.docs);
     }
 

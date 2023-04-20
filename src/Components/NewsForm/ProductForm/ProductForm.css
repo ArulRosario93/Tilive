@@ -4,8 +4,12 @@
     width: auto;
 }
 
+.ProductForm label{
+    margin-left: 5px;
+}   
+
 .ProductFormHead{
-    padding: 4vh 0px 8vh;
+    padding: 4vh 0px 2vh;
     text-align: center;
 }
 

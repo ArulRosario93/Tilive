@@ -153,7 +153,16 @@ useEffect(() => {
         <div className="ProductForm">
 
             <h1 className="ProductFormHead">Product Form</h1>
-
+            <div className="newsFormLabel">
+                <label>Note:</label>
+                <br/>
+                <label>For Product File You Select A Dark Theme Image As A First File</label>
+                <br/>
+                <label>And Then It can Have Multiple Pictures/Videos</label>
+                <br/>
+                <br/>   
+                <br/>
+            </div>
             <div className="ProductFormFlex">
                 <div className="ProductFormFlexDes">
                     <p className="ProductFormFlexDesP">Product Name</p>
@@ -200,7 +209,7 @@ useEffect(() => {
 
                     </div>
             </div>
-            <button className="newsformbuttonhead" onClick={validate} >Submit Form</button>
+            <button className="newsformbuttonhead" onClick={validate} ><p>Submit Form</p>   </button>
 
         </div>
     )

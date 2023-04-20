@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Fade from "react-reveal/Fade";
 import "./NewsHomeTopNews.css";
 
-import { getDocs, collection, doc } from "firebase/firestore";
+import { getDocs, collection, doc, query, orderBy } from "firebase/firestore";
 import { firebasee } from "../../../firebase";
 import { Link } from "react-router-dom";
 
@@ -11,8 +11,13 @@ const NewsHomeTopNews = () => {
     const [docs, setDocs] = useState();
 
     const handleClick = async () => {
-        const aa  = await getDocs(collection(firebasee, "tilive_data"));
-        setDocs(aa.docs[5]?._document?.data?.value?.mapValue?.fields);
+        const query1 = await collection(firebasee, "tilive_data");
+
+        const bb = await query(query1, orderBy('timeStamp', 'desc'));
+
+        const aa = await getDocs(bb); 
+
+        setDocs(aa.docs[0]?._document?.data?.value?.mapValue?.fields);
         console.log(aa.docs[5]?._document?.data?.value?.mapValue?.fields);
     }
 

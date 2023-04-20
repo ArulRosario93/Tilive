@@ -12,15 +12,7 @@ import Loader from "../../Loader/Loader";
 
 const AllNews = () => {
 
-    const [docs, setDocs] = useState([]);
-
     const [loader, setLoader] = useState(true);
-        
-    const handleClick = async () => {
-        const aa  = await getDocs(collection(firebasee, "tilive_data"));
-        setDocs(aa.docs);
-        console.log(aa.docs);
-    }
 
     setTimeout(() => {
         setLoader(false);
@@ -28,7 +20,6 @@ const AllNews = () => {
 
     useEffect(() => {
         window.scrollTo(0,0);
-        handleClick();
     }, []);
 
     return(
