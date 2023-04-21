@@ -37,7 +37,7 @@ const EnLargeNews = () => {
                         <h1 className="EnLargeNewsHeadingwithshortDesHead">{data?.eventName?.stringValue ? data?.eventName?.stringValue: data?.eventName}</h1>
                         <p className="EnLargeNewsHeadingwithshortDesDes">{data?.eventCaption?.stringValue ? data?.eventCaption?.stringValue: data?.eventCaption}</p>
                     </div>
-                    <div className="EnLargeNewsHeadingwithDate">27/03</div>
+                    <div className="EnLargeNewsHeadingwithDate">{data?.timestamp}</div>
                 </div>
                 {/* <Fade bottom> */}
                     <div className="EnLargeNewsBody">

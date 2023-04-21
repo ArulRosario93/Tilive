@@ -5,7 +5,6 @@ import { StartingPage } from "../../Home/StartingPage/StartingPage";
 const ContactUsHome = () => {
         return(
             <>
-                <StartingPage want={false}/>
                 <div className="ContactUsHome">
                     <p className="ContactUsHomeP">CONTACT</p>
                     <h1 className="ContactUsHomeHead">How can we be of service?</h1>

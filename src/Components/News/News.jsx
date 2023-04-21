@@ -45,7 +45,7 @@ const News = () => {
             </h1> */}
                 <NewsHome />
                 {/* <Fade> */}
-                    <NewsHomeTopNews />
+                <NewsHomeTopNews />
                 {/* </Fade> */}
                 <br />
 

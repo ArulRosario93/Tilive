@@ -144,13 +144,14 @@ const CarrersForm = () => {
             }
         }
     }, [seletedFiles]);
+
     return(
         <div className="newsForm">
-            <div className="newsformhead"><h1>Carrers Form</h1></div>
+            <div className="newsformhead"><h1>Carrer Form</h1></div>
             <div className="newsFormLabel">
                 <label>Note:</label>
                 <br/>
-                <label>For Product File You Select A Dark Theme Image As A First File</label>
+                <label>For Carrer File You Select A Dark Theme Image As A First File</label>
                 <br/>
                 <label>And Then It can Have Multiple Pictures/Videos</label>
                 <br/>

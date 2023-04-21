@@ -33,17 +33,22 @@ const NewsContainer = () => {
 
                     const data = item._document?.data?.value?.mapValue?.fields;
 
+                    const options = { year: "numeric", month: "long", day: "numeric"}
+                    const finalONe1 =  new Date(data?.timeStamp?.timestampValue).toLocaleDateString(undefined, options)
+
+
                     const eventCaption = data?.eventCaption;
                     const eventDescription = data?.eventDescription;
                     const eventName = data?.eventName;
                     const linkURl = data?.fileLink?.arrayValue?.values;
-                
+                    
                 
                     const stateChange = {
                         eventCaption: eventCaption,
                         eventDescription: eventDescription,
                         eventName: eventName,
                         linkURl: linkURl,
+                        timestamp: finalONe1
                     }
 
                     var des = "";

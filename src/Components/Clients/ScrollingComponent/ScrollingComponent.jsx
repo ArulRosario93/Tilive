@@ -3,7 +3,7 @@ import "./ScrollingComponent.css";
 import { Fade } from "react-reveal";
 import { Link } from 'react-router-dom';
 
-function ScrollingComponent({ handleChange, firstImage, secondImage, thirdImage, firstHead, firstDes, secondHead, secondDes, thirdHead, thirdDes, firstLink, secondLink, thirdLink, heightStartsHere }) {
+function ScrollingComponent({ timestamp1, timestamp2, timestamp3, handleChange, firstImage, secondImage, thirdImage, firstHead, firstDes, secondHead, secondDes, thirdHead, thirdDes, firstLink, secondLink, thirdLink, heightStartsHere }) {
   const [isScrolled, setIsScrolled] = useState(false);
     
   const [image1, setImage1] = useState(false);
@@ -62,25 +62,27 @@ function ScrollingComponent({ handleChange, firstImage, secondImage, thirdImage,
   const docs1 = {
     eventName: firstHead,
     eventDescription: firstDes,
+    timestamp: timestamp1,
     linkURl: arrImg1,
   }
   const arrImg2 = [secondImage];
-
+  
   const docs2 = {
+    timestamp: timestamp2,
     eventName: secondHead,
     eventDescription: secondDes,
     linkURl: arrImg2,
   }
   const arrImg3 = [thirdImage];
-
+  
   const docs3 = {
+    timestamp: timestamp3,
     eventName: thirdHead,
     eventDescription: thirdDes,
     linkURl: arrImg3,
   }
   console.log(docs1);
   console.log("LEett See What Coming");
-
 
   return (
     <div className='ScrollingComponent'>

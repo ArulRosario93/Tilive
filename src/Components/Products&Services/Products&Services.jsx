@@ -7,15 +7,31 @@ import Loader from "../Loader/Loader";
 import ScrollingComponent from "../Clients/ScrollingComponent/ScrollingComponent";
 import ProductsServicesFotter from "./ProductsServicesFotter/ProductsServicesFotter";
 
+import { getDocs, query, collection, orderBy } from "firebase/firestore";
+import { firebasee } from "../../firebase.js";
+
 const ProductsServices = () => {
 
     const [loader, setLoader] = useState(false);
+    const [docs, setDocs] = useState([]);
 
     const [OP, setOP] = useState(0);
 
     const ref = useRef(null);
 
+    const handleClick = async () => {
+        const query1 = await collection(firebasee, "products");
+
+        const bb = await query(query1, orderBy('timeStamp', 'desc'));
+
+        const aa = await getDocs(bb);         setDocs(aa.docs);
+        console.log(docs[1]?._document?.data?.value?.mapValue?.fields?.LinkUrl?.arrayValue?.values);
+    }
+
+
     useEffect(() => {
+
+        handleClick();
 
         setTimeout(() => {
             setLoader(true);
@@ -26,7 +42,6 @@ const ProductsServices = () => {
             // behavior: 'smooth' // smooth scrolling animation
         });
         
-
         if (ref.current) {
             const { top } = ref.current.getBoundingClientRect();
 
@@ -36,7 +51,37 @@ const ProductsServices = () => {
             console.log(OP);
             console.log("Found");
         }
-    }, [loader, OP])
+    }, [loader, OP]);
+
+    const options = { year: "numeric", month: "long", day: "numeric"}
+    const finalONe1 =  new Date(docs[4]?._document?.data?.value?.mapValue?.fields?.timeStamp?.timestampValue).toLocaleDateString(undefined, options)
+    const finalONe2 =  new Date(docs[5]?._document?.data?.value?.mapValue?.fields?.timeStamp?.timestampValue).toLocaleDateString(undefined, options)
+    const finalONe3 =  new Date(docs[6]?._document?.data?.value?.mapValue?.fields?.timeStamp?.timestampValue).toLocaleDateString(undefined, options)
+    
+
+    var docs1 = {
+        eventName: docs[4]?._document?.data?.value?.mapValue?.fields?.productName?.stringValue,
+        eventDescription: docs[4]?._document?.data?.value?.mapValue?.fields?.productDescription?.stringValue,
+        linkURl: docs[4]?._document?.data?.value?.mapValue?.fields?.LinkUrl?.arrayValue?.values,
+        timestamp: finalONe1,
+        purchaseNow: true
+    }
+    
+    var docs2 = {
+        eventName: docs[5]?._document?.data?.value?.mapValue?.fields?.productName?.stringValue,
+        eventDescription: docs[5]?._document?.data?.value?.mapValue?.fields?.productDescription?.stringValue,
+        linkURl: docs[5]?._document?.data?.value?.mapValue?.fields?.LinkUrl?.arrayValue?.values,
+        timestamp: finalONe2,
+        purchaseNow: true
+    }
+    
+    var docs3 = {
+        eventName: docs[6]?._document?.data?.value?.mapValue?.fields?.productName?.stringValue,
+        eventDescription: docs[6]?._document?.data?.value?.mapValue?.fields?.productDescription?.stringValue,
+        linkURl: docs[6]?._document?.data?.value?.mapValue?.fields?.LinkUrl?.arrayValue?.values,
+        timestamp: finalONe3,
+        purchaseNow: true
+    }
 
     return(
         loader? <div>
@@ -44,7 +89,7 @@ const ProductsServices = () => {
             <ProductsServicesHomeHead />
             <ProductsServicesContainer />
             <ProductsServicesGrid />
-            <div ref={ref}><ScrollingComponent heightStartsHere={OP != 0? OP : 2000} firstImage="https://media.istockphoto.com/id/987385296/photo/metal-rolled-products-on-a-warehouse-background-3d-illustration.jpg?s=612x612&w=0&k=20&c=nDlihb5fUsKIyJgOt6IWPNmFfeQSE_CcSQVyzd-aSis=" secondImage="https://www.ferrettogroup.com/uploads/Pagine/ferretto-omr-031.jpg" thirdImage="https://www.baumalog.eu/wp-content/uploads/2022/02/TwinTower-mini-1.jpg" firstHead="Baumalog" firstDes="Find here online price details of companies selling Steel Metal Components. Get info of suppliers, manufacturers, exporters, traders of Steel MetalFind here online price details of companies selling Steel Metal Components. Get info of suppliers, manufacturers, exporters, traders of Steel Metal ..." secondHead="Sheet metal storage" secondDes="Wholesale Merchants of Iron and Steel Products - Iron And Steel, Metal Sheets And Plates, TMT Bars and Structural Sheets offered by CB-YASHI & COWholesale Merchants of Iron and Steel Products - Iron And Steel, Metal Sheets And Plates, TMT Bars and Structural Sheets offered by CB-YASHI & CO..." thirdHead="Metal sheet warehouse rack" thirdDes="Steel Products manufacture custom-made items of metal. We reduce raw material waste and achieve higher product strength at even lower prices. Steel Products manufacture custom-made items of metal. We reduce raw material waste and achieve higher product strength at even lower prices..." firstLink="" secondLink="" thirdLink=""/></div>
+            <div ref={ref}><ScrollingComponent heightStartsHere={OP != 0? OP : 2000} firstImage={docs1?.linkURl[0]?.stringValue} timestamp1={finalONe1} timestamp2={finalONe2} timestamp3={finalONe3} secondImage={docs2?.linkURl[0]?.stringValue} thirdImage={docs3?.linkURl[0]?.stringValue} firstHead={docs1?.eventName} firstDes={docs1?.eventDescription} secondHead={docs2?.eventName} secondDes={docs2?.eventDescription} thirdHead={docs3?.eventName} thirdDes={docs3?.eventDescription} firstLink="" secondLink="" thirdLink=""/></div>
             <ProductsServicesFotter />
         </div> : <Loader />
     )

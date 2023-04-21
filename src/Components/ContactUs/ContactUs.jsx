@@ -12,7 +12,8 @@ const ContactUs = () => {
     }, 2000)
 
     return(
-        loader? <div>
+        loader? <div> 
+            
             <ContactUsHome />
             <ContactUsForm />
         </div>: <Loader />

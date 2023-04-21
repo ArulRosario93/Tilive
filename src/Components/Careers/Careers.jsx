@@ -43,7 +43,7 @@ const Careers = () => {
                 eventName: item?._document?.data?.value?.mapValue?.fields?.clientName?.stringValue,
                 eventDescription: item?._document?.data?.value?.mapValue?.fields?.aboutClient?.stringValue,
                 linkURl: item?._document?.data?.value?.mapValue?.fields?.fileLink?.arrayValue?.values[0].stringValue,
-                timestamp: item?._document?.data?.value?.mapValue?.fields?.timestamp?.stringValue,
+                timestamp: item?._document?.data?.value?.mapValue?.fields?.timeStamp?.timestampValue,
             }
             docFoundHere.push(doc1);
         })
@@ -81,6 +81,10 @@ const Careers = () => {
         }
     }, [heightFound, loader]);
 
+    const options = { year: "numeric", month: "long", day: "numeric"}
+    const finalONe1 =  new Date(docFound[0]?.timestamp).toLocaleDateString(undefined, options)
+    const finalONe2 =  new Date(docFound[1]?.timestamp).toLocaleDateString(undefined, options)
+    const finalONe3 =  new Date(docFound[2]?.timestamp).toLocaleDateString(undefined, options)
 
     const handleScroll = (e) => {
         console.log(e);
@@ -92,7 +96,7 @@ const Careers = () => {
         <div className="Careers" onScroll={handleScroll}>
             <CareersHome />
             <div ref={ref}>
-                <ScrollingComponent  heightStartsHere={heightFound != 0? heightFound : 1000} firstImage={docFound[0]?.linkURl} secondImage={docFound[1]?.linkURl} thirdImage={docFound[2]?.linkURl} firstHead={docFound[0]?.eventName} firstDes={docFound[0]?.eventDescription} secondHead={docFound[1]?.eventName} secondDes={docFound[0]?.eventDescription} thirdHead={docFound[2]?.eventName} thirdDes={docFound[2]?.eventDescription} firstLink="" secondLink="" thirdLink="" />
+                <ScrollingComponent  heightStartsHere={heightFound != 0? heightFound : 1000} timestamp1={finalONe1} timestamp2={finalONe2} timestamp3={finalONe3} firstImage={docFound[0]?.linkURl} secondImage={docFound[1]?.linkURl} thirdImage={docFound[2]?.linkURl} firstHead={docFound[0]?.eventName} firstDes={docFound[0]?.eventDescription} secondHead={docFound[1]?.eventName} secondDes={docFound[0]?.eventDescription} thirdHead={docFound[2]?.eventName} thirdDes={docFound[2]?.eventDescription} firstLink="" secondLink="" thirdLink="" />
                 {/* <ScrollingComponent  heightStartsHere={heightFound != 0? heightFound : 2000} firstImage={docFound[0]?.linkURl} secondImage={docFound[1]?.linkURl} thirdImage={docFound[2]?.linkURl} firstHead={docFound[0]?.eventName} firstDes={docFound[0]?.eventDescription} secondHead={docFound[1]?.eventName} secondDes={docFound[1]?.eventDescription} thirdHead={docFound[2]?.eventName} thirdDes={docFound[2]?.eventDescription} firstLink="" secondLink="" thirdLink="" /> */}
             </div>
             {/* <div ref={ref}><CarrersScrollList heightFound={heightFound !=0? heightFound: 2000} docs={docs}/></div> */}

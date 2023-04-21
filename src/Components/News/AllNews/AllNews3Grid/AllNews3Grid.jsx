@@ -19,6 +19,7 @@ const AllNews3Grid = () => {
     const [currentItem, setCurrentItem] = useState(true);
 
     const [anyChange, setAnyChange] = useState(false);
+    const options = { year: "numeric", month: "long", day: "numeric"}
 
     const handleEvent1 = async () => {
         const query1 = await collection(firebasee, "tilive_data");
@@ -31,6 +32,8 @@ const AllNews3Grid = () => {
 
             const data = aa?.docs[1]?._document?.data?.value?.mapValue?.fields;
 
+            const finalONe1 =  new Date(data?.timeStamp?.timestampValue).toLocaleDateString(undefined, options)
+
             const eventCaption = data?.eventCaption?.stringValue;
             const eventDescription = data?.eventDescription?.stringValue;
             const eventName = data?.eventName?.stringValue;
@@ -41,6 +44,7 @@ const AllNews3Grid = () => {
                 eventDescription: eventDescription,
                 eventName: eventName,
                 linkURl: linkURl,
+                timestamp: finalONe1,
             }
 
             setDocs1(stateChange);
@@ -71,6 +75,9 @@ const query1 = await collection(firebasee, "tilive_data");
 
             const data = aa?.docs[2]?._document?.data?.value?.mapValue?.fields;
 
+            const finalONe1 =  new Date(data?.timeStamp?.timestampValue).toLocaleDateString(undefined, options)
+
+
             const eventCaption = data?.eventCaption?.stringValue;
             const eventDescription = data?.eventDescription?.stringValue;
             const eventName = data?.eventName?.stringValue;
@@ -80,6 +87,7 @@ const query1 = await collection(firebasee, "tilive_data");
                 eventCaption: eventCaption,
                 eventDescription: eventDescription,
                 eventName: eventName,
+                timestamp: finalONe1,
                 linkURl: linkURl,
             }
 
@@ -107,6 +115,8 @@ const query1 = await collection(firebasee, "tilive_data");
 
             const data = aa?.docs[3]?._document?.data?.value?.mapValue?.fields;
 
+            const finalONe1 =  new Date(data?.timeStamp?.timestampValue).toLocaleDateString(undefined, options)
+
             const eventCaption = data?.eventCaption?.stringValue;
             const eventDescription = data?.eventDescription?.stringValue;
             const eventName = data?.eventName?.stringValue;
@@ -117,6 +127,7 @@ const query1 = await collection(firebasee, "tilive_data");
                 eventName: eventName,
                 eventCaption: eventCaption,
                 linkURl: linkURl,
+                timestamp: finalONe1,
             }
 
             setDocs3(stateChange);

@@ -22,11 +22,17 @@ const AllNewsContainer = () => {
         console.log(aa.docs[5]?._document?.data?.value?.mapValue?.fields);
     }
 
+    const options = { year: "numeric", month: "long", day: "numeric"}
+    const finalONe1 =  new Date(docs?.timeStamp?.timestampValue).toLocaleDateString(undefined, options)
+
+
+
     var stateChange = {
         eventName: docs?.eventName?.stringValue,
         eventDescription: docs?.eventDescription?.stringValue,
         eventCaption: docs?.eventCaption?.stringValue,
         linkURl: docs?.fileLink?.arrayValue?.values,
+        timestamp: finalONe1,
     }
 
     var linkURl3 = `${docs?.fileLink?.arrayValue?.values[0]?.stringValue}`;

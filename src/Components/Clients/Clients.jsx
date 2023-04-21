@@ -45,7 +45,7 @@ const Clients = () => {
                 eventName: item?._document?.data?.value?.mapValue?.fields?.carrerName?.stringValue,
                 eventDescription: item?._document?.data?.value?.mapValue?.fields?.carrerDescription?.stringValue,
                 linkURl: item?._document?.data?.value?.mapValue?.fields?.fileLink?.arrayValue?.values[0].stringValue,
-                timestamp: item?._document?.data?.value?.mapValue?.fields?.timestamp?.stringValue,
+                timestamp: item?._document?.data?.value?.mapValue?.fields?.timeStamp?.timestampValue,
             }
             docFoundHere.push(doc1);
         })
@@ -84,6 +84,13 @@ const Clients = () => {
         }
     }, [OP, loader]);
 
+
+    const options = { year: "numeric", month: "long", day: "numeric"}
+    const finalONe1 =  new Date(docFound[0]?.timestamp).toLocaleDateString(undefined, options)
+    const finalONe2 =  new Date(docFound[1]?.timestamp).toLocaleDateString(undefined, options)
+    const finalONe3 =  new Date(docFound[2]?.timestamp).toLocaleDateString(undefined, options)
+    
+
     return(
         loader? <div>
             <StartingPage />
@@ -91,7 +98,7 @@ const Clients = () => {
             <ClientsWhyUs />
             {/* <div ref={ref}><CarrersScrollList heightFound={OP !=0? OP: 2000} docs={docs}/></div> */}
             <div ref={ref}>
-            <ScrollingComponent  heightStartsHere={OP != 0? OP : 2000} firstImage={docFound[0]?.linkURl} secondImage={docFound[1]?.linkURl} thirdImage={docFound[2]?.linkURl} firstHead={docFound[0]?.eventName} firstDes={docFound[0]?.eventDescription} secondHead={docFound[1]?.eventName} secondDes={docFound[0]?.eventDescription} thirdHead={docFound[2]?.eventName} thirdDes={docFound[2]?.eventDescription} firstLink="" secondLink="" thirdLink="" />
+            <ScrollingComponent  heightStartsHere={OP != 0? OP : 2000} timestamp1={finalONe1} timestamp2={finalONe2} timestamp3={finalONe3} firstImage={docFound[0]?.linkURl} secondImage={docFound[1]?.linkURl} thirdImage={docFound[2]?.linkURl} firstHead={docFound[0]?.eventName} firstDes={docFound[0]?.eventDescription} secondHead={docFound[1]?.eventName} secondDes={docFound[0]?.eventDescription} thirdHead={docFound[2]?.eventName} thirdDes={docFound[2]?.eventDescription} firstLink="" secondLink="" thirdLink="" />
             </div>
             <ClientFotter />
         </div> : <Loader />
