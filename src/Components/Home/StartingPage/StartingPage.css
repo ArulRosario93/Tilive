@@ -14,8 +14,7 @@
 }
 .start{
     padding: 10px;
-    position: relative;
-    height: 90vh;
+    /* height: 90vh; */
 }
 .startingButton:hover{
     text-decoration: 3px underline rgb(255, 255, 255);
@@ -28,7 +27,7 @@
 
 .startingPageContainer{
     padding: 20px 30px;
-    position:absolute;
+    position:fixed;
     background: transparent;
     top: 0;
     left: 5;
@@ -117,21 +116,22 @@
 }
 #floating_btn{
   position: absolute;
+  z-index: 1000;
 }
 
-.start #float_contact{
+ #float_contact{
   bottom: 0;
   right:0; 
   margin: 55px 30px;
   padding: 15px;
   border-radius: 40px;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.74);
+  background-color: rgba(0, 0, 0, 0.87);
   border-color: transparent;
   font-size: large;
   color: white;
 }
-.start #float_contact:hover {
+#float_contact:hover {
   transform: scale(1.1);
   /*text-decoration: 2px underline white;*/
 }

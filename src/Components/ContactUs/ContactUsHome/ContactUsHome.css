@@ -19,3 +19,41 @@
     letter-spacing: 1px;
     /* background-color: aqua;  */
 }
+
+@media only screen and (max-width: 768px) {
+    .ContactUsHomeHead {
+      font-size: 2.5rem;
+    }
+    .ContactUsHomePara{
+        font-size: small;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .ContactUsHome{
+        padding: 12vh 6vw 6vh;
+    }
+    .ContactUsHomeHead {
+      font-size: 1.7rem;
+    }
+    .ContactUsHomePara{
+        font-size: x-small;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+    .ContactUsHome{
+        padding: 15vh 6vw 4vh;
+    }
+    .ContactUsHomeHead {
+        font-size: 1.5rem;
+      }
+      .ContactUsHomePara{
+        font-size: xx-small;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .ContactUsHomeHead{
+        font-size: 1.2rem;
+    }
+}

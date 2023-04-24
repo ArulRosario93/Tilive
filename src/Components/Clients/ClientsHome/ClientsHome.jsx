@@ -6,7 +6,7 @@ const ClientsHome = () => {
         <div className="ClientsHome">
             <div className="ClientsHomeImg"><img src="https://www.sedex.com/app/uploads/2022/11/Consulting-2.jpeg"/></div>
             <div className="ClientsHomeDes">
-                <h3 className="ClientsHomeDesHeadThird">Carrers</h3>
+                <h3 className="ClientsHomeDesHeadThird">Careers</h3>
                 <br />
                 <h1 className="ClientsHomeDesHeadOne">"Become part of our team"</h1>
                 <br />

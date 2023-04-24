@@ -1,15 +1,14 @@
 .ContactUsForm{
     width: 100%;
-    background-color: rgb(236, 236, 236);
     padding: 5vh 15vh;
 }
 
 .handleCapture{
+    padding: 6vh 0px;
     padding-bottom: 10vh;
 }
 
 .handleCaptureForm{
-    /* background-color: rgb(247, 247, 247); */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -91,4 +90,104 @@
     outline: none;
     border: none;
     color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .handleCapture{
+        padding: 5vh;
+    }
+    .handleCaptureForm{
+        padding: 3vh 0px 1vh;
+    }
+    .handleCaptureFormNamep{
+        font-size: x-small;
+    }
+    .handleCaptureFormMailp{
+        font-size: x-small;
+    }
+    .handleCaptureFormTextAreaP{
+        font-size: x-small;
+    }
+    .handleCaptureFormNump{
+        font-size: x-small;
+    }
+    .handleCaptureFormSubmit{
+        margin: 20px 60px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .handleCapture{
+        /* background-color: aqua; */
+        padding: 3vh 10px;
+    }
+    .handleCaptureForm{
+        padding: 3vh 0px;
+    }
+    .handleCaptureFormNameInp{
+        width: 35vw;
+        padding: 10px;
+    }
+    .handleCaptureFormMailInp{
+        width: 35vw;
+        padding: 10px;
+    }
+    .handleCaptureFormNumInp{
+        width: 35vw;
+        padding: 10px;
+    }
+    .handleCaptureFormNamep{
+        font-size: xx-small;
+    }
+    .handleCaptureFormMailp{
+        font-size: xx-small;
+    }
+    .handleCaptureFormTextAreaP{
+        font-size: xx-small;
+    }
+    .handleCaptureFormNump{
+        font-size: xx-small;
+    }
+    .handleCaptureFormSubmit{
+        margin: 20px 30px;
+        padding: 10px 40px;
+    }
+    .handleCaptureFormTextArea textarea{
+        /* background-color: brown; */
+        height: 35vh;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .handleCaptureFormSubmit{
+        margin: 25px 15px;
+    }
+    .handleCaptureFormTextArea textarea{
+        /* background-color: brown; */
+        height: 33vh;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .handleCaptureFormSubmit{
+        margin: 25px 10px;
+    }
+    .handleCaptureFormNump{
+        font-size: 8px;
+        letter-spacing: 0px;
+    }
+    .handleCaptureFormNamep{
+        font-size: 8px;
+        letter-spacing: 0px;
+    }
+    .handleCaptureFormMailp{
+        font-size: 8px;
+        letter-spacing: 0px;
+    }
+    .handleCaptureFormTextAreaP{
+        font-size: 8px;
+        letter-spacing: 0px;
+    }
 }

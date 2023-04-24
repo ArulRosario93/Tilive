@@ -1,7 +1,7 @@
 .AboutUsHome{
     background-image: url("https://images.businessnewsdaily.com/app/uploads/2022/04/04074130/teamwork_g-stockstudio_getty.jpg");
     height: 135vh;
-    position: relative;
+    /* position: relative; */
     width: 100%;
     overflow: hidden;
     /* background-color: violet; */
@@ -9,6 +9,7 @@
     background-repeat: no-repeat;
     background-color: aqua;
     object-fit: cover;
+    z-index: 1;
     /* object-fit: cover;    */
 }
 

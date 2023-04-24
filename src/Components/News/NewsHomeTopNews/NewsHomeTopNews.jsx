@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Fade from "react-reveal/Fade";
 import "./NewsHomeTopNews.css";
 
 import { getDocs, collection, doc, query, orderBy } from "firebase/firestore";
 import { firebasee } from "../../../firebase";
+import Fade from "react-reveal/Fade";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const NewsHomeTopNews = () => {
@@ -60,7 +61,7 @@ const NewsHomeTopNews = () => {
                     <br />
                     <p className="NewsHomeTopNewsContentDesP">{docs?.eventDescription?.stringValue}</p>
                 
-                    <Fade><div className="NewsHomeTopNewsContentDesViewMore"><Link to={"/moredetail"} state={{stateChange}}><button>View In Detail</button></Link></div></Fade>
+                    <Fade><div className="NewsHomeTopNewsContentDesViewMore"><Link to="/moredetail" state={{stateChange}}><button onClick={()=> {console.log("CLicked Here on")}}>View In Detail</button></Link></div></Fade>
                 </div>
             </div>
             <div className="NewsHomeTopNewsImage">

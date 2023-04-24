@@ -7,11 +7,11 @@ export const StartingPage = ({ want }) => {
 
    return (
     <div className="startingPageContainer">
+         <Link to={"/contactus"}><button id="float_contact">Contact us</button></Link>
      <div className = 'start'>
          <Link to={"/"}>
             <button id="floating_btn"style={{outline: "none", background: 'transparent', border: 'none', cursor: '-moz-initial'}}><img id="startlogo" style={{borderRadius: '50px'}} width="100px" height="100px" src="https://t3.ftcdn.net/jpg/02/05/46/30/360_F_205463037_cXsFsDC65v6ZlZlqoDYabosy0sZnwReO.jpg" alt="ehh"></img></button>
          </Link>
-         <Link to={"/contactus"}><button id="float_contact">Contact us</button></Link>
           {
             want? <>
             

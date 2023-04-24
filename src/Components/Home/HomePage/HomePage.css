@@ -1,0 +1,32 @@
+.HomePage{
+    background-color: blueviolet;
+    height: 100vh;
+    /* width: auto; */
+    position: relative;
+    background-image: url("https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_detail/aventador/Ultimae/2023/02_21/aven_ultimae_05.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.HomePageDes{
+    position: absolute;
+    text-align: left;
+    top: 43%;
+    width: 40%;
+    left: 10%;
+}   
+
+.HomePageDesHead{
+    color: wheat;
+    color: wheat;
+    font-size: 3rem;
+}
+
+.HomePageDesP{
+    width: 100%;
+    color: wheat;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
