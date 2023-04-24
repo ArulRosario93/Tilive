@@ -4,7 +4,7 @@
 }
 
 .handleCapture{
-    padding: 6vh 0px;
+    padding: 3vh 0px;
     padding-bottom: 10vh;
 }
 
@@ -13,13 +13,13 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
     padding: 10vh 0px 5vh;
 }
 .handleCaptureFormNameInp{
     width: 30vw;
     padding: 20px;
 }
-
 .handleCaptureFormLeft input{
     outline: none;
     border: 0.1px solid rgba(0, 0, 0, 0.712);
@@ -64,7 +64,6 @@
 }
 .handleCaptureFormTextArea textarea{
     resize: none;
-    background-color: white;
 }
 
 .handleCaptureFormMailInp{
@@ -161,16 +160,41 @@
 }
 
 @media only screen and (max-width: 425px) {
+    .handleCaptureFormSubmit{
+        margin: auto;
+        padding: 10px 50px;
+        border-radius: 2px;
+    }
+    .handleCapture{
+        width: 100%;
+        padding: 1vh 10px;
+    }
+    .handleCaptureFormLeft{
+        width: 100%;
+    }
+    .handleCaptureFormRight{
+        margin-top: 20px;
+    }
     .handleCaptureForm{
         flex-direction: column;
         /* background-color: ; */
         padding: 20px 25px;
     }
+    .handleCaptureFormNameInp{
+        width: 100%;
+    }
+    .handleCaptureFormMailInp{
+        width: 100%;
+    }
+    .handleCaptureFormNumInp{
+        width: 100%;
+        width: 100%;
+    }
+    .handleCaptureFormTextArea textarea{
+        width: 100%;
+    }
 }
 @media only screen and (max-width: 375px) {
-    .handleCaptureFormSubmit{
-        margin: 25px 15px;
-    }
     .handleCaptureFormTextArea textarea{
         /* background-color: brown; */
         height: 33vh;
@@ -178,9 +202,6 @@
 }
 
 @media only screen and (max-width: 340px) {
-    .handleCaptureFormSubmit{
-        margin: 25px 10px;
-    }
     .handleCaptureFormNump{
         font-size: 8px;
         letter-spacing: 0px;
