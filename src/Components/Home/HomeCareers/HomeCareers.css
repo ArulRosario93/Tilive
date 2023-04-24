@@ -1,5 +1,6 @@
 .HomeCareers{
     height: 90vh;
+    /* width: 100vw; */
     background-color: rgb(248, 247, 247);
     padding: 20vh 10vh;
     display: flex;
@@ -25,9 +26,9 @@
     border-radius: 50%;
 }
 
-.HomeCareersDes{
+/* .HomeCareersDes{
     flex: 1;
-}
+} */
 
 .HomeCareersDesHead4{
     font-size: smaller;
@@ -49,4 +50,35 @@
     width: 94%;
     letter-spacing: 1px;
     font-weight: 400;
+}
+
+@media only screen and (max-width: 425px) {
+    .HomeCareers{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .HomeCareersDesHead2{
+        font-size: 1rem;
+        margin: auto;
+
+    }
+    .HomeCareersImgImg{
+        height: 300px;
+        width: 300px;
+    }
+    .HomeCareersImg img{
+        width: 300px;
+        height: 300px;
+        padding: 40px;
+    }
+    .HomeCareersDes{
+        text-align: center;
+    }
+    .HomeCareersDesP{
+        margin: auto;
+        width: 100%;
+        font-size: 0.6rem;
+        letter-spacing: 0px;
+        font-weight: normal;
+    }
 }

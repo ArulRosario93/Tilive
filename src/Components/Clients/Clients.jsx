@@ -89,11 +89,10 @@ const Clients = () => {
     const finalONe1 =  new Date(docFound[0]?.timestamp).toLocaleDateString(undefined, options)
     const finalONe2 =  new Date(docFound[1]?.timestamp).toLocaleDateString(undefined, options)
     const finalONe3 =  new Date(docFound[2]?.timestamp).toLocaleDateString(undefined, options)
-    
 
     return(
         loader? <div>
-            <StartingPage />
+            <StartingPage want={false}/>
             <ClientsHome />
             <ClientsWhyUs />
             {/* <div ref={ref}><CarrersScrollList heightFound={OP !=0? OP: 2000} docs={docs}/></div> */}

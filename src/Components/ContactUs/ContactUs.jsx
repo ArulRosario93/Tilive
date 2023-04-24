@@ -13,7 +13,6 @@ const ContactUs = () => {
 
     return(
         loader? <div> 
-            
             <ContactUsHome />
             <ContactUsForm />
         </div>: <Loader />
