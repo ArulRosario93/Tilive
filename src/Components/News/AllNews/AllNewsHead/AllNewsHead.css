@@ -47,6 +47,7 @@
 .AllNewsHeadCarousel img{
     object-fit: contain;
     height: 100vh;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.39);
 }
 
 

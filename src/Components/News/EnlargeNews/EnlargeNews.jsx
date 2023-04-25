@@ -26,7 +26,7 @@ const EnLargeNews = () => {
     return(
         <div className="EnLargeNews" style={bgImage? {backgroundImage: `url("${bgImage}")`}: null}>
             {/* <Fade> */}
-                <div className="EnLargeNewsImage" style={largeImage? { width: '100vw' }: {width: '350px'}}>
+                <div className="EnLargeNewsImage" style={largeImage? { width: '100vw' }: {minWidth: '350px'}}>
                     <EnlargeNewsCarousel images={images} largeImage={largeImage} setLargeImage={setLargeImage}/>
                 </div>
             {/* </Fade> */}

@@ -1,7 +1,7 @@
 .WeAre{
     height: 110vh;
     padding: 100px 0px;
-    background-color: whitesmoke;
+    background-color: rgb(253, 253, 253);
 }
 
 .WeAreHead{
@@ -31,7 +31,7 @@
     /* top: -9px; */
     height: 180px;
     object-fit: cover;
-    border: 10px solid whitesmoke;
+    border: 10px solid rgb(253, 253, 253);
 }
 
 .WeAreMainContentDes{
@@ -40,9 +40,12 @@
     z-index: 1;
     margin: auto;
     width: 88%;
+    /* height: 50vh; */
     padding: 19vh 10vh 10vh;
+    border-radius: 3px;
     border: 1px solid black;
 }
+
 .WeAreMainContentDes p{
     font-size: 16px;
     color: rgb(0, 0, 0);
@@ -50,7 +53,21 @@
     font-size: smaller;
     letter-spacing: 1px;
     /* word-spacing: 1px; */
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     /* font-family: 'Cinzel', serif; */
     font-weight: 400;
+}
+
+@media only screen and (max-width: 425px) {
+    .WeAreMainContentDes{
+        padding: 15vh 20px 4vh;
+    }
+    .WeAre{
+        padding: 55px 0px;
+    }
+    .WeAreMainContentDes p{
+        font-size: x-small;
+        letter-spacing: 1px;
+    }
+    
 }

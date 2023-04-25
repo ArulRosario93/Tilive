@@ -2,6 +2,7 @@
     height: 100vh;
     background-color: aqua;
     position: relative;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.541);
     background-image: url("https://www.livemint.com/lm-img/img/2023/04/11/1600x900/2-0-131573390-Tata-Steel-4C-0_1681212533240_1681212948573_1681212948573.jpg");
 }
 
@@ -25,19 +26,30 @@
 
 .HomeProductsDesP{
     letter-spacing: 1px;
+    font-size: smaller;
+    font-weight: 400;
 }
 
 .HomeProductsDesViewMore{
-    padding: 15px 20px;
+    padding: 8px 10px;
+    margin-top: 10px;
     width: max-content;
     text-decoration: none;
-    color: blueviolet;
+    display: flex;
+    background-color: blueviolet;
+    flex-direction: row;
+    border-radius: 5px;
 }
+
 .HomeProductsDesViewMore p{
+    font-size: small;
+    font-weight: normal;
     text-decoration: none;
+    color: whitesmoke;
 }
 
 .aaa{
+    width: max-content;
     text-decoration: none;
     color: blueviolet;
 }

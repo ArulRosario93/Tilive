@@ -1,20 +1,78 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { createBrowserHistory } from "history";
 import './StartingPage.css';
 import { Link } from 'react-router-dom';
 
 export const StartingPage = ({ want }) => {
 
+   const [lastScrollTop, setLastScrollTop] = useState(0);
+   const [scrollDirection, setScrollDirection] = useState("down");
+
+   // const handleScroll = () => {
+   //    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+   //    if (currentScrollTop > lastScrollTop) {
+   //       header.classList.remove("startingPageContainerdummy");
+   //    } else {
+   //       header.classList.add("startingPageContainerdummy");
+   //    }
+   //    setLastScrollTop(currentScrollTop);
+   // };
+
+   // useEffect(() => {
+   //    if (want) {
+   //       window.addEventListener("scroll", () => {
+   //          var header = document.querySelector(".startingPageContainer");
+   //          const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+   //          if (window.pageYOffset > 100) {
+   //             setScrollDirection("down");
+   //             header.classList.remove("startingPageContainerdummy");
+   //             header.classList.add("startingPageContainerdummy");
+   //          } else {
+   //             setScrollDirection("up");
+   //             header.classList.add("startingPageContainerdummy");
+   //             header.classList.remove("startingPageContainerdummy");
+   //          }
+   //          setLastScrollTop(currentScrollTop);
+   //       });
+   //    }
+   // }, [])
+
+      // if (window.pageYOffset < 100) {
+      //   header.classList.add("startingPageContainerdummy");
+      // } else if(window.pageYOffset > 0) {
+      //   header.classList.remove("startingPageContainerdummy");
+      // }
+
+      // window.addEventListener("scroll", function() {
+      //    var header = document.querySelector(".startingPageContainer");
+      //    if (window.pageYOffset < 100) {
+      //      header.classList.add("startingPageContainerdummy");
+      //    } else {
+      //      header.classList.remove("startingPageContainerdummy");
+      //    }
+      //  });
+      // window.addEventListener("scroll", function() {
+      //    var header = document.querySelector(".startingPageContainer");
+      //    if (window.pageYOffset > 0) {
+      //      header.classList.add("scrolling");
+      //    } else {
+      //      header.classList.remove("scrolling");
+      //    }
+      //  });
+
    return (
     <div className="startingPageContainer">
          <Link to={"/contactus"}><button id="float_contact">CONTACT US</button></Link>
-     <div className = 'start'>
+     <div className='start'>
          <Link to={"/"}>
-            <button id="floating_btn"style={{outline: "none", background: 'transparent', border: 'none', cursor: '-moz-initial'}}><img id="startlogo" style={{borderRadius: '50px'}} width="100px" height="100px" src="https://t3.ftcdn.net/jpg/02/05/46/30/360_F_205463037_cXsFsDC65v6ZlZlqoDYabosy0sZnwReO.jpg" alt="ehh"></img></button>
+            <button id="floating_btn"style={{outline: "none", background: 'transparent', border: 'none', cursor: '-moz-initial'}}><img id="startlogo" style={{borderRadius: '50px'}} src="https://t3.ftcdn.net/jpg/02/05/46/30/360_F_205463037_cXsFsDC65v6ZlZlqoDYabosy0sZnwReO.jpg" alt="ehh"></img></button>
          </Link>
           {
             want? <>
-            
+            <div className="navLine">
+               ===
+            </div>
+            <div className="gg">
          <Link to="/contactus">
             <button type='button' className='startingPageContact startingButton'>Contact Us</button>
          </Link>
@@ -93,7 +151,7 @@ export const StartingPage = ({ want }) => {
          <Link to="/newsform">
             <button type='button' className='startingPageAbout startingButton'>Administrator</button>
          </Link>
-         
+         </div>
          </>: null
           }
      </div>

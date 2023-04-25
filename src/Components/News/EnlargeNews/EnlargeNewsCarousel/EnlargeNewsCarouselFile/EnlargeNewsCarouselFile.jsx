@@ -42,7 +42,7 @@ const EnlargeNewsCarouselFile = ({ item, largeImage, onChangeCaptured, i }) => {
     }
     
     return(
-        <div style={{ height: '100vh'}}>
+        <div className="bbHEre">
             {
                 linkURl.length > 1?
                 typeIMg? <img style={ largeImage? {objectFit: 'contain'}: {objectFit: 'cover'} } src={linkURl}/>: <EnlargeNewsCarouselVid item={item} largeImage={largeImage} onChangeCaptured={onChangeCaptured} i={ii}/>

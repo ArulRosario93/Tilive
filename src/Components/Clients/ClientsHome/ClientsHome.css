@@ -1,12 +1,14 @@
 .ClientsHome{
-    background-color: cadetblue;
     height: 100vh;
+    background-image: url("https://www.sedex.com/app/uploads/2022/11/Consulting-2.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.493);
 }
 
 .ClientsHomeImg{
     position: relative;
     height: 100vh;
-    background-color: aqua;
 }
 
 .ClientsHomeImg img{
@@ -31,10 +33,11 @@
 }
 
 .ClientsHomeDesHeadOne{
-    color: antiquewhite;
+    color: rgb(255, 255, 255);
+    /* color: antiquewhite; */
     padding: 0px 8px;
     margin: 0%;
-    background-color: blueviolet;
+    background-color: rgba(137, 43, 226, 0.63);
     font-family: 'Raleway', sans-serif;
     width: max-content;
     font-style: italic;

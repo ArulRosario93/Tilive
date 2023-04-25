@@ -43,6 +43,8 @@
     background-color: blueviolet;
     width: max-content;
     margin: 10px 0px;
+    letter-spacing: 1px;
+    font-weight:normal;
     font-size: 2rem;
     border-radius: 2px;
     padding: 0px 6px;
