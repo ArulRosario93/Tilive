@@ -50,6 +50,7 @@
 
 .aaa{
     width: max-content;
+    background-color: aqua;
     text-decoration: none;
     color: blueviolet;
 }
@@ -61,6 +62,12 @@
     .HomeProductsDesHead4{
         font-size: 0.6rem;
     }
+    .HomeProductsDesViewMore{
+        padding: 5px 9px;
+    }
+    .HomeProductsDesViewMore p{
+        font-size: x-small;
+    }
     .HomeProductsDesP{
         font-size: x-small;
     }
@@ -68,7 +75,6 @@
         font-size: 1.5rem;
     }
     .aaa{
-        font-size: medium;
-        background-color: aqua;
+        font-size: smaller;
     }
 }

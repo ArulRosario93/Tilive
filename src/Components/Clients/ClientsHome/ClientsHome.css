@@ -3,7 +3,7 @@
     background-image: url("https://www.sedex.com/app/uploads/2022/11/Consulting-2.jpeg");
     background-position: center;
     background-repeat: no-repeat;
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.493);
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.589);
 }
 
 .ClientsHomeImg{
@@ -57,4 +57,19 @@
     letter-spacing: 1px;
     word-spacing: 1px;
     color: azure;
+}
+
+@media only screen and (max-width: 425px) {
+    .ClientsHomeDesHeadOne{
+        font-size: 1.7rem;
+    }
+    .ClientsHomeDes{
+        width: 90%;
+    }
+    .ClientsHomeDesP{
+        width: 90%;
+    }
+    .ClientsHomeDesPSpan{
+        font-size: x-small;
+    }
 }

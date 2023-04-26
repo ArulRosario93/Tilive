@@ -7,7 +7,7 @@
     background-image: url("https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_detail/aventador/Ultimae/2023/02_21/aven_ultimae_05.jpg");
     background-position: center;
     background-repeat: initial;
-    object-fit: cover;
+    background-size: cover;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.39);
 
 }

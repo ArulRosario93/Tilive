@@ -84,6 +84,10 @@ function ScrollingComponent({ timestamp1, timestamp2, timestamp3, handleChange, 
   console.log(docs1);
   console.log("LEett See What Coming");
 
+  var desfinal1 =  `${firstDes}`.length > 100? `${firstDes}`.substring(0, 100) + "...": `${firstDes}`;
+  var desfinal2 =  `${secondDes}`.length > 100? `${secondDes}`.substring(0, 100) + "...": `${secondDes}`;
+  var desfinal3 =  `${thirdDes}`.length > 100? `${thirdDes}`.substring(0, 100) + "...": `${thirdDes}`;
+  
   return (
     <div className='ScrollingComponent'>
       <div className='ScrollingComponentImg' style={{position: isScrolled? 'fixed': 'relative'}}>
@@ -91,20 +95,20 @@ function ScrollingComponent({ timestamp1, timestamp2, timestamp3, handleChange, 
         image3 ? <div className='CalledIn'><img src={thirdImage} alt='gonnabeFixed'/><Fade><div className='ScrollingComponentDes' style={{top: `${scrollHeight}vh`}}>
             <h1 className='ScrollingComponentDesHead'>{thirdHead}</h1>
             <br />
-            <p className='ScrollingComponentDesP'>{thirdDes} </p>
+            <p className='ScrollingComponentDesP'>{desfinal3} </p>
             <br/>
             
             <div className='ScrollingComponentViewInDetail'><Link to={"/moredetail"} state={ {docs3} }><button>View In Detail</button></Link></div>
           </div></Fade></div> : image2? <div className='CalledIn'><Fade><img src={secondImage} alt='gonnabeFixed'/><div className='ScrollingComponentDes' style={{top: `${scrollHeight}vh`}}>
             <h1 className='ScrollingComponentDesHead'>{secondHead}</h1>
             <br />
-            <p className='ScrollingComponentDesP'>{secondDes}</p>
+            <p className='ScrollingComponentDesP'>{desfinal2}</p>
             <br/>
             <div className='ScrollingComponentViewInDetail'><Link to={"/moredetail"} state={ {docs2} }><button>View In Detail</button></Link></div>
         </div></Fade></div>: image1? <div className='CalledIn'><img src={firstImage} alt='gonnabeFixed'/><Fade><div className='ScrollingComponentDes' style={{top: `${scrollHeight}vh`}}>
             <h1 className='ScrollingComponentDesHead'>{firstHead}</h1>
             <br />
-            <p className='ScrollingComponentDesP'>{firstDes}</p>
+            <p className='ScrollingComponentDesP'>{desfinal1}</p>
             <br/>
             <div className='ScrollingComponentViewInDetail'><Link to={"/moredetail"} state={ {docs1} }><button>View In Detail</button></Link></div>
           </div></Fade></div>: <img src={firstImage} alt='gonnabeFixed'/>

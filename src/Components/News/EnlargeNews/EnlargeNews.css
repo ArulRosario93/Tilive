@@ -159,7 +159,7 @@
     }
     .EnLargeNewsHeader{
         /* background-color: aqua; */
-        padding: 6vh 20px;
+        padding: 6vh 30px;
     }
     .EnLargeNewsImage{
         overflow: hidden;
@@ -181,8 +181,9 @@
         /* height: 100vh; */
         height: 150px;
     }
+
     .EnLargeNewsBody{
-        padding: 10px 15px;
+        padding: 10px 25px;
         margin-top: 27vh;
     }
     .EnLargeNewsBodyDes{

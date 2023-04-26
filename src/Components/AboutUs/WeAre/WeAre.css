@@ -61,13 +61,15 @@
 @media only screen and (max-width: 425px) {
     .WeAreMainContentDes{
         padding: 15vh 20px 4vh;
+        /* border: none; */
     }
     .WeAre{
         padding: 55px 0px;
     }
     .WeAreMainContentDes p{
-        font-size: x-small;
-        letter-spacing: 1px;
+        /* border: 1px solid black; */
+        /* padding: 5px; */
+        font-size: 0.7rem;
     }
     
 }

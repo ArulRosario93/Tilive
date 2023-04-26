@@ -31,9 +31,9 @@
     left:0;
     height:100%;
     width:100%;
-    background: rgba(0, 0, 0, 0.26);
-    z-index:99;
-  }
+    background: rgba(0, 0, 0, 0.582);
+    z-index:1;
+}
 
 
 .ScrollingComponentDes{
@@ -59,14 +59,15 @@
 }
 
 .ScrollingComponentDesHead{
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     /* font-size: xx-large; */
     letter-spacing: 1px;
 }
+
 .ScrollingComponentDesP{
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     letter-spacing: 1px;
-    font-size: small;
+    font-size: medium;
 }
 
 .ScrollingComponentDesD{
@@ -87,4 +88,13 @@
     background-color: transparent;
     color: aliceblue;
     border: none;
+}
+
+@media only screen and (max-width: 425px) {
+    .ScrollingComponentDesHead{
+        font-size: large;
+    }
+    .ScrollingComponentDesP{
+        font-size: small;
+    }
 }

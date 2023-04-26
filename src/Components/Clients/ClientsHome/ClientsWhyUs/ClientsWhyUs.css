@@ -18,10 +18,24 @@
 }
 
 .ClientsWhyUsPP{
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     letter-spacing: 1px;
     font-size: medium;
-    font-weight: 600;
-    word-spacing: 1px;
-    color: rgba(0, 0, 0, 0.459);
+    /* font-weight: 600; */
+    /* word-spacing: 1px; */
+    color: rgba(0, 0, 0, 0.938);
+}
+
+@media only screen and (max-width: 425px) {
+    .ClientsWhyUsHead{
+        font-size: 1.7rem;
+    }
+    .ClientsWhyUsPIn{
+        width: 80%;
+    }
+    
+    .ClientsWhyUsPP{
+        font-size: small;
+        text-align: center;
+    }
 }
