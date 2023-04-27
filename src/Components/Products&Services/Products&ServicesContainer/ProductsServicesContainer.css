@@ -18,20 +18,23 @@
     font-weight: 400;
 }
 .ProductsServicesContainerDesHead{
+    font-size: xx-large;
     font-family: 'Raleway', sans-serif;
 }
 .ProductsServicesContainerImg{
     width: 100%;
+    background-color: aqua;
     margin: auto;
     flex: 1;
     height: 60vh;
 }
 
 .ProductsServicesContainerDesP{
-    /* font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     font-size: small;
-    font-weight: 100; */
-    /* font-weight: 400; */
+    letter-spacing: 0.6px;
+    /* font-weight: 100; */
+    font-weight: 400;
 }
 
 .ProductsServicesContainerImg img{
@@ -47,4 +50,31 @@
     /* width: auto; */
     font-family: 'Raleway', sans-serif;
     background-color: transparent;
+}
+
+@media only screen and (max-width: 425px) {
+    .ProductsServicesContainerDesHead{
+        font-size: large;
+    }
+    .ProductsServicesContainerImg{
+        width: 100%;
+        background-color: aqua;
+        margin: auto;
+        flex: 1;
+        height: 50vh;
+    }
+    .ProductsServicesContainerImg img{
+        margin: auto;
+        object-fit: cover;
+        height: 50vh;
+        width: 100%;
+    }
+    .ProductsServicesContainerViewInDetail button{
+        padding: 3px 9px;
+        border: 0.8px solid blueviolet;
+        border-radius: 2px;
+        /* width: auto; */
+        font-family: 'Raleway', sans-serif;
+        background-color: transparent;
+    }   
 }

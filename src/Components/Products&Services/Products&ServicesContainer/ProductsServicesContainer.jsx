@@ -8,15 +8,17 @@ import { Link } from "react-router-dom";
 const ProductsServicesContainer = () => {
 
     const [docs, setDocs] = useState([]);
-        
+
+    var mobileView = false;
+    
     const handleClick = async () => {
-const query1 = await collection(firebasee, "products");
+        const query1 = await collection(firebasee, "products");
 
         const bb = await query(query1, orderBy('timeStamp', 'desc'));
 
         const aa = await getDocs(bb);         
-        
-    setDocs(aa.docs[0]?._document?.data?.value?.mapValue?.fields);
+            
+        setDocs(aa.docs[0]?._document?.data?.value?.mapValue?.fields);
         console.log(aa.docs[0]?._document?.data?.value?.mapValue?.fields);
     }
 
@@ -24,7 +26,10 @@ const query1 = await collection(firebasee, "products");
         handleClick();
     }, []);
 
-    
+    if (window.screen.width < 800) {
+        mobileView = true;
+    }
+
     var stringValue = `${docs?.productDescription?.stringValue}`;
 
     const options = { year: "numeric", month: "long", day: "numeric"}
@@ -39,12 +44,14 @@ const query1 = await collection(firebasee, "products");
         purchaseNow: true
     }
 
+    var finalDes = stringValue.length > 750? mobileView? stringValue.substring(0, 250): stringValue.substring(0, 750) + "...": stringValue;
+
     return(
         <div className="ProductsServicesContainer">
             <div className="ProductsServicesContainerDes">
                 <h2 className="ProductsServicesContainerDesHead">{docs?.productName?.stringValue}</h2>
                 <br /><br />
-                <p className="ProductsServicesContainerDesP">{stringValue.substring(0, 750) + "..."}</p>
+                <p className="ProductsServicesContainerDesP">{finalDes}</p>
                 <br /><br />
                 <div className="ProductsServicesContainerViewInDetail"><Link to={"/moredetail"} state={{stateChange}}><button>View In Detail</button></Link></div>
             </div>

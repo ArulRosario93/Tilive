@@ -6,6 +6,7 @@
     align-items: center;
     flex-direction: row;
     margin-bottom: 200vh;
+    background-color: black ;
 }
 
 .ScrollingComponentImg{
@@ -54,7 +55,7 @@
 .CalledIn{
     position: relative;
     width: 100%;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(0, 0, 0);
     /* height: 1; */
 }
 

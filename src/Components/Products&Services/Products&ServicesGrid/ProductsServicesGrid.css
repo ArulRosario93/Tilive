@@ -1,5 +1,5 @@
 .ProductsServicesGrid{
-    height: 100vh;
+    /* height: 100vh; */
     margin-bottom: 6vh;
     padding: 10vh 6vw;
 }
@@ -107,3 +107,18 @@
     display: none;
 }
 
+@media only screen and (max-width: 425px) {
+    .ProductsServicesGridHere{
+        /* margin-top: 50px; */
+        /* background-color: blueviolet; */
+        /* padding: 5vh 15px; */
+        text-align: center;
+        display: grid;
+        align-items:baseline;
+        grid-template-columns: 1fr;
+        gap: 1rem
+    }
+    .ProductsServicesGridHereEach{
+        margin: 10px auto;
+    }
+}
