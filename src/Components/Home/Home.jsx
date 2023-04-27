@@ -6,12 +6,12 @@ import HomeProducts from "./HomeProducts/HomeProducts";
 import HomeCareers from "./HomeCareers/HomeCareers";
 import HomeFooter from "./HomeFooter/HomeFooter";
 import { useEffect, useState } from "react";
+import HomeNav from "./HomeNav/HomeNav";
 
 const Home = () => {
 
     const [lastScrollTop, setLastScrollTop] = useState(0);
     const [scrollDirection, setScrollDirection] = useState("down");
-
 
     // useEffect(() => {
     //     window.addEventListener("scroll", () => {
@@ -30,6 +30,7 @@ const Home = () => {
         <div className="Home">
            <StartingPage want={true} />
            <HomePage />
+           <HomeNav />
            <HomeProducts />
            <HomeCareers />
            <HomeFooter />

@@ -26,6 +26,7 @@
   height: 35px;
   width: 35px;
   margin-bottom: 20px;
+  margin-left: 15px;
   position: fixed;
 }
 #startlogodummy{
@@ -37,10 +38,10 @@
 
 .startingPageContainer{
   /* background-color: rgba(5, 4, 4, 0.911); */
-    padding: 30px 25px;
     position: fixed;
     top: 0;
     /* left: 5; */
+    padding: 20px 0px;
     margin: auto;
     width: 100%;
     z-index: 99;
@@ -69,8 +70,11 @@
   border: none;
 }
 .navLine{
+  margin-right: 10px;
   display: none;
+  height: 0vh;
 }
+
 /* Style the dropdown content */
 .dropdown-content {
   display: none;
@@ -135,6 +139,32 @@
   font-family:'Be Vietnam Pro', sans-serif;
   width:fill;
 }
+.HomeNav{
+  padding: 25px;
+  overflow:hidden;
+  position: fixed;
+  width: 0%;
+  transition: 0.4s;
+  display: block;
+  /* z-index: 0; */
+  background-color: whitesmoke;
+}
+
+.HomeNavClose{
+  color: black;
+  text-align: right;
+}
+
+.HomeNavNav{
+  display: flex;
+  height: 80vh;
+  color: black;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
 .insubdropbtn:hover{
   background-color: rgba(0, 0, 0, 0.705);
 }
@@ -173,7 +203,11 @@
     font-size: x-small;
   }
   .navLine{
-    text-align: right;
+    width: max-content;
+    margin: auto;
+    float: right;
+    margin-right: 10px;
+    position: relative;
     color: rgb(255, 255, 255);
     display: block;
   }

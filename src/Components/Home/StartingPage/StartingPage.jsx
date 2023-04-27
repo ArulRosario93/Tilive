@@ -60,17 +60,52 @@ export const StartingPage = ({ want }) => {
       //    }
       //  });
 
+   const [stylee, setStyle] = useState(false);
+
+    const handleClick = () => {
+        setStyle(!stylee);
+    }
+
    return (
     <div className="startingPageContainer">
+    <div className="HomeNav" style={{opacity: stylee? "1": "0", zIndex: stylee? "1000": "0", height: stylee? "100vh": "0vh", width: stylee? "100%": "0%",}}>
+            <h1 className="HomeNavClose" onClick={() => handleClick()}>X</h1>
+            <div className="HomeNavNav">
+                <div>
+                    <Link to={"/aboutus"}><p>About Us</p></Link>
+                </div>
+                <div>
+                    <Link to={"/productsservices"}><p>Products & Services</p></Link>
+                </div>
+                <div>
+                    <Link to={"buyonline"}><p>Buy Online</p></Link>
+                </div>
+                <div>
+                    <Link to={"clients"}><p>Clients</p></Link>
+                </div>
+                <div>
+                    <Link to={"/news"}><p>News</p></Link>
+                </div>
+                <div>
+                    <Link to={"/careers"}><p>Careers</p></Link>
+                </div>
+                <div>
+                    <Link to={"contactus"}><p>Contact Us</p></Link>
+                </div>
+            </div>
+        </div>
+
          <Link to={"/contactus"}><button id="float_contact">CONTACT US</button></Link>
-     <div className='start'>
-         <Link to={"/"}>
-            <button id="floating_btn"style={{outline: "none", background: 'transparent', border: 'none', cursor: '-moz-initial'}}><img id="startlogo" style={{borderRadius: '50px'}} src="https://t3.ftcdn.net/jpg/02/05/46/30/360_F_205463037_cXsFsDC65v6ZlZlqoDYabosy0sZnwReO.jpg" alt="ehh"></img></button>
-         </Link>
+            <div className='start'>
+            <Link to={"/"}>
+               <button id="floating_btn" style={{outline: "none", background: 'transparent', border: 'none', cursor: '-moz-initial'}}><img id="startlogo" style={{borderRadius: '50px'}} src="https://t3.ftcdn.net/jpg/02/05/46/30/360_F_205463037_cXsFsDC65v6ZlZlqoDYabosy0sZnwReO.jpg" alt="ehh"></img></button>
+            </Link>
           {
             want? <>
             <div className="navLine">
-               ===
+               <p className="gTHem" onClick={() => handleClick()}>
+                  ===
+               </p>
             </div>
             <div className="gg">
          <Link to="/contactus">
