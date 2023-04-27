@@ -164,23 +164,27 @@ const query1 = await collection(firebasee, "tilive_data");
         <h1 className="AllNews3GridHead">Latest Events From Tilive</h1>
         <div className="AllNewsContainerGrid">
                         {
-                            fileType1 ? <Link to={"/moredetail"} state={{docs1}}>
+                            fileType1 ?
                                 <div className="AllNewsContainerGridEach">
+                                <Link to={"/moredetail"} state={{docs1}}>
                                         <img className="AllNewsContainerGridEachImg" src={docs1?.linkURl[0]?.stringValue}/>
-                                    <div className="AllNewsContainerGridEachDiv">
-                                        <div className="AllNewsContainerGridEachDivDes">
-                                            <Fade bottom>
-                                                <h2 className="AllNewsContainerGridEachDivDesHead">Description:</h2>
-                                                <br />
-                                                <p className="AllNewsContainerGridEachDivDesP">{doc1finalDes}</p>
-                                            </Fade>
+                                        <div className="AllNewsContainerGridEachDiv">
+                                            <div className="AllNewsContainerGridEachDivDes">
+                                                <Fade bottom>
+                                                    <h2 className="AllNewsContainerGridEachDivDesHead">Description:</h2>
+                                                    <br />
+                                                    <p className="AllNewsContainerGridEachDivDesP">{doc1finalDes}</p>
+                                                </Fade>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </div> 
-                            </Link>: <Link to={"/moredetail"} state={{docs1}}><div className="AllNewsContainerGridEach">
+                            : <div className="AllNewsContainerGridEach">
+                            <Link to={"/moredetail"} state={{docs1}}>
                                 <video width="350px" height="auto" >
                                     <source src={docs1.linkURl[0]?.stringValue} type="video/mp4"/>
                                 </video>
+                            </Link>
                                     <div className="AllNewsContainerGridEachDiv">
                                         <div className="AllNewsContainerGridEachDivDes">
                             <Fade bottom>
@@ -191,7 +195,6 @@ const query1 = await collection(firebasee, "tilive_data");
                                         </div>
                                     </div>
                                 </div>
-                            </Link>
                         }
                         
                         {

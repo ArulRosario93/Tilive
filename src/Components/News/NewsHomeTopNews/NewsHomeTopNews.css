@@ -4,13 +4,13 @@
 .topNewsHead{
     font-size: xx-large;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
 }
 
 .NewsHomeTopNews{
     height: 85vh;
     display: flex;
-    justify-items: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
     box-sizing: border-box;
@@ -44,19 +44,19 @@
 
 .NewsHomeTopNewsContentDesMainHead{
     font-size: xx-large;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     text-decoration: underline;
 }
 
 .NewsHomeTopNewsContentDesHead{
     font-size: smaller;
     padding-left: 2px;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
 }
 
 .NewsHomeTopNewsContentDesP{
     font-size: medium;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     word-spacing: 1px;
 }
 
@@ -69,11 +69,44 @@
 }
 
 .NewsHomeTopNewsContentDesViewMore button{
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     padding: 8px 16px;
     /* margin-left: 30px; */
     border: 1px solid black;
     font-family: 'Cinzel', serif;
     font-weight: 400;
     background-color: white;
+}
+
+@media only screen and (max-width: 425px) {
+    .topNewsHead{
+        font-size: x-large;
+    }
+    .NewsHomeTopNewsContentDesMainHead{
+        font-size: x-large;
+    }
+    .NewsHomeTopNewsContentDesP{
+        font-size: small;
+        word-spacing: 0px;
+    }
+    .NewsHomeTopNews{
+        justify-content: space-between;
+    }
+    .NewsHomeTopNewsContent{
+        padding: 10px 0px 0px 15px;
+    }
+    .NewsHomeTopNewsImageGoesHere img{
+        width: 100%;
+        object-fit: cover;
+        height: 50vh;
+    }
+    .NewsHomeTopNewsContentDesViewMore button{
+        padding: 6px 10px;
+        font-size: x-small;
+    }
+    .NewsHomeTopNewsImageGoesHere video{
+        width: 100%;
+        object-fit: cover;
+        height: 50vh;
+    }
 }

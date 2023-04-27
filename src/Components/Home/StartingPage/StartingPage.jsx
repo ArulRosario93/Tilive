@@ -68,7 +68,7 @@ export const StartingPage = ({ want }) => {
 
    return (
     <div className="startingPageContainer">
-    <div className="HomeNav" style={{opacity: stylee? "1": "0", zIndex: stylee? "1000": "0", height: stylee? "100vh": "0vh", width: stylee? "100%": "0%",}}>
+    <div className="HomeNav" style={{opacity: stylee? "1": "0", display: stylee? "block": "block", zIndex: stylee? "1000": "0", height: stylee? "100vh": "0vh", width: stylee? "100%": "0%",}}>
             <h1 className="HomeNavClose" onClick={() => handleClick()}>X</h1>
             <div className="HomeNavNav">
                 <div>

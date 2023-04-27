@@ -43,6 +43,14 @@ const NewsHomeTopNews = () => {
         fileType = false;
     }
 
+    var des = `${docs?.eventDescription?.stringValue}`;
+
+    if (window.screen.width < 600) {
+        des = des.length > 250? des.substring(0, 250) + "...": des;
+    }else{
+        des = des.length > 650? des.substring(0, 640) + "...": des;
+    }
+
     useEffect(() => {
         handleClick();
     }, []);
@@ -59,7 +67,7 @@ const NewsHomeTopNews = () => {
                     <h5 className="NewsHomeTopNewsContentDesHead">{docs?.eventCaption?.stringValue}</h5>
                     <br />
                     <br />
-                    <p className="NewsHomeTopNewsContentDesP">{docs?.eventDescription?.stringValue}</p>
+                    <p className="NewsHomeTopNewsContentDesP">{des}</p>
                 
                     <Fade><div className="NewsHomeTopNewsContentDesViewMore"><Link to="/moredetail" state={{stateChange}}><button onClick={()=> {console.log("CLicked Here on")}}>View In Detail</button></Link></div></Fade>
                 </div>

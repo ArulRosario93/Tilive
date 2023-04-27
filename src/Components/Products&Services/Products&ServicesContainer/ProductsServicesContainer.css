@@ -18,6 +18,7 @@
     width: 90%;
     /* background-color: aqua; */
     font-weight: 400;
+    text-align: center;
 }
 .ProductsServicesContainerDesHead{
     font-size: 2.5rem;
@@ -46,6 +47,10 @@
     height: 60vh;
     width: 100%;
 }
+
+/* .ProductsServicesContainerViewInDetail{
+    margin: auto;
+} */
 
 .ProductsServicesContainerViewInDetail button{
     padding: 7px 12px;
@@ -87,4 +92,7 @@
         font-family: 'Raleway', sans-serif;
         background-color: transparent;
     }   
+    .ProductsServicesContainerDesP{
+        text-align: left;
+    }
 }

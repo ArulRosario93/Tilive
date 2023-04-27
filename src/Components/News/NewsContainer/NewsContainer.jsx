@@ -57,7 +57,7 @@ const NewsContainer = () => {
 
                     if (des.length > 650) {
                         des = des.slice(0, 650) + "...";
-                    }
+                    } 
 
                     var itemNow = `${linkURl[0]?.stringValue}`;
 

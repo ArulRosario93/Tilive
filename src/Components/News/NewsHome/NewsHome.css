@@ -7,9 +7,9 @@
     background-repeat: no-repeat;
     object-fit: cover;
     -webkit-box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.39);
-       -moz-box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.39);
-       box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.39);
-       padding-bottom: 100px;
+    -moz-box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.39);
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.558);
+    padding-bottom: 100px;
 }
 .NewsHomeDes{
     position: relative;
@@ -21,11 +21,20 @@
 .NewsHomeDesHead{
     color: white;
     font-size: xx-large;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
 }
 .NewsHomeDesP{
     color: white;
     font-size: smaller;
     letter-spacing: 1px;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+@media only screen and (max-width: 425px) {
+    .NewsHomeDesHead{
+        font-size: x-large;
+    }
+    .NewsHomeDesP{
+        font-size: x-small;
+    }
 }

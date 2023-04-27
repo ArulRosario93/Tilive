@@ -50,16 +50,20 @@ const AllNewsContainer = () => {
     }, []);
 
     var des = `${docs?.eventDescription?.stringValue}`;
-    var desfinal = des.length > 500? des.substring(0, 500) + "...": des.substring(0, 500);
+
+    if (window.screen.width < 600) {
+        des = des.length > 250? des.substring(0, 250) + "...": des;
+    }else{
+        des = des.length > 650? des.substring(0, 650) + "...": des;
+    }
 
     return(
         <div className="AllNewsCreativeContainer">
+                    <h2 className="AllNewsContainerStartsHereDesHead">{docs?.eventName?.stringValue}</h2>
             <div className="AllNewsContainerStartsHere">
                 <div className="AllNewsContainerStartsHereDes">
-                    <h2 className="AllNewsContainerStartsHereDesHead">{docs?.eventName?.stringValue}</h2>
                     <br />
-                    <p className="AllNewsContainerStartsHereDesP">{desfinal}</p>
-                    <div className="NewsHomeTopNewsContentDesViewMore"><Link to={"/moredetail"} state={{stateChange}}><button>View More Detail</button></Link></div>
+                    <p className="AllNewsContainerStartsHereDesP">{des}</p>
                 </div>
                 <div className="AllNewsContainerStartsHereImg">
                     {
@@ -70,6 +74,7 @@ const AllNewsContainer = () => {
                     
                 </div>
             </div>
+            <div className="NewsHomeTopNewsContentDesViewMore"><Link to={"/moredetail"} state={{stateChange}}><button>View More Detail</button></Link></div>
         </div>
     )
 }
