@@ -1,10 +1,12 @@
 .ProductsServicesContainer{
-    height: 80vh;
-    margin: 16vh 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+.ProductsServicesFund{
+    height: 80vh;
+    margin: 14vh 0px;
     padding: 0px 30px;
 }
 
@@ -18,8 +20,10 @@
     font-weight: 400;
 }
 .ProductsServicesContainerDesHead{
-    font-size: xx-large;
-    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    /* font-family: 'Raleway', sans-serif; */
 }
 .ProductsServicesContainerImg{
     width: 100%;
@@ -55,6 +59,12 @@
 @media only screen and (max-width: 425px) {
     .ProductsServicesContainerDesHead{
         font-size: large;
+    }
+    .ProductsServicesContainerDesHead{
+        font-size: 1.5rem;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 30px;
     }
     .ProductsServicesContainerImg{
         width: 100%;

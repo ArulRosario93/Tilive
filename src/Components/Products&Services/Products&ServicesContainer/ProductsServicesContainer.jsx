@@ -47,9 +47,10 @@ const ProductsServicesContainer = () => {
     var finalDes = stringValue.length > 750? mobileView? stringValue.substring(0, 250): stringValue.substring(0, 750) + "...": stringValue;
 
     return(
+    <div className="ProductsServicesFund">
+      <h2 className="ProductsServicesContainerDesHead">{docs?.productName?.stringValue}</h2>
         <div className="ProductsServicesContainer">
             <div className="ProductsServicesContainerDes">
-                <h2 className="ProductsServicesContainerDesHead">{docs?.productName?.stringValue}</h2>
                 <br /><br />
                 <p className="ProductsServicesContainerDesP">{finalDes}</p>
                 <br /><br />
@@ -57,6 +58,7 @@ const ProductsServicesContainer = () => {
             </div>
             <div className="ProductsServicesContainerImg"><img src={docs?.LinkUrl?.arrayValue?.values[0]?.stringValue}/></div>
         </div>
+    </div>
     )
 }
 
