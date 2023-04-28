@@ -92,6 +92,8 @@
 
 .EnlargeNewsCarouselVidHere video {
     height: 100vh;
+    object-fit: contain;
+    object-position: center;
 } 
 
 /* .EnlargeNewsCarouselVidHere video:before {
@@ -211,6 +213,9 @@
     .EnLargeNewsBodyDes{
         overflow: scroll;
         height: 40vh;
+    }
+    .EnlargeNewsCarouselVidHere video{
+        height: auto;
     }
 }
 

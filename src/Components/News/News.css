@@ -21,24 +21,26 @@
     bottom: 0;
     left: 0;
     right: 0;
+    margin: auto;
     display: none;
     /* justify-content: center; */
     width: 26vw;
     background-color: rgba(0, 0, 0, 0.801);
-    height: 380px;
+    height:100%;
     opacity:0;
     text-align: left; 
   }
   .container{
-    position: relative;
-    width: 26vw;
-    height: 380px;
-    margin: 40px;
-    float: left;
+      /* background-color: blueviolet; */
+      /* padding: 5vh 15px; */
+      width: 26vw;
+      height: 380px;
+      margin: auto;
   }
   .container:hover .news {
     transition: 0.4s;
     display: flex;
+    justify-content: center;
     align-items: center;
     opacity:1;
   }
@@ -46,7 +48,7 @@
   .text {
     word-wrap: break-word;
     width: 260px;
-    height:350px;
+    height:100%;
     display: flex;
     /* transition: 1s; */
    align-items: center;
@@ -66,14 +68,14 @@
 }
 .newsDescriptionHead{
   font-size: medium;
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
   font-weight: 500;
   text-decoration: underline;
 }
 .newsDescriptionP{
   font-size: small;
   padding: 15px 0px;
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
   font-weight: 500;
 }
 .NewsContainer{
@@ -81,9 +83,16 @@
   margin: auto;
   /* position: relative; */
   display: block;
-  margin-bottom: 50px;
-  background-color: blue;
+  margin: 50px;
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.NewsContainerHeadHere{
+  margin-left: 50px;
+  margin-bottom: 10px;
 }
 .containerBottom{
   padding: 0%;
@@ -106,4 +115,29 @@
 .AboutUs{
   z-index: -2;
   background-color: rgba(252, 252, 252, 0.993);
+}
+
+
+@media only screen and (max-width: 425px) {
+  .NewsContainer{
+    /* padding: 25px; */
+    margin: auto;
+    /* position: relative; */
+    display: block;
+    margin: 25px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .xyz{
+    padding: 0;
+    width: 80%;
+    height: 300px;
+    cursor: pointer;
+    object-fit: cover;
+  }
+  .container:hover .news {
+    display: none;
+  }
 }

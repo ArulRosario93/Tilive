@@ -133,7 +133,7 @@ const AllNewsHead = () => {
                             return(
                                 <div className="AllNewsHeadCarousel">
                                     {
-                                        typeIMg? <img className="AllNewsHeadCarouselImg" src={item.stringValue} /> : <EnlargeNewsCarouselVid item={item} onChangeCaptured={currentItem} i={ii} largeImage={anyChange}/>
+                                        typeIMg? <img className="AllNewsHeadCarouselImg" src={item.stringValue} /> : <EnlargeNewsCarouselVid item={item} onChangeCaptured={currentItem} heightCame="max" i={ii} largeImage={anyChange}/>
                                     }
                                 </div>
                             )

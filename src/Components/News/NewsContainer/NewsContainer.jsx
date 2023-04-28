@@ -92,7 +92,7 @@ const NewsContainer = () => {
                             <div className='imgdiv'>
                             {
                                 typeImg?
-                                <img className="xyz" src={linkURl?.[0]?.stringValue} alt="Factory Image"/>: <video className="xyz" width="100%" height="auto">
+                                <img className="xyz" src={linkURl?.[0]?.stringValue} alt="Factory Image"/>: <video className="xyz">
                                         <source src={linkURl?.[0]?.stringValue} type="video/mp4"/>
                                     </video>
                             }

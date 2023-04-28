@@ -14,6 +14,7 @@ import NewsContainer from './NewsContainer/NewsContainer';
 import NewsHome from './NewsHome/NewsHome';
 import NewsHomeTopNews from './NewsHomeTopNews/NewsHomeTopNews';
 import { Fade } from 'react-reveal';
+import ClientFotter from '../Clients/ClientFotter/ClientFotter';
 
 // import firebase from "firebase";
 
@@ -54,9 +55,9 @@ const newsItems = [
                 <NewsHomeTopNews />
                 {/* </Fade> */}
                 <br />
-
-                <h2>News</h2>
-                <NewsContainer />
+                    <h2 className='NewsContainerHeadHere'>News</h2>
+                    <NewsContainer />
+                <ClientFotter />
             {/* </Fade> */}
         </div>
     )

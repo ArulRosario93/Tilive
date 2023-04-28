@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import CareersHome from "./CareersHome/CareersHome";
-import CarrersScrollList from "./CarrersScrollList/CarrersScrollList";
 import Loader from "../Loader/Loader";
 import { firebasee } from "../../firebase";
 import { getDocs, collection, query, orderBy } from "firebase/firestore";
@@ -99,9 +98,7 @@ const Careers = () => {
             <CareersHome />
             <div ref={ref}>
                 <ScrollingComponent  heightStartsHere={heightFound != 0? heightFound : 1000} timestamp1={finalONe1} timestamp2={finalONe2} timestamp3={finalONe3} firstImage={docFound[0]?.linkURl} secondImage={docFound[1]?.linkURl} thirdImage={docFound[2]?.linkURl} firstHead={docFound[0]?.eventName} firstDes={docFound[0]?.eventDescription} secondHead={docFound[1]?.eventName} secondDes={docFound[0]?.eventDescription} thirdHead={docFound[2]?.eventName} thirdDes={docFound[2]?.eventDescription} firstLink="" secondLink="" thirdLink="" />
-                {/* <ScrollingComponent  heightStartsHere={heightFound != 0? heightFound : 2000} firstImage={docFound[0]?.linkURl} secondImage={docFound[1]?.linkURl} thirdImage={docFound[2]?.linkURl} firstHead={docFound[0]?.eventName} firstDes={docFound[0]?.eventDescription} secondHead={docFound[1]?.eventName} secondDes={docFound[1]?.eventDescription} thirdHead={docFound[2]?.eventName} thirdDes={docFound[2]?.eventDescription} firstLink="" secondLink="" thirdLink="" /> */}
             </div>
-            {/* <div ref={ref}><CarrersScrollList heightFound={heightFound !=0? heightFound: 2000} docs={docs}/></div> */}
         </div>: <Loader />
     )
 }

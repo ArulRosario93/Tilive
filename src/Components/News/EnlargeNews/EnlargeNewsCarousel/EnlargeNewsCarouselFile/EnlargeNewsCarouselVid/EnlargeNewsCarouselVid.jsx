@@ -3,7 +3,7 @@ import React,{ useEffect, useRef, useState } from "react";
 import 'intersection-observer';
 import { useIsVisible  } from 'react-is-visible';
 
-const EnlargeNewsCarouselVid = ({ item, onChangeCaptured, i, largeImage }) => {
+const EnlargeNewsCarouselVid = ({ item, heightCame, onChangeCaptured, i, largeImage }) => {
 
     const [use, setUse] = useState(true);
 
@@ -32,8 +32,8 @@ const EnlargeNewsCarouselVid = ({ item, onChangeCaptured, i, largeImage }) => {
     }, [onChangeCaptured, largeImage]);
 
     return(
-        <div style={{width: '100%'}} className="EnlargeNewsCarouselVidHere">
-            <video loop ref={vidRef} muted={use} id="EnlargeNewsCarouselVid" width="100%">
+        <div style={{width: '100%',}} className="EnlargeNewsCarouselVidHere">
+            <video loop ref={vidRef} style={{height: heightCame == "max"? "100vh": "auto"}} muted={use} id="EnlargeNewsCarouselVid" width="100%">
                     <source src={item?.stringValue} type="video/mp4"/>
             </video>
         </div>
