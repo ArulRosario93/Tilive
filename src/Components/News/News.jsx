@@ -45,7 +45,7 @@ const newsItems = [
     return (
         <div className='News'>
             {/* <Fade> */}
-                <StartingPage want={false}/>
+                <StartingPage want={true}/>
 
             {/* <h1 className='NewsHeading'>
                 News

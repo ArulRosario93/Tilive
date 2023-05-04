@@ -4,8 +4,9 @@
     color: white;
     background-color: transparent;
     border-color: transparent;
-    font-family:'Be Vietnam Pro', sans-serif;
+    /* font-family:'Be Vietnam Pro', sans-serif; */
     font-size: 20;
+    font-family: 'Poppins', sans-serif;
     float:right;
     transition: text-decoration 0.6s ease;
     text-decoration: 3px underline transparent;
@@ -66,7 +67,8 @@
 .dropbtn {
   background-color: transparent;
   color: white;
-  font-family:'Be Vietnam Pro', sans-serif;
+  /* font-family:'Be Vietnam Pro', sans-serif; */
+  font-family: 'Poppins', sans-serif;
   border: none;
 }
 .navLine{
@@ -93,8 +95,10 @@
   background-color: transparent;
   color: white;
   padding: 10px;
+  max-width: 180px;
   border: none;
-  font-family:'Be Vietnam Pro', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  /* font-family:'Be Vietnam Pro', sans-serif; */
 }
 
 /* Style the sub-dropdown content */
@@ -118,7 +122,8 @@
 
 .sub-dropdown{
     background-color:rgba(73, 73, 76, 0.46);
-    font-family:'Be Vietnam Pro', sans-serif;
+    /* font-family:'Be Vietnam Pro', sans-serif; */
+    font-family: 'Poppins', sans-serif;
 }
 
 .insubdropbtn{
@@ -136,7 +141,8 @@
   color: white;
   padding: 10px;
   border: none;
-  font-family:'Be Vietnam Pro', sans-serif;
+  /* font-family:'Be Vietnam Pro', sans-serif; */
+  font-family: 'Poppins', sans-serif;
   width:fill;
 }
 

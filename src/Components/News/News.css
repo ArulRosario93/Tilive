@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;400&family=Raleway:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
 .NewsHeading{
     padding: 15px;
     text-align: center;
-    font-family: 'Cinzel', serif;
     text-decoration: underline;
     margin: 30px 0px;
-  }
-  .xyz{
+}
+
+.xyz{
     padding: 0;
     width: 26vw;
     height: 380px;
     cursor: pointer;
     object-fit: cover;
-  }
-  .news {
+}
+.news {
     position:absolute;
     color: azure;
     top: 0;
@@ -29,23 +29,24 @@
     height:100%;
     opacity:0;
     text-align: left; 
-  }
-  .container{
+}
+.container{
       /* background-color: blueviolet; */
       /* padding: 5vh 15px; */
       width: 26vw;
       height: 380px;
       margin: auto;
-  }
-  .container:hover .news {
+}
+
+.container:hover .news {
     transition: 0.4s;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity:1;
-  }
+}
   
-  .text {
+.text {
     word-wrap: break-word;
     width: 260px;
     height:100%;
@@ -54,7 +55,7 @@
    align-items: center;
     /* justify-content: center; */
     text-align: center;
-  }
+}
 
 .NewsItem{
   /* position: relative; */
@@ -63,6 +64,7 @@
   width: 350px;
   height: 350px;
 }
+
 .newsDescription{
   padding: 50px 25px;
 }
@@ -72,12 +74,14 @@
   font-weight: 500;
   text-decoration: underline;
 }
+
 .newsDescriptionP{
   font-size: small;
   padding: 15px 0px;
   /* font-family: 'Raleway', sans-serif; */
   font-weight: 500;
 }
+
 .NewsContainer{
   /* padding: 25px; */
   margin: auto;
@@ -94,6 +98,7 @@
   margin-left: 50px;
   margin-bottom: 10px;
 }
+
 .containerBottom{
   padding: 0%;
   font-size: xx-large;
@@ -108,7 +113,6 @@
   align-items: center;
   font-size: medium;
   flex-direction: column;
-  font-family: 'Cinzel', serif;
   color: black;
 }
 
@@ -136,6 +140,14 @@
     height: 300px;
     cursor: pointer;
     object-fit: cover;
+  }
+  
+  .container{
+      /* background-color: blueviolet; */
+      /* padding: 5vh 15px; */
+      width: 100%;
+      height: 300px;
+      margin: auto;
   }
   .container:hover .news {
     display: none;

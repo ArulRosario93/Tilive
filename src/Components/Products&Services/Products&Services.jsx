@@ -85,7 +85,7 @@ const ProductsServices = () => {
 
     return(
         loader? <div>
-            <StartingPage want={false}/>
+            <StartingPage want={true}/>
             <ProductsServicesHomeHead />
             <ProductsServicesContainer />
             <ProductsServicesGrid />

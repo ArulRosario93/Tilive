@@ -34,6 +34,7 @@
 .HomeCareersDesHead4{
     font-size: smaller;
     font-weight: 400;
+    font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
 }
 
@@ -47,11 +48,13 @@
     font-weight:normal;
     font-size: 2rem;
     border-radius: 2px;
+    font-family: 'Poppins', sans-serif;
     padding: 0px 6px;
 }
 .HomeCareersDesP{
     width: 94%;
     letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
 .HomeProductsDesViewMoreHEy{
@@ -63,6 +66,7 @@
     background-color: blueviolet;
     flex-direction: row;
     border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .HomeProductsDesViewMoreHEy p{
@@ -70,6 +74,7 @@
     font-weight: normal;
     text-decoration: none;
     color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
 }
 
 

@@ -10,10 +10,9 @@ const AboutUs = () => {
         window.scrollTo(0,0);
     }, []);
 
-
     return(
         <div className="AboutUs">
-            <StartingPage />
+            <StartingPage want={true}/>
             <AboutUsHome />
             <WeAre />
             <CompanySecret />

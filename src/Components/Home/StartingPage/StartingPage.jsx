@@ -129,7 +129,8 @@ export const StartingPage = ({ want }) => {
             <button class="dropbtn">Products & Services</button>
             <div class="dropdown-content">
                <div class="sub-dropdown">
-                  <button class="sub-dropbtn">Cars</button>
+                  <Link><button class="sub-dropbtn">Marketing and Business Development
+Services</button></Link>
                   <div class="sub-dropdown-content">
                      <button className="insubdropbtn">Gears</button>
                      <button className="insubdropbtn">Tires</button>
@@ -139,8 +140,9 @@ export const StartingPage = ({ want }) => {
                   </div>
                </div>
             <div class="sub-dropdown">
-               <button class="sub-dropbtn">Strawhats</button>
-               <div class="sub-dropdown-content">
+               <button class="sub-dropbtn">Sourcing and Supply Chain
+Management Services</button>
+               <div class="sub-dropdown-content" style={{top: '10%'}}>
                <button className="insubdropbtn">Monkey D Luffy</button>
                <button className="insubdropbtn">Roronoa Zoro</button>
                <button className="insubdropbtn">Vinsmoke Sanji</button>
@@ -148,8 +150,9 @@ export const StartingPage = ({ want }) => {
                </div>
             </div>
             <div class="sub-dropdown">
-               <button class="sub-dropbtn">Red-Hair</button>
-               <div class="sub-dropdown-content">
+               <button class="sub-dropbtn">Merger &amp; Acquisition Consultancy
+Services</button>
+               <div class="sub-dropdown-content" style={{top: '20%'}}>
                <button className="insubdropbtn">Red-Hair Shanks</button>
                <button className="insubdropbtn">Benn Beckman</button>
                <button className="insubdropbtn">Yasopp</button>
@@ -157,8 +160,8 @@ export const StartingPage = ({ want }) => {
                </div>
             </div>
             <div class="sub-dropdown">
-               <button class="sub-dropbtn">Whitebeard</button>
-               <div class="sub-dropdown-content">
+               <button class="sub-dropbtn">CEO/ CFO Services</button>
+               <div class="sub-dropdown-content" style={{top: '35%'}}>
                <button className="insubdropbtn">Edward Newgate</button>
                <button className="insubdropbtn">Marco</button>
                <button className="insubdropbtn">Portagaz D Ace</button>
@@ -166,8 +169,26 @@ export const StartingPage = ({ want }) => {
                </div>
             </div>
             <div class="sub-dropdown">
-               <button class="sub-dropbtn">Cross-Guild</button>
-               <div class="sub-dropdown-content">
+               <button class="sub-dropbtn">Manufacturing Guild</button>
+               <div class="sub-dropdown-content" style={{top: '40%'}}>
+               <button className="insubdropbtn">Buggy D Clown</button>
+               <button className="insubdropbtn">Dracule Mihawk</button>
+               <button className="insubdropbtn">Sir Crocodile</button>
+               <button className="insubdropbtn">Doflamingo</button>
+               </div>
+            </div>
+            <div class="sub-dropdown">
+               <button class="sub-dropbtn">Automotive and Engineering Parts</button>
+               <div class="sub-dropdown-content" style={{top: '45%'}}>
+               <button className="insubdropbtn">Buggy D Clown</button>
+               <button className="insubdropbtn">Dracule Mihawk</button>
+               <button className="insubdropbtn">Sir Crocodile</button>
+               <button className="insubdropbtn">Doflamingo</button>
+               </div>
+            </div>
+            <div class="sub-dropdown">
+               <button class="sub-dropbtn">General Trading</button>
+               <div class="sub-dropdown-content" style={{top: '50%'}}>
                <button className="insubdropbtn">Buggy D Clown</button>
                <button className="insubdropbtn">Dracule Mihawk</button>
                <button className="insubdropbtn">Sir Crocodile</button>

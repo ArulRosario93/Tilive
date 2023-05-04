@@ -92,7 +92,7 @@ const Clients = () => {
 
     return(
         loader? <div>
-            <StartingPage want={false}/>
+            <StartingPage want={true}/>
             <ClientsHome />
             <ClientsWhyUs />
             {/* <div ref={ref}><CarrersScrollList heightFound={OP !=0? OP: 2000} docs={docs}/></div> */}
