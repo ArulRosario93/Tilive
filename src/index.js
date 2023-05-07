@@ -17,6 +17,7 @@ import NewsForm from './Components/NewsForm/NewsForm';
 import Loader from './Components/Loader/Loader';
 import { createBrowserHistory } from 'history';
 import AllNews from './Components/News/AllNews/AllNews';
+import SubDropPage from './Components/SubDropPage/SubDropPage';
 
 const history = createBrowserHistory();
 
@@ -67,6 +68,34 @@ const router = createBrowserRouter([
   {
     path: "/newsform",
     element: <NewsForm stateChange="yoyo"/>,
+  },
+  {
+    path: "/MarketingBusiness",
+    element: <SubDropPage />,
+  },
+  {
+    path: "/Sourcing&SupplyChain",
+    element: <SubDropPage />,
+  },
+  {
+    path: "/Merger&Acquisition",
+    element: <SubDropPage />,
+  },
+  {
+    path: "/CEO/CFOServices",
+    element: <SubDropPage />,
+  },
+  {
+    path: "/ManufacturingGuild",
+    element: <SubDropPage />,
+  },
+  {
+    path: "/Automotive&EngineeringParts",
+    element: <SubDropPage />,
+  },
+  {
+    path: "/GeneralTrading",
+    element: <SubDropPage />,
   },
 ]);
 

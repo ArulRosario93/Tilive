@@ -29,9 +29,13 @@ const ClientsHome = () => {
             <div className="ClientsHomeDes" style={{top: `${position}%`}}>
                 <h3 className="ClientsHomeDesHeadThird">Careers</h3>
                 <br />
-                <h1 className="ClientsHomeDesHeadOne">"Become part of our team"</h1>
+                <h1 className="ClientsHomeDesHeadOne">"Join Our Team at Tilive International LLP"</h1>
                 <br />
-                <p className="ClientsHomeDesP"> <span className="ClientsHomeDesPSpan">At SMR we believe that our people are our biggest assets and that the capability of the company is the combined competence of all of us. Join our team and experience the spirit of a well-networked global enterprise offering exciting projects and outstanding development opportunities.</span></p>
+                <p className="ClientsHomeDesP"> <span className="ClientsHomeDesPSpan">At Tilive International LLP, we believe that our greatest asset is our talented team
+of professionals. We are a dynamic and rapidly growing consultancy and service
+provider in the Automotive &amp; Engineering sectors, offering exciting career
+opportunities for individuals who are passionate, innovative, and committed to
+excellence.</span></p>
             </div>
         </div>
     )

@@ -24,7 +24,7 @@ const HomeProducts = () => {
     }, [position]);
 
     return(
-        <div className="HomeProducts">
+        <div className="HomeProducts" id="SubComponents">
             <div className="HomeProductsDes" style={{top: `${position}%`}}>
                 <h4 className="HomeProductsDesHead4">Products & Services</h4>
                 <h2 className="HomeProductsDesHead2">Intelligence in View</h2>

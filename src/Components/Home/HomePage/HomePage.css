@@ -1,17 +1,32 @@
 .HomePage{
-    background-color: blueviolet;
     height: 100vh;
     /* width: 100vw; */
     /* width: auto; */
     position: relative;
-    background-image: url("https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_detail/aventador/Ultimae/2023/02_21/aven_ultimae_05.jpg");
-    background-position: center;
-    background-repeat: initial;
-    background-size: cover;
     z-index: 10;
+    scrollbar-width: 1px;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.39);
 }
 
+.downScroll{
+    position: absolute;
+    z-index: 100;
+    margin-bottom: 20px;
+    bottom: 0;
+    transition: 1ms;
+    text-align: center;
+    width: 100%;
+}
+
+.downScroll a{
+    color: whitesmoke;
+    text-decoration: underline;
+
+    border-radius: 9px;
+    padding: 6px 12px;
+    margin-bottom: 10px;
+    margin: auto;
+}
 
 .HomePageCarousel{
     width: auto;
@@ -21,6 +36,7 @@
     height: 100vh;
 }
 .hnhn img{
+    /* display: block; */
     height: 100vh;
     object-fit: cover;
 }
@@ -29,6 +45,7 @@
     /* height: 100vh;
     z-index: 100; */
     position: absolute;
+    display: block;
     text-align: left;
     width: 60%;
     left: 10%;
@@ -44,6 +61,11 @@
     font-family: 'Poppins', sans-serif;
     /* margin-bottom: 8px; */
 }
+.aaaa{
+    width: max-content;
+    display: block;
+    text-decoration: none;
+}
 
 .HomePageDesP{
     width: 100%;
@@ -57,11 +79,29 @@
 
 @media only screen and (max-width: 425px) {
     .HomePageDesHead{
-        font-size: 2rem;
+        font-size: 1.3rem;
+        line-height: 5vh;
     }
+
+    .HomePage{
+        height: 100vh;   
+    }
+
+    .hnhn{
+        height: 100vh;
+    }
+
+    .hnhn img{
+        height: 100vh;
+    }
+
+    .HomePageCarousel{
+        height: 100vh;
+    }
+
     .HomePageDes{
-        width: 60%;
-        top: 50%;
+        width: 80%;
+        top: 20%;
         left: 10%;
     }
     .HomePageDesP{

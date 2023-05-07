@@ -11,7 +11,11 @@ const HomeCareers = () => {
             <div className="HomeCareersDes">
                 <h4 className="HomeCareersDesHead4">CAREERS</h4>
                 <h2 className="HomeCareersDesHead2">"Become part of our team"</h2>
-                <p className="HomeCareersDesP">At Tilive we believe that our people are the key to our success and that the capability of the company is the combined competence of all of us. Join our team and experience the spirit of a well-networked global enterprise offering exciting projects and outstanding development opportunities.</p>
+                <p className="HomeCareersDesP">At Tilive International LLP, we believe that our greatest asset is our talented team
+of professionals. We are a dynamic and rapidly growing consultancy and service
+provider in the Automotive &amp; Engineering sectors, offering exciting career
+opportunities for individuals who are passionate, innovative, and committed to
+excellence.</p>
                 <br />
                 <Link to={"/careers"} className="aaa"><div className="HomeProductsDesViewMoreHEy">
                 {/* <p>&#62;</p> */}

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
-
-const HomePageComponent = ({ top, firstHead, secondHead, firstP, secondP, imgSrc }) => {
+import { Fade } from "react-reveal";
+import { Link } from "react-router-dom";
+ 
+const HomePageComponent = ({ link, top, firstHead, secondHead, firstP, secondP, imgSrc, state }) => {
 
     const [position, setPosition] = useState(top); // Initial position is 0
     const moveAmount = 10; // Adjust this value to change the amount of movement
@@ -8,9 +10,7 @@ const HomePageComponent = ({ top, firstHead, secondHead, firstP, secondP, imgSrc
     useEffect(() => {
       function handleScroll() {
         setPosition(window.pageYOffset/30 + top);
-        // setPosition(window.pageYOffset + moveAmount);
         console.log("this is pageOFFset" + window.pageYOffset);
-        // console.log(moveAmount);
       }
       
       window.addEventListener('scroll', handleScroll);
@@ -20,15 +20,22 @@ const HomePageComponent = ({ top, firstHead, secondHead, firstP, secondP, imgSrc
       };
     }, [position]);
 
+    console.log("Hello");
+    console.log(state);
+
     return(
         <div className="hnhn">
-            <div className="HomePageDes" style={{top: `${position}%`}}>
-                <h2 className="HomePageDesHead">{firstHead}</h2>
-                <h2 className="HomePageDesHead">{secondHead}</h2>
-                <br />
-                <p className="HomePageDesP">{firstP}</p>
-                                <p className="HomePageDesP">{secondP}</p>
-            </div>
+          <Fade>
+              <div className="HomePageDes" style={{top: `${position}%`}}>
+                  <h2 className="HomePageDesHead">{firstHead}</h2>
+                  <h2 className="HomePageDesHead">{secondHead}</h2>
+                  <br />
+                  <p className="HomePageDesP">{firstP}</p>
+                  <p className="HomePageDesP">{secondP}</p>
+                  <Link to={`/${link}`} state={{state}} className="aaaa"><div className="HomeProductsDesViewMore"><p>View More</p></div></Link>
+              </div>
+            </Fade>
+            
             <img src={imgSrc}/>
         </div>
     )
