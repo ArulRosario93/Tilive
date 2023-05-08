@@ -1,21 +1,25 @@
 .ContactUsHome{
     width: 100%;
+    font-family: 'Poppins', sans-serif;
     padding: 15vh 15vh 5vh;
 }
 .ContactUsHomeP{
     font-size: small;
     font-weight: 600;
+    font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
 }
 
 .ContactUsHomeHead{
-    font-size: 4rem;
+    font-size: 4rem;    font-family: 'Poppins', sans-serif;
+
 }
 
 .ContactUsHomePara{
     width: 85%;
     font-size: large;
     font-weight: 400;
+    font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
     /* background-color: aqua;  */
 }

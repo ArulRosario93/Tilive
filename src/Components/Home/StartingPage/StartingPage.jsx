@@ -82,10 +82,10 @@ export const StartingPage = ({ want }) => {
                     <Link to={"/productsservices"}><p>Products & Services</p></Link>
                 </div>
                 <div>
-                    <Link to={"buyonline"}><p>Buy Online</p></Link>
+                    <Link to={"/buyonline"}><p>Buy Online</p></Link>
                 </div>
                 <div>
-                    <Link to={"clients"}><p>Clients</p></Link>
+                    <Link to={"/clients"}><p>Clients</p></Link>
                 </div>
                 <div>
                     <Link to={"/news"}><p>News</p></Link>
@@ -94,7 +94,7 @@ export const StartingPage = ({ want }) => {
                     <Link to={"/careers"}><p>Careers</p></Link>
                 </div>
                 <div>
-                    <Link to={"contactus"}><p>Contact Us</p></Link>
+                    <Link to={"/contactus"}><p>Contact Us</p></Link>
                 </div>
             </div>
         </div>

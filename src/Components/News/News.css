@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 .NewsHeading{
     padding: 15px;
@@ -12,6 +12,7 @@
     width: 26vw;
     height: 380px;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
     object-fit: cover;
 }
 .news {
@@ -30,6 +31,7 @@
     opacity:0;
     text-align: left; 
 }
+
 .container{
       /* background-color: blueviolet; */
       /* padding: 5vh 15px; */
@@ -44,6 +46,7 @@
     justify-content: center;
     align-items: center;
     opacity:1;
+    font-family: 'Poppins', sans-serif;
 }
   
 .text {
@@ -71,6 +74,8 @@
 .newsDescriptionHead{
   font-size: medium;
   /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+
   font-weight: 500;
   text-decoration: underline;
 }
@@ -95,6 +100,7 @@
 }
 
 .NewsContainerHeadHere{
+  font-family: 'Poppins', sans-serif;
   margin-left: 50px;
   margin-bottom: 10px;
 }

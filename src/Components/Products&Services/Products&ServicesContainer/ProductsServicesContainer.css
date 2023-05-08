@@ -12,11 +12,13 @@
 
 .ProductsServicesContainerDes{
     flex: 1;
+    font-family: 'Poppins', sans-serif;
 }
 
 .ProductsServicesContainerDesP{
     width: 90%;
     /* background-color: aqua; */
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     text-align: center;
 }
@@ -24,7 +26,7 @@
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 30px;
-    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Poppins', sans-serif;
 }
 .ProductsServicesContainerImg{
     width: 100%;
@@ -35,7 +37,7 @@
 }
 
 .ProductsServicesContainerDesP{
-    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Poppins', sans-serif;
     font-size: small;
     letter-spacing: 0.6px;
     /* font-weight: 100; */
@@ -57,7 +59,7 @@
     border: 2px solid blueviolet;
     border-radius: 2px;
     /* width: auto; */
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: transparent;
 }
 

@@ -15,6 +15,8 @@
 .CarrersScrollListImgDes{
     position: absolute;
     width: max-content;
+    font-family: 'Poppins', sans-serif;
+
     left: 0;
     color: white;
     background-color: rgba(0, 0, 0, 0.603);
@@ -40,7 +42,7 @@
 }
 
 .CarrersScrollListImgDesHead{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .CarrersScrollListImg img{

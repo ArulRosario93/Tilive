@@ -8,8 +8,8 @@
     margin-bottom: 55px;
     text-align: center;
     font-size: x-large;
-    font-weight: 100;
-    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
     color: black;
 }
 .WeAreMainContent{
@@ -52,10 +52,8 @@
     /* font-weight: 3px; */
     font-size: smaller;
     letter-spacing: 1px;
-    /* word-spacing: 1px; */
-    /* font-family: 'Raleway', sans-serif; */
-    /* font-family: 'Cinzel', serif; */
-    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
 @media only screen and (max-width: 425px) {
@@ -63,13 +61,19 @@
         padding: 15vh 20px 4vh;
         /* border: none; */
     }
+    .WeAreHead{
+        margin-bottom: 30px;
+    }
     .WeAre{
         padding: 55px 0px;
     }
     .WeAreMainContentDes p{
+        font-family: 'Poppins', sans-serif;
         /* border: 1px solid black; */
         /* padding: 5px; */
-        font-size: 0.7rem;
+        letter-spacing: 0px;
+        font-size: x-small;
+        /* font-size: 0.7rem; */
     }
     
 }

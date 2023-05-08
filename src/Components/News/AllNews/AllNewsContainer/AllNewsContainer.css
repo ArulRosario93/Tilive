@@ -15,7 +15,8 @@
 }
 
 .AllNewsContainerStartsHereDes{
-    flex: 1;
+    flex: 1;    font-family: 'Poppins', sans-serif;
+
     /* text-align: left; */
     background-color: rgb(255, 255, 255);
 }
@@ -29,6 +30,7 @@
     padding-top: 10px;
     /* font-family: 'Raleway', sans-serif; */
     font-size: xx-large;
+    font-family: 'Poppins', sans-serif;
     text-decoration: underline;
 }
 
@@ -51,6 +53,8 @@
     letter-spacing: 1px;
     word-spacing: 2px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+
     /* font-family: 'Raleway', sans-serif; */
 }
 

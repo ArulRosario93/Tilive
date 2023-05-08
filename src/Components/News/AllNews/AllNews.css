@@ -4,7 +4,9 @@
 
 .AllNews3GridHead{
     font-weight: 600;
+    
     padding: 25px 10px;
+    font-family: 'Poppins', sans-serif;
     /* font-family: 'Raleway', sans-serif; */
 }
 
@@ -17,6 +19,7 @@
 
 .AllNewsContainerHead{
     color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
     /* font-family: 'Raleway', sans-serif; */
 }
 
@@ -55,6 +58,7 @@
     margin: auto;
     width: 350px;
     height: 350px;
+    font-family: 'Poppins', sans-serif;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.871);
 }

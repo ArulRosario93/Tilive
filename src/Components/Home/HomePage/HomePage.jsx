@@ -89,35 +89,35 @@ const HomePage =() => {
          <div className="HomePage">
       <Carousel transitionTime={600} autoPlay animation={"Fade"} stopOnHover={false} infiniteLoop interval={7000} autoFocus showStatus={false} className="HomePageCarousel" showIndicators={false} showArrows={true}>
 
-                <HomePageComponent top={40} state={MarketingBusiness} link="MarketingBusiness" firstHead="Marketing and Business" secondHead={"Development Services"} firstP="Grow Your Business Exponentially with our Customized Business Development and Marketing Strategies" secondP="Tilive International LLP offers customized business development and marketing strategies for
+                <HomePageComponent top={moveAmount? 35: 40} state={MarketingBusiness} link="MarketingBusiness" firstHead="Marketing and Business" secondHead={"Development Services"} firstP="Grow Your Business Exponentially with our Customized Business Development and Marketing Strategies" secondP="Tilive International LLP offers customized business development and marketing strategies for
   exponential growth in the Automotive and Industrial domain. With strong business networking skills and
   established connections, we tailor solutions to individual needs. Our team builds strong client
   relationships for effective collaboration and communication, ensuring successful outcomes."  imgSrc="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_detail/aventador/Ultimae/2023/02_21/aven_ultimae_05.jpg"/>
 
-                <HomePageComponent top={41} state={SourcingSupplyChain} link="Sourcing&SupplyChain" firstHead="Sourcing and Supply Chain" secondHead="Management Services" secondP="Drive Seamless Operations and Increased Profitability with Expert Sourcing &amp;
+                <HomePageComponent top={moveAmount? 36: 41} state={SourcingSupplyChain} link="Sourcing&SupplyChain" firstHead="Sourcing and Supply Chain" secondHead="Management Services" secondP="Drive Seamless Operations and Increased Profitability with Expert Sourcing &amp;
   Supply Chain Management" firstP="Tilive International LLP offers top-notch consultancy services in sourcing and supply chain management,
   helping businesses optimize their operations. Our experts provide customized solutions in supplier
   selection, logistics, compliance, and sustainability. We prioritize collaboration and communication to
   ensure alignment with clients&#39; vision and values." imgSrc="https://themes10.win/wp-content/uploads/2019/04/forest-mystical-fog-trees-night-starry-sky-1-1024x576.jpg" />
 
-                <HomePageComponent top={40} state={MergerAcquisition} link="Merger&Acquisition" firstHead="Merger &amp; Acquisition" secondHead="Consultancy
+                <HomePageComponent top={moveAmount? 35: 40} state={MergerAcquisition} link="Merger&Acquisition" firstHead="Merger &amp; Acquisition" secondHead="Consultancy
 Services" firstP="We expertly manage your merger and acquisition process, ensuring a seamless
 transition and maximizing value for your business." secondP="Tilive International LLP specializes in providing customized M&amp;A services for the Automotive
 components industry. Our technical and commercial due diligence services help identify risks. We
 prioritize communication and collaboration to align with clients&#39; vision and values."  imgSrc="https://wallpaperaccess.com/full/4434265.jpg"/>
                 
-                <HomePageComponent top={48} state={CEOCFOServices} link="CEO/CFOServices" firstHead="CEO/ CFO Services" secondHead="" firstP="Maximize Your Business Potential with Expert Outsourced CEO and CFO Services
+                <HomePageComponent top={moveAmount? 43: 48} state={CEOCFOServices} link="CEO/CFOServices" firstHead="CEO/ CFO Services" secondHead="" firstP="Maximize Your Business Potential with Expert Outsourced CEO and CFO Services
 from Tilive International LLP – Featuring Certified Independent Directors!" secondP="Tilive International LLP offers trustworthy outsourced CEO and CFO services on a short-term basis. Our
 Certified Independent Directors prioritize integrity and loyalty, collaborating closely with clients to meet
 their specific needs and goals."  imgSrc="https://images.squarespace-cdn.com/content/v1/5c16691b3917ee3bfd77e9ad/1545055598627-GE85GGJ5DDHZZZZTZU5W/VanMalleghem_POLICE001.jpg?format=2500w"/>
                 
-                <HomePageComponent top={50} state={ManufacturingGuild} link="ManufacturingGuild" firstHead="Manufacturing Guild" secondHead="" firstP="Manufacturing Excellence for Rotary Unions, Pole Wheels, Forgings, Tools,
+                <HomePageComponent top={moveAmount? 45: 50} state={ManufacturingGuild} link="ManufacturingGuild" firstHead="Manufacturing Guild" secondHead="" firstP="Manufacturing Excellence for Rotary Unions, Pole Wheels, Forgings, Tools,
 Gauges, and Instruments." secondP="" imgSrc="https://wallpapers.com/images/hd/dark-theme-eerie-forest-eqotskl5ef7i8wod.jpg"/>
                 
-                <HomePageComponent top={51} state={AutomotiveEngineeringParts} link="Automotive&EngineeringParts" firstHead="Automotive and Engineering Parts" secondHead="" firstP="Delivering Excellence: Your Source for World-Class Automotive and Engineering
+                <HomePageComponent top={moveAmount? 46: 51} state={AutomotiveEngineeringParts} link="Automotive&EngineeringParts" firstHead="Automotive and Engineering Parts" secondHead="" firstP="Delivering Excellence: Your Source for World-Class Automotive and Engineering
 Parts." secondP="" imgSrc="https://static.vecteezy.com/system/resources/thumbnails/001/624/835/original/abstract-technology-background-free-video.jpg"/>
                 
-                <HomePageComponent top={51} state={GeneralTrading} link="GeneralTrading" firstHead="General Trading" secondHead="" firstP="Your Trusted Source for a Comprehensive Range of Quality Products for Your
+                <HomePageComponent top={moveAmount? 46: 51} state={GeneralTrading} link="GeneralTrading" firstHead="General Trading" secondHead="" firstP="Your Trusted Source for a Comprehensive Range of Quality Products for Your
 Unique Requirements" secondP="" imgSrc="https://wallpapers.com/images/hd/dark-theme-background-cml7xusbzkcxz371.jpg"/>
           
           </Carousel>

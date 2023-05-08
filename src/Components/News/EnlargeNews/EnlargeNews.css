@@ -34,6 +34,7 @@
     height: 100vh;
     overflow: scroll;
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
     flex: 8;
     color: white;
     margin-left: 350px;
@@ -45,10 +46,12 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    font-family: 'Poppins', sans-serif;
     padding: 85px 75px 40px 40px; 
 }
 .EnLargeNewsHeadingwithshortDesHead{
     /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Poppins', sans-serif;
     font-weight: bolder;
     font-size: xx-large;
     text-decoration: underline;
@@ -58,10 +61,11 @@
     font-size: medium;
     font-weight: 200;
     word-spacing: 0px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .EnLargeNewsHeadingwithDate{
-    font-family: 'Cinzel', serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bolder;
     font-size: x-large;
 }
@@ -73,11 +77,13 @@
 .EnLargeNewsBodyHead{
     /* font-family: 'Raleway', sans-serif; */
     font-size: x-large;
+    font-family: 'Poppins', sans-serif;
     text-decoration: underline;
 }
 .EnLargeNewsBodyDes{
     padding: 30px 15px 15px;
     /* background-color: blue; */
+    font-family: 'Poppins', sans-serif;
 }
 .EnLargeNewsBodyDesPre{
     letter-spacing: 0.8px;
@@ -88,6 +94,7 @@
     /* font-family:'Be Vietnam Pro', sans-serif; */
     font-weight:200;
     font-size: small;
+    font-family: 'Poppins', sans-serif;
 }
 
 .EnlargeNewsCarouselVidHere video {
@@ -115,7 +122,7 @@
 .EnLargeNewsBodyPurchaseNowHead{
     margin: auto;
     font-size: smaller;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding: 15px 35px;
     width: max-content;
     background-color: rgba(255, 255, 255, 0.911);

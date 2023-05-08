@@ -9,7 +9,7 @@ const AboutUsHome  = () => {
   
     useEffect(() => {
       function handleScroll() {
-        setPosition(window.pageYOffset/50 + 35);
+        setPosition(window.pageYOffset/25 + 35);
         // setPosition(window.pageYOffset + moveAmount);
         console.log("this is pageOFFset" + window.pageYOffset);
         // console.log(moveAmount);

@@ -21,11 +21,15 @@
 .NewsHomeDesHead{
     color: white;
     font-size: xx-large;
+    font-family: 'Poppins', sans-serif;
+
     /* font-family: 'Raleway', sans-serif; */
 }
 .NewsHomeDesP{
     color: white;
     font-size: smaller;
+    font-family: 'Poppins', sans-serif;
+    
     letter-spacing: 1px;
     /* font-family: 'Raleway', sans-serif; */
 }

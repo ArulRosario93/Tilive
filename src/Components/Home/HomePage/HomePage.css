@@ -11,7 +11,7 @@
 .downScroll{
     position: absolute;
     z-index: 100;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     bottom: 0;
     transition: 1ms;
     text-align: center;
@@ -21,7 +21,6 @@
 .downScroll a{
     color: whitesmoke;
     text-decoration: underline;
-
     border-radius: 9px;
     padding: 6px 12px;
     margin-bottom: 10px;
