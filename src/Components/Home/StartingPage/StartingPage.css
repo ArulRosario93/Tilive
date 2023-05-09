@@ -38,7 +38,6 @@
 }
 
 .startingPageContainer{
-  /* background-color: rgba(5, 4, 4, 0.911); */
     position: fixed;
     top: 0;
     /* left: 5; */
@@ -217,6 +216,9 @@
 }
 
 @media only screen and (max-width: 425px) {
+  .startingPageContainer{
+    background-color: transparent;
+  }
   .gg{
     display: none;
   }

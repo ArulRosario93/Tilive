@@ -192,11 +192,14 @@
         /* background-color: aqua; */
         padding: 6vh 30px;
     }
+    .EnLargeNewsHeadingwithshortDesDes{
+        font-size: small;
+    }
     .EnLargeNewsImage{
         overflow: hidden;
         position: absolute;
         right: 0;
-        top: 15%;
+        top: 18%;
         margin: auto;
         width: 70%;
         height: 150px;
