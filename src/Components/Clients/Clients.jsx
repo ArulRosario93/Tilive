@@ -13,6 +13,8 @@ const Clients = () => {
 
     const ref = useRef(null);
 
+    const [mobileView, setmobileView] = useState(false);
+
     const [loader, serLoader] = useState(false);
 
     const [OP, setOP] = useState(0);
@@ -65,6 +67,10 @@ const Clients = () => {
             serLoader(true);
         }, 2000);
 
+        if (window.screen.width > 425) {
+            setmobileView(true);
+        }
+
         window.scrollTo({
             top: 0,
             // behavior: 'smooth' // smooth scrolling animation
@@ -92,7 +98,7 @@ const Clients = () => {
 
     return(
         loader? <div>
-            <StartingPage want={true} color={true}/>
+            <StartingPage want={true} color={mobileView}/>
             <ClientsHome />
             <ClientsWhyUs />
             {/* <div ref={ref}><CarrersScrollList heightFound={OP !=0? OP: 2000} docs={docs}/></div> */}
