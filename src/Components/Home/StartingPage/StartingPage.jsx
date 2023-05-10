@@ -108,7 +108,7 @@ export const StartingPage = ({ want, color }) => {
             want? <>
             <div className="navLine">
                <p className="gTHem" onClick={() => handleClick()}>
-                  ===
+                  |||
                </p>
             </div>
             <div className="gg">

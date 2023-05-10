@@ -56,6 +56,9 @@ const ContactUsForm = () => {
                         </div>
                     </div>
                 </div>
+                <div className="handleCaptureFormText">
+                    <p>Tilive is one of leading consulting firm in the area of biz dev, Sourcing, Marketing, Supply chain management,  Manufacturing, and supply of various of OE and aftermarket parts domestic snd international markets.</p>
+                </div>
                 <div className="handleCaptureFormSubmit">
                     <a className="handleCaptureFormSubmitButton">Submit</a>
                 </div>

@@ -97,6 +97,10 @@ const router = createBrowserRouter([
     path: "/GeneralTrading",
     element: <SubDropPage />,
   },
+  {
+    path: "/PrivacyPolicy",
+    element: <SubDropPage />
+  },
 ]);
 
 // window.onload()

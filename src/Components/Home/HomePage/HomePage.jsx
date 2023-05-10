@@ -87,7 +87,7 @@ const HomePage =() => {
 
     return(
          <div className="HomePage">
-      <Carousel transitionTime={600} autoPlay animation={"Fade"} stopOnHover={false} infiniteLoop interval={7000} autoFocus showStatus={false} className="HomePageCarousel" showIndicators={false} showArrows={true}>
+      <Carousel swipeable={false} transitionTime={600} autoPlay animation={"Fade"} stopOnHover={false} infiniteLoop interval={7000} autoFocus showStatus={false} className="HomePageCarousel" showIndicators={false} showArrows={true}>
 
                 <HomePageComponent top={moveAmount? 35: 40} state={MarketingBusiness} link="MarketingBusiness" firstHead="Marketing and Business" secondHead={"Development Services"} firstP="Grow Your Business Exponentially with our Customized Business Development and Marketing Strategies" secondP="Tilive International LLP offers customized business development and marketing strategies for
   exponential growth in the Automotive and Industrial domain. With strong business networking skills and

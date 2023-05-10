@@ -58,7 +58,9 @@
 }
 
 .gTHem{
-  color: blueviolet;
+  color: white;
+  font-weight: lighter;
+  transform: rotate(90deg);
 }
 
 .dropdown{

@@ -9,7 +9,7 @@ const SubDropPage = () => {
 
     const [mobileView, setmobileView] = useState(false);
 
-    const data = location?.state?.MarketingBusiness ? location?.state?.MarketingBusiness: location?.state?.SourcingSupplyChain ? location?.state?.SourcingSupplyChain: location?.state?.MergerAcquisition ? location?.state?.MergerAcquisition: location?.state?.CEOCFOServices ? location?.state?.CEOCFOServices : location?.state?.ManufacturingGuild ? location?.state?.ManufacturingGuild : location?.state?.AutomotiveEngineeringParts ? location?.state?.AutomotiveEngineeringParts :  location?.state?.GeneralTrading ? location?.state?.GeneralTrading : location?.state?.state ? location?.state?.state: "";
+    const data = location?.state?.MarketingBusiness ? location?.state?.MarketingBusiness: location?.state?.SourcingSupplyChain ? location?.state?.SourcingSupplyChain: location?.state?.MergerAcquisition ? location?.state?.MergerAcquisition: location?.state?.CEOCFOServices ? location?.state?.CEOCFOServices : location?.state?.ManufacturingGuild ? location?.state?.ManufacturingGuild : location?.state?.AutomotiveEngineeringParts ? location?.state?.AutomotiveEngineeringParts :  location?.state?.GeneralTrading ? location?.state?.GeneralTrading : location?.state?.state ? location?.state?.state: location?.state?.PrivacyPolicy ? location?.state?.PrivacyPolicy : "";
     
     useEffect(() => {
         window.scrollTo({

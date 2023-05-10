@@ -96,7 +96,6 @@
     width: max-content;
     margin: 0px 25vh;
     font-family: 'Poppins', sans-serif;
-
     background-color: blueviolet;
 }
 
@@ -107,6 +106,18 @@
     color: white;
 }
 
+.handleCaptureFormText{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.handleCaptureFormText p{
+    font-family: 'Poppins', sans-serif;
+    font-size: x-small;
+    width: 80%;
+    margin: 25px;
+}
 
 @media only screen and (max-width: 768px) {
     .handleCapture{
@@ -176,6 +187,12 @@
 }
 
 @media only screen and (max-width: 425px) {
+    .handleCaptureFormText p{
+        /* font-family: 'Poppins', sans-serif; */
+        font-size: xx-small;
+        margin: 0px 25px;
+        width: 90%;
+    }
     .handleCaptureFormSubmit{
         margin: auto;
         padding: 10px 50px;
