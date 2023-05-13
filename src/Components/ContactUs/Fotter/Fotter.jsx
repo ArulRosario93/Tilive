@@ -15,7 +15,7 @@ const Fotter = () => {
                     <div>
                         <Link to={"/careers"} className="fotterLink"><p>Careers</p></Link>
                         <Link to={"/news"} className="fotterLink"><p>News</p></Link>
-                        <Link to={"/productsservices"} className="fotterLink"><p>Products & Services</p></Link>
+                        <Link to={"/contactus"} className="fotterLink"><p>Contact Us</p></Link>
                     </div>
                 </div>
                 <div>

@@ -58,6 +58,8 @@ const AllNewsContainer = () => {
     }
 
     return(
+        <>
+
         <div className="AllNewsCreativeContainer">
                     <h2 className="AllNewsContainerStartsHereDesHead">{docs?.eventName?.stringValue}</h2>
             <div className="AllNewsContainerStartsHere">
@@ -74,8 +76,9 @@ const AllNewsContainer = () => {
                     
                 </div>
             </div>
-            <div className="NewsHomeTopNewsContentDesViewMore"><Link to={"/moredetail"} state={{stateChange}}><button>View More Detail</button></Link></div>
         </div>
+            <div className="NewsHomeTopNewsContentDesViewMore" style={{marginLeft: "50px"}}><Link to={"/moredetail"} state={{stateChange}}><button>View More Detail</button></Link></div>
+        </>
     )
 }
 

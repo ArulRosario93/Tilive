@@ -9,7 +9,7 @@
 }
 
 .NewsHomeTopNews{
-    height: 85vh;
+    padding-top: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -32,15 +32,17 @@
 }
 
 .NewsHomeTopNewsImageGoesHere img{
-    width: 100%;
+    width: 50vh;
+    border-radius: 100%;
     object-fit: cover;
-    height: 70vh;
+    height: 50vh;
 }
 
 .NewsHomeTopNewsImageGoesHere video{
-    width: 100%;
+    width: 50vh;
+    border-radius: 100%;
     object-fit: cover;
-    height: 70vh;
+    height: 50vh;
 }
 
 .NewsHomeTopNewsContentDesMainHead{
@@ -59,7 +61,7 @@
 }
 
 .NewsHomeTopNewsContentDesP{
-    font-size: medium;
+    font-size: small;
     /* font-family: 'Raleway', sans-serif; */
     font-family: 'Poppins', sans-serif;
 
@@ -67,7 +69,7 @@
 }
 
 .NewsHomeTopNewsContentDesViewMore{
-    margin: 25px 20px;
+    margin: 0   px 40px;
     /* width: 100%; */
     float: left;
     font-family: 'Poppins', sans-serif;

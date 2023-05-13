@@ -9,6 +9,7 @@ import AllNews3Grid from "./AllNews3Grid/AllNews3Grid";
 import AllNewsHead from "./AllNewsHead/AllNewsHead";
 import AllNewsContainer from "./AllNewsContainer/AllNewsContainer";
 import Loader from "../../Loader/Loader";
+import Fotter from "../../ContactUs/Fotter/Fotter";
 
 const AllNews = () => {
 
@@ -41,6 +42,12 @@ const AllNews = () => {
                         {/* <Fade bottom> */}
                             <AllNewsContainer />
                         {/* </Fade> */}
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <Fotter />
                     </div>            
                 </div>
             }

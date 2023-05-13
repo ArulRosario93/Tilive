@@ -68,7 +68,8 @@ const NewsHomeTopNews = () => {
                     <br />
                     <br />
                     <p className="NewsHomeTopNewsContentDesP">{des}</p>
-                
+                    <br />
+                    {/* <br /> */}
                     <Fade><div className="NewsHomeTopNewsContentDesViewMore"><Link to="/moredetail" state={{stateChange}}><button onClick={()=> {console.log("CLicked Here on")}}>View In Detail</button></Link></div></Fade>
                 </div>
             </div>

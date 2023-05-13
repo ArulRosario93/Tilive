@@ -10,7 +10,7 @@
     font-size: small    ;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .fotterLink{

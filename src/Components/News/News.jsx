@@ -52,9 +52,9 @@ const newsItems = [
                 News
             </h1> */}
                 <NewsHome />
-                {/* <Fade> */}
-                <NewsHomeTopNews />
-                {/* </Fade> */}
+                <Fade>
+                    <NewsHomeTopNews />
+                </Fade>
                 <br />
                     <h2 className='NewsContainerHeadHere'>News</h2>
                     <NewsContainer />

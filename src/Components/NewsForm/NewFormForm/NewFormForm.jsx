@@ -159,10 +159,10 @@ const NewsFormForm = () => {
                             <p className="newsformeventdesp">Event Caption</p>
                             <input className="newsformeventdesinput" autoComplete="off" onChange={(e) => setEventCaption(e.target.value)} type="text" name="eventcap"/>
                         </div>
-                        <div className="newsformeventdesEventCap">
+                        {/* <div className="newsformeventdesEventCap">
                             <p className="newsformeventdesp">Event Type</p>
                             <input className="newsformeventdesinput" type="text" placeholder="Event | Company Update | Major News | Casual News"/>
-                        </div>
+                        </div> */}
                         <div className="newsformeventdesEventDes">
                             <p className="newsformeventdesp">Description*</p>
                             <textarea draggable={false} spellCheck className="newsformeventdesinput" onChange={(e) => setEventDescription(e.target.value)} type="text" name="eventdes" required/>
