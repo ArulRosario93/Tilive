@@ -1,5 +1,5 @@
 .CareersHome{
-    height: 110vh;
+    height: 100vh;
     position: relative;
     /* background-color: aliceblue; */
 }
@@ -8,9 +8,9 @@
     background-image: url("./image.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     /* box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.49); */
-    height: 110vh;
+    height: 100vh;
     width: 100%;
 }
 

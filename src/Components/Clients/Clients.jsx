@@ -8,6 +8,7 @@ import { StartingPage } from "../Home/StartingPage/StartingPage";
 import { firebasee } from "../../firebase";
 import { getDocs, collection, orderBy, query } from "firebase/firestore";
 import CarrersScrollList from "../Careers/CarrersScrollList/CarrersScrollList";
+import Fotter from "../ContactUs/Fotter/Fotter";
 
 const Clients = () => {
 
@@ -105,7 +106,7 @@ const Clients = () => {
             <div ref={ref}>
             <ScrollingComponent  heightStartsHere={OP != 0? OP : 2000} timestamp1={finalONe1} timestamp2={finalONe2} timestamp3={finalONe3} firstImage={docFound[0]?.linkURl} secondImage={docFound[1]?.linkURl} thirdImage={docFound[2]?.linkURl} firstHead={docFound[0]?.eventName} firstDes={docFound[0]?.eventDescription} secondHead={docFound[1]?.eventName} secondDes={docFound[0]?.eventDescription} thirdHead={docFound[2]?.eventName} thirdDes={docFound[2]?.eventDescription} firstLink="" secondLink="" thirdLink="" />
             </div>
-            <ClientFotter />
+            <Fotter />
         </div> : <Loader />
     )
 }

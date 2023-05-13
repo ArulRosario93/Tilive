@@ -10,6 +10,7 @@ import HomeNav from "./HomeNav/HomeNav";
 
 import CookieConsent, { Cookies } from "react-cookie-consent";
 import { Link } from "react-router-dom";
+import Fotter from "../ContactUs/Fotter/Fotter";
 
 const Home = () => {
 
@@ -55,7 +56,7 @@ const Home = () => {
            <HomeNav />
            {/* <HomeProducts /> */}
            <HomeCareers />
-           <HomeFooter />
+           <Fotter />
         </div>
     )
 }

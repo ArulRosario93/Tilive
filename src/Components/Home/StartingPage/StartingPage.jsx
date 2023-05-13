@@ -107,7 +107,13 @@ export const StartingPage = ({ want, color }) => {
             </div>
         </div>
 
-         <Link to={"/contactus"}><button id="float_contact">CONTACT US</button></Link>
+         <Link to={"/contactus"} >
+            {
+               want? 
+            <button id="float_contact">CONTACT US</button> : <div></div>
+            }
+         </Link>
+         
             <div className='start'>
             
           {

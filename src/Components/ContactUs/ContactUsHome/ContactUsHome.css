@@ -11,8 +11,11 @@
 }
 
 .ContactUsHomeHead{
-    font-size: 4rem;    font-family: 'Poppins', sans-serif;
-
+    font-size: 4rem;    
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    margin-top:6px;
+    line-height: 11vh;
 }
 
 .ContactUsHomePara{

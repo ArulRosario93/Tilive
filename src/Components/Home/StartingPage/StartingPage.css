@@ -13,12 +13,12 @@
     padding: 5px;
   }
   
-  .TiliveInternational{
+.TiliveInternational{
     margin-right: 30px;
     font-size: large;
     font-weight: lighter;
-  font-family: 'Poppins',   sans-serif;
-  text-align: right;
+    font-family: 'Poppins',   sans-serif;
+    text-align: right;
 }
 .start{
   padding: 10px;
@@ -237,13 +237,13 @@
   }
 
   .TiliveInternational{
-    margin-top: 10px;
+    margin-top: 9px;
     font-size: medium;
   }
 
   #startlogo{
     height: 90px;
-    /* margin-top: 18px; */
+    margin-top: 12px;
     margin-left: 15px;
     width: 140px;
   }

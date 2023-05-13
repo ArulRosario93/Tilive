@@ -3,6 +3,7 @@ import ContactUsHome from "./ContactUsHome/ContactUsHome";
 import ContactUsForm from "./ContactUsForm/ContactUsForm";
 import Loader from "../Loader/Loader";
 import { StartingPage } from "../Home/StartingPage/StartingPage";
+import Fotter from "./Fotter/Fotter";
 
 const ContactUs = () => {
 
@@ -17,6 +18,7 @@ const ContactUs = () => {
             <StartingPage want={false}/>
             <ContactUsHome />
             <ContactUsForm />
+            <Fotter />
         </div>: <Loader />
     )
 }   

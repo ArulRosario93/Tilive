@@ -121,9 +121,9 @@ Parts." secondP="" imgSrc="https://static.vecteezy.com/system/resources/thumbnai
 Unique Requirements" secondP="" imgSrc="https://wallpapers.com/images/hd/dark-theme-background-cml7xusbzkcxz371.jpg"/>
           
           </Carousel>
-            {
+            {/* {
               moveAmount? <div className="downScroll"><a href="#SubComponents">Go Down</a></div>: ""
-            }
+            } */}
          </div>
     )
 }
