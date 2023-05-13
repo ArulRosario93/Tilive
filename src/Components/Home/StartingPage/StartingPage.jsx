@@ -221,7 +221,7 @@ Services</button></Link>
                <button type='button' className='startingPageAbout startingButton'>Administrator</button>
             </Link>
             </div>
-         </>: <div><p className="TiliveInternational">Tilive International</p></div>
+         </>: <div><p className="TiliveInternational">Tilive International LLP</p></div>
           }
      </div>
     </div>

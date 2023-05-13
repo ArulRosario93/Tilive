@@ -46,3 +46,40 @@
     padding: 20px 30px;
     box-sizing: border-box;
 }
+
+.FotterFlexTwoDes{
+    width: 100%;
+}
+
+.FotterFlexTwoDes p{
+    text-align: center;
+}
+
+/* . */
+
+@media only screen and (max-width: 425px) {
+    .FotterFlexTwoBranch{
+        text-align: center;
+        margin: 0px;
+    }
+    .FotterFlexTwoBranch{
+        flex: 1;
+        font-size: x-small;
+    }
+    .FotterFlexTwoRegistered{
+        font-size: x-small;
+        flex: 1;
+    }
+    .FotterFlex{
+        flex: 1;
+        flex-direction: column;
+        font-size: x-small;
+        justify-content: center;
+        text-align: center;
+    }
+    .FotterFlexOne{
+        width: 100%;
+        flex: 1;
+        justify-content: space-around;
+    }
+}

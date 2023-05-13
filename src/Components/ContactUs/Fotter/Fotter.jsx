@@ -18,21 +18,28 @@ const Fotter = () => {
                         <Link to={"/productsservices"} className="fotterLink"><p>Products & Services</p></Link>
                     </div>
                 </div>
-                <div className="FotterFlexTwo">
-                    <div className="FotterFlexTwoBranch">
-                        <h3>Branch office:</h3>
-                        <p>G-31, Sunshree Woods Commercial Complex</p>
-                        <p>NIBM Road, Kondhwa, Pune- 411048</p>
-                        <p>Maharashtra, India</p>
+                <div>
+                    <div className="FotterFlexTwo">
+                        <div className="FotterFlexTwoBranch">
+                            <h3>Branch office:</h3>
+                            <p>G-31, Sunshree Woods Commercial Complex</p>
+                            <p>NIBM Road, Kondhwa, Pune- 411048</p>
+                            <p>Maharashtra, India</p>
+                        </div>
+                        <br />
+                        <div className="FotterFlexTwoRegistered">
+                            <h3>Registered office:</h3>
+                            <p>P-12, Sacred Heart Town</p>
+                            <p>Wanawadi, Pune- 411040</p>
+                            <p>Maharashtra, India</p>   
+                        </div>
                     </div>
-                    <br />
-                    <div className="FotterFlexTwoRegistered">
-                        <h3>Registered office:</h3>
-                        <p>P-12, Sacred Heart Town</p>
-                        <p>Wanawadi, Pune- 411040</p>
-                        <p>Maharashtra, India</p>
+                    <div className="FotterFlexTwoDes">
+                        <p>Tel: +91 20 4932 9761 I Mob: +91 78754 44099 I 95112 68475</p>
+                        <p>Email: info@tilive.co.in I Website: www.tilive.co.in</p>
                     </div>
                 </div>
+
             </div>
         </div>
     )
