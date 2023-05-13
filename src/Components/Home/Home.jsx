@@ -53,7 +53,7 @@ const Home = () => {
            <StartingPage want={true} />
            <HomePage />
            <HomeNav />
-           <HomeProducts />
+           {/* <HomeProducts /> */}
            <HomeCareers />
            <HomeFooter />
         </div>

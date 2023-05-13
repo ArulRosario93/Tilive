@@ -46,7 +46,11 @@
     position: absolute;
     display: block;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 60%;
+    height: 100vh;
     left: 10%;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;

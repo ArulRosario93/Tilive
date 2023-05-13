@@ -106,7 +106,7 @@ transition and maximizing value for your business." secondP="Tilive Internationa
 components industry. Our technical and commercial due diligence services help identify risks. We
 prioritize communication and collaboration to align with clients&#39; vision and values."  imgSrc="https://wallpaperaccess.com/full/4434265.jpg"/>
                 
-                <HomePageComponent top={moveAmount? 43: 48} state={CEOCFOServices} link="CEO/CFOServices" firstHead="CEO/ CFO Services" secondHead="" firstP="Maximize Your Business Potential with Expert Outsourced CEO and CFO Services
+                <HomePageComponent top={moveAmount? 43: 48} state={CEOCFOServices} link="CEOServices" firstHead="CEO/ CFO Services" secondHead="" firstP="Maximize Your Business Potential with Expert Outsourced CEO and CFO Services
 from Tilive International LLP – Featuring Certified Independent Directors!" secondP="Tilive International LLP offers trustworthy outsourced CEO and CFO services on a short-term basis. Our
 Certified Independent Directors prioritize integrity and loyalty, collaborating closely with clients to meet
 their specific needs and goals."  imgSrc="https://images.squarespace-cdn.com/content/v1/5c16691b3917ee3bfd77e9ad/1545055598627-GE85GGJ5DDHZZZZTZU5W/VanMalleghem_POLICE001.jpg?format=2500w"/>

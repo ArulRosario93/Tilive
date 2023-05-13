@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { createBrowserHistory } from "history";
 import './StartingPage.css';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
+
+import logoImage from "./logo.png";
 
 export const StartingPage = ({ want, color }) => {
 
@@ -70,8 +72,14 @@ export const StartingPage = ({ want, color }) => {
         setStyle(!stylee);
    }
 
+   var navigate = useNavigate();
+
    return (
-    <div className="startingPageContainer" style={{background: color? "black": "transparent"}}>
+    <div className="startingPageContainer">
+    {/* <Link to={"/"}> */}
+    <img onClick={() => navigate("/")} id="startlogo" style={{borderRadius: '50px'}} src={logoImage} alt="ehh"></img>
+      {/* <button id="floating_btn" style={{outline: "none", background: 'transparent', border: 'none', cursor: '-moz-initial'}}></button> */}
+   {/* </Link> */}
     <div className="HomeNav" style={{opacity: stylee? "1": "0", display: stylee? "block": "block", zIndex: stylee? "1000": "0", height: stylee? "100vh": "0vh", width: stylee? "100%": "0%",}}>
             <h1 className="HomeNavClose" onClick={() => handleClick()}>X</h1>
             <div className="HomeNavNav">
@@ -101,9 +109,7 @@ export const StartingPage = ({ want, color }) => {
 
          <Link to={"/contactus"}><button id="float_contact">CONTACT US</button></Link>
             <div className='start'>
-            <Link to={"/"}>
-               <button id="floating_btn" style={{outline: "none", background: 'transparent', border: 'none', cursor: '-moz-initial'}}><img id="startlogo" style={{borderRadius: '50px'}} src="https://t3.ftcdn.net/jpg/02/05/46/30/360_F_205463037_cXsFsDC65v6ZlZlqoDYabosy0sZnwReO.jpg" alt="ehh"></img></button>
-            </Link>
+            
           {
             want? <>
             <div className="navLine">
@@ -128,7 +134,7 @@ export const StartingPage = ({ want, color }) => {
             <button type='button' className='startingPageBuy startingButton'>Buy Online</button>
          </Link>
 
-         <Link to="/productsservices"><button type='button' className='startingPageNews startingButton'>
+         <button type='button' className='startingPageNews startingButton'>
          <div class="dropdown">
             <button class="dropbtn">Products & Services</button>
             <div class="dropdown-content">
@@ -164,7 +170,7 @@ Services</button></Link>
                </div>
             </div>
             <div class="sub-dropdown">
-               <Link to={"/CEO/CFOServices"} state={{ CEOCFOServices }}><button class="sub-dropbtn">CEO/ CFO Services</button></Link>
+               <Link to={"/CEOServices"} state={{ CEOCFOServices }}><button class="sub-dropbtn">CEO/ CFO Services</button></Link>
                <div class="sub-dropdown-content" style={{top: '35%'}}>
                <button className="insubdropbtn">Edward Newgate</button>
                <button className="insubdropbtn">Marco</button>
@@ -199,10 +205,9 @@ Services</button></Link>
                <button className="insubdropbtn">Doflamingo</button>
                </div>
             </div>
-  </div>
-</div>
-</button>
-         </Link>
+         </div>
+         </div>
+         </button>
             <Link to="/aboutus">
                <button type='button' className='startingPageAbout startingButton'>About Us</button>
             </Link>
@@ -210,7 +215,7 @@ Services</button></Link>
                <button type='button' className='startingPageAbout startingButton'>Administrator</button>
             </Link>
             </div>
-         </>: null
+         </>: <div><p className="TiliveInternational">Tilive International</p></div>
           }
      </div>
     </div>
