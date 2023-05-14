@@ -60,19 +60,6 @@ const NewsHomeTopNews = () => {
         <h1 className="topNewsHead">Top Activity</h1>
         <div className="NewsHomeTopNews">
             <h1></h1>
-            <div className="NewsHomeTopNewsContent">
-                <div className="NewsHomeTopNewsContentDes">
-                    <h1 className="NewsHomeTopNewsContentDesMainHead">{docs?.eventName?.stringValue}</h1>
-                    <br />
-                    <h5 className="NewsHomeTopNewsContentDesHead">{docs?.eventCaption?.stringValue}</h5>
-                    <br />
-                    <br />
-                    <p className="NewsHomeTopNewsContentDesP">{des}</p>
-                    <br />
-                    {/* <br /> */}
-                    <Fade><div className="NewsHomeTopNewsContentDesViewMore"><Link to="/moredetail" state={{stateChange}}><button onClick={()=> {console.log("CLicked Here on")}}>View In Detail</button></Link></div></Fade>
-                </div>
-            </div>
             <div className="NewsHomeTopNewsImage">
                 <div className="NewsHomeTopNewsImageGoesHere">
 
@@ -82,6 +69,18 @@ const NewsHomeTopNews = () => {
                         </video>
                     }    
                 
+                </div>
+            </div>
+            <div className="NewsHomeTopNewsContent">
+                <div className="NewsHomeTopNewsContentDes">
+                    <h1 className="NewsHomeTopNewsContentDesMainHead">{docs?.eventName?.stringValue}</h1>
+                    {/* <br /> */}
+                    <h5 className="NewsHomeTopNewsContentDesHead">{docs?.eventCaption?.stringValue}</h5>
+                    <br />
+                    <p className="NewsHomeTopNewsContentDesP">{des}</p>
+                    <br />
+                    {/* <br /> */}
+                    <Fade><div className="NewsHomeTopNewsContentDesViewMore"><Link to="/moredetail" state={{stateChange}}><button onClick={()=> {console.log("CLicked Here on")}}>View In Detail</button></Link></div></Fade>
                 </div>
             </div>
         </div>

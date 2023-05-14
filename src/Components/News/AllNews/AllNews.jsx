@@ -40,7 +40,7 @@ const AllNews = () => {
                         {/* </Fade> */}
 
                         {/* <Fade bottom> */}
-                            <AllNewsContainer />
+                            {/* <AllNewsContainer /> */}
                         {/* </Fade> */}
                         <br />
                         <br />

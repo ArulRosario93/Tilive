@@ -9,6 +9,7 @@ import ProductsServicesFotter from "./ProductsServicesFotter/ProductsServicesFot
 
 import { getDocs, query, collection, orderBy } from "firebase/firestore";
 import { firebasee } from "../../firebase.js";
+import HomePage from "../Home/HomePage/HomePage.jsx";
 
 const ProductsServices = () => {
 
@@ -86,11 +87,7 @@ const ProductsServices = () => {
     return(
         loader? <div>
             <StartingPage want={true}/>
-            <ProductsServicesHomeHead />
-            <ProductsServicesContainer />
-            <ProductsServicesGrid />
-            <div ref={ref}><ScrollingComponent heightStartsHere={OP != 0? OP : 2000} firstImage={docs1?.linkURl[0]?.stringValue} timestamp1={finalONe1} timestamp2={finalONe2} timestamp3={finalONe3} secondImage={docs2?.linkURl[0]?.stringValue} thirdImage={docs3?.linkURl[0]?.stringValue} firstHead={docs1?.eventName} firstDes={docs1?.eventDescription} secondHead={docs2?.eventName} secondDes={docs2?.eventDescription} thirdHead={docs3?.eventName} thirdDes={docs3?.eventDescription} firstLink="" secondLink="" thirdLink=""/></div>
-            <ProductsServicesFotter />
+            <HomePage />
         </div> : <Loader />
     )
 }
