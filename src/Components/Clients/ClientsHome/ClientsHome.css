@@ -22,7 +22,6 @@
     font-family: 'Poppins', sans-serif;
     top: 35vh;
     left: 8vw;
-    width: 70%;
 }
 
 .ClientsHomeDesHeadThird{
@@ -39,8 +38,9 @@
     /* color: antiquewhite; */
     padding: 0px 8px;
     margin: 0%;
-    background-color: rgba(137, 43, 226, 0.63);
+    background-color: rgb(61, 43, 226);
     width: max-content;
+    font-size: larger;
     font-style: italic;
     font-size: 30px;
     font-weight: 200;
@@ -63,6 +63,7 @@
 @media only screen and (max-width: 425px) {
     .ClientsHomeDesHeadOne{
         font-size: 1rem;
+        /* word-wrap: break-word; */
     }
     .ClientsHomeDes{
         width: 90%;
@@ -74,6 +75,6 @@
         top: 25vh;
     }
     .ClientsHomeDesPSpan{
-        font-size: x-small;
+        font-size: small;
     }
 }

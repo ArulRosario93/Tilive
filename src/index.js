@@ -32,6 +32,11 @@ import AutomobileAndEngineeringParts from './Components/AutomobileAndEngineering
 import AutomobileAndEngineeringPartsWriteUp from './Components/AutomobileAndEngineeringParts/AutomobileAndEngineeringPartsWriteUp/AutomobileAndEngineeringPartsWriteUp';
 import GenralTrading from './Components/GeneralTrading/GenralTrading';
 import GenralTradingWriteUp from './Components/GeneralTrading/GenralTradingWriteUp/GenralTradingWriteUp';
+import Casting from './Components/Sourcing&SupplyChain/Casting/Casting';
+import MachinedComponents from './Components/Sourcing&SupplyChain/MachinedComponents/MachinedComponents';
+import Forging from './Components/Sourcing&SupplyChain/Forging/Forging';
+import PlasticAndRubberParts from './Components/Sourcing&SupplyChain/Plastic&RubberParts/Plastic&RubberParts';
+import SheetMetalFabricatedParts from './Components/Sourcing&SupplyChain/SheetMetal&FabricatedParts/SheetMetal&FabricatedParts';
 
 const history = createBrowserHistory();
 
@@ -142,6 +147,26 @@ const router = createBrowserRouter([
   {
     path: "/GenralTradingWriteUp",
     element: <GenralTradingWriteUp />
+  },
+  {
+    path: "/Casting",
+    element: <Casting />
+  },
+  {
+    path: "/MachinedComponents",
+    element: <MachinedComponents />
+  },
+  {
+    path: "/Forging",
+    element: <Forging />
+  },
+  {
+    path: "/PlasticAndRubberParts",
+    element: <PlasticAndRubberParts />
+  },
+  {
+    path: "/SheetMetalFabricatedParts",
+    element: <SheetMetalFabricatedParts />
   },
 ]);
 

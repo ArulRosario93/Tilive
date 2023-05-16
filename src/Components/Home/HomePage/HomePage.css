@@ -37,7 +37,7 @@
 .hnhn img{
     /* display: block; */
     height: 100vh;
-    object-fit: cover;
+    object-fit:cover;
 }
 
 .HomePageDes{
@@ -57,7 +57,7 @@
 }   
 
 .HomePageDesHead{
-    color: rgb(247, 247, 247);
+    color: rgb(0, 0, 0);
     /* width: 60%; */
     line-height: 7vh;
     font-size: 2.7rem;
@@ -72,8 +72,18 @@
 
 .HomePageDesP{
     width: 100%;
-    color: rgb(236, 236, 236);
+    color: rgb(0, 0, 0);
     font-size: 0.9rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.HomePageDesPP{
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
     margin-bottom: 20px;
     letter-spacing: 1px;
     font-weight: 500;

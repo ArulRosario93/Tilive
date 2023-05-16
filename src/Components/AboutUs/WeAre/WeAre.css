@@ -5,7 +5,7 @@
 }
 
 .WeAreHead{
-    margin-bottom: 55px;
+    margin-bottom: 45px;
     text-align: center;
     font-size: x-large;
     font-weight: 600;
@@ -62,9 +62,10 @@
         /* border: none; */
     }
     .WeAreHead{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     .WeAre{
+        height: 90vh;
         padding: 55px 0px;
     }
     .WeAreMainContentDes p{

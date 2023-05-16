@@ -9,10 +9,6 @@
     flex-direction: row;
 }
 
-.HomeCareersImg{
-    /* width: 50%; */
-}
-
 .HomeCareersImgImg{
     margin: auto;
     width: 500px;
@@ -41,7 +37,7 @@
 .HomeCareersDesHead2{
     font-style: italic;
     color: whitesmoke;
-    background-color: blueviolet;
+    background-color: rgb(61, 43, 226);
     width: max-content;
     margin: 10px 0px;
     letter-spacing: 1px;
@@ -63,7 +59,7 @@
     width: max-content;
     text-decoration: none;
     display: flex;
-    background-color: blueviolet;
+    background-color: rgb(61, 43, 226);
     flex-direction: row;
     border-radius: 5px;
     font-family: 'Poppins', sans-serif;

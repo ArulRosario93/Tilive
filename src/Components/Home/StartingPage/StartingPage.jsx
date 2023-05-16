@@ -159,10 +159,11 @@ Services</button></Link>
                <Link to={"/Sourcing&SupplyChain"} state={{ SourcingSupplyChain }}><button class="sub-dropbtn">Sourcing and Supply Chain
 Management Services</button></Link>
                <div class="sub-dropdown-content" style={{top: '10%'}}>
-               <button className="insubdropbtn">Monkey D Luffy</button>
-               <button className="insubdropbtn">Roronoa Zoro</button>
-               <button className="insubdropbtn">Vinsmoke Sanji</button>
-               <button className="insubdropbtn">Usopp</button>
+               <Link to={"/Casting"}><button className="insubdropbtn">Casting</button></Link>
+               <Link to={"/Forging"}><button className="insubdropbtn">Forging</button></Link>
+               <Link to={"/MachinedComponents"}><button className="insubdropbtn">Machined Components</button></Link>
+               <Link to={"/SheetMetalFabricatedParts"}><button className="insubdropbtn">Sheet Metal & Fabricated Parts</button></Link>
+               <Link to={"/PlasticAndRubberParts"}><button className="insubdropbtn">Plastic & Rubber Parts</button></Link> 
                </div>
             </div>
             <div class="sub-dropdown">
@@ -217,9 +218,9 @@ Services</button></Link>
             <Link to="/aboutus">
                <button type='button' className='startingPageAbout startingButton'>About Us</button>
             </Link>
-            <Link to="/newsform">
+            {/* <Link to="/newsform">
                <button type='button' className='startingPageAbout startingButton'>Administrator</button>
-            </Link>
+            </Link> */}
             </div>
          </>: <div><p className="TiliveInternational">Tilive International LLP</p></div>
           }

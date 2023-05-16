@@ -13,7 +13,7 @@ const Fotter = () => {
                         <Link to={"/clients"} className="fotterLink"><p>Clients</p></Link>
                     </div>
                     <div>
-                        <Link to={"/careers"} className="fotterLink"><p>Careers</p></Link>
+                        <Link to={"/newsform"} className="fotterLink"><p>Administrator</p></Link>
                         <Link to={"/news"} className="fotterLink"><p>News</p></Link>
                         <Link to={"/contactus"} className="fotterLink"><p>Contact Us</p></Link>
                     </div>
@@ -35,8 +35,8 @@ const Fotter = () => {
                         </div>
                     </div>
                     <div className="FotterFlexTwoDes">
-                        <p>Tel: +91 20 4932 9761 I Mob: +91 78754 44099 I 95112 68475</p>
-                        <p>Email: info@tilive.co.in I Website: www.tilive.co.in</p>
+                        <p>Tel: +91 20 4932 9761 &nbsp; I &nbsp; Mob: +91 78754 44099 &nbsp; I &nbsp; 95112 68475</p>
+                        <p>Email: info@tilive.co.in &nbsp; I &nbsp;  Website: www.tilive.co.in</p>
                     </div>
                 </div>
 

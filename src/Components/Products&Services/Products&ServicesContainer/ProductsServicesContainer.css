@@ -56,7 +56,7 @@
 
 .ProductsServicesContainerViewInDetail button{
     padding: 7px 12px;
-    border: 2px solid blueviolet;
+    border: 2px solid rgb(61, 43, 226);
     border-radius: 2px;
     /* width: auto; */
     font-family: 'Poppins', sans-serif;
@@ -86,9 +86,9 @@
         height: 50vh;
         width: 100%;
     }
-    .ProductsServicesContainerViewInDetail button{
+    .ProductsServicesContainerInDetail button{
         padding: 3px 9px;
-        border: 0.8px solid blueviolet;
+        border: 0.8px solid rgb(61, 43, 226);
         border-radius: 2px;
         /* width: auto; */
         font-family: 'Raleway', sans-serif;

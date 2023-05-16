@@ -38,7 +38,7 @@ const SourcingSupplyChain = () => {
         <div>
             <StartingPage want={true} color={mobileView? true: false} />
         <div className="SubDropPageforMarketing">
-                <h1 className="SubDropPageH1">Sourcing & SupplyChain</h1>
+                <h1 className="SubDropPageH1">Sourcing & Supply Chain Management</h1>
                     <br />
         <br />
                 <div className="SubDropPageGGG">

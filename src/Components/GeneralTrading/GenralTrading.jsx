@@ -37,7 +37,7 @@ const GenralTrading = () => {
         <div>
             <StartingPage want={true} color={mobileView? true: false} />
         <div className="SubDropPageforMarketing">
-                <h1 className="SubDropPageH1">Genral Trading</h1>
+                <h1 className="SubDropPageH1">General Trading</h1>
                     <br />
                 <div className="SubDropPageGGG">
                 <Carousel autoPlay interval={6000} selectedItem={0} onChange={(i) => onChangeCaptured(i)} showArrows={false} showIndicators={false} stopOnHover={false} showStatus={false} showThumbs={false} className="CarouselForMarketBusiness" infiniteLoop>
@@ -71,10 +71,10 @@ const GenralTrading = () => {
                             <br />
                             <p>At Tilive International LLP, we are committed to providing top-notch consultancy services in the domain of sourcing and supply chain management. Our team of experts has extensive experience in the industry and is well-equipped to help businesses optimize their sourcing and supply chain operations.</p>
                             <br />
-                            {
+                            {/* {
                                 mobileView? <div></div>: <p>We understand that managing sourcing and supply chain operations can be complex and time - consuming, and we strive to simplify the process for our clients. We work closely with businesses to identify areas of improvement and develop customized solutions to meet their specific needs and goals.
 </p>
-                            }
+                            } */}
                             <br />
                                 <Link to={"/GenralTradingWriteUp"}><div>View More</div></Link>
                             <br />

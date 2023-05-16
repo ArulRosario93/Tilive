@@ -9,7 +9,7 @@ const AboutUsHome  = () => {
   
     useEffect(() => {
       function handleScroll() {
-        setPosition(window.pageYOffset/25 + 35);
+        setPosition(window.pageYOffset/15 + 35);
         // setPosition(window.pageYOffset + moveAmount);
         console.log("this is pageOFFset" + window.pageYOffset);
         // console.log(moveAmount);
@@ -26,7 +26,7 @@ const AboutUsHome  = () => {
         <div className="AboutUsHome">
             <Fade bottom slow>
                 <div className="AboutUsHomeDes" style={{top: `${position}vh`}}>
-                    <h1 className="AboutUsHomeDesHead">Trust Integrity Loyalty is our DNA</h1>
+                    <h1 className="AboutUsHomeDesHead">Trust + Integrity + Loyalty is our DNA</h1>
                 </div>
             </Fade>
         </div>

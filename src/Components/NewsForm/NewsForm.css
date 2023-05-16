@@ -20,7 +20,7 @@
     border-radius: 2px;
     padding: 25px;
     margin-top: 10px;
-    background-color: blueviolet;
+    background-color: rgb(61, 43, 226);
     border: none;
     color: white;
     width: 100%;
@@ -130,7 +130,7 @@
     padding: 15px 35px;
     width: max-content;
     margin: auto;
-    background: blueviolet;
+    background: rgb(61, 43, 226);
 }
 
 .newsformimgCarousel{

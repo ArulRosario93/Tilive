@@ -5,3 +5,14 @@
     margin: auto;
     margin-bottom: 25px;
 }
+
+.SourcingSupplyChainWriteUp img{
+    height:78vh;
+    object-fit: contain;
+    width: 100%;
+}
+@media only screen and (max-width: 425px) {
+    .SourcingSupplyChainWriteUpHead{
+        font-size: larger;
+    }
+}

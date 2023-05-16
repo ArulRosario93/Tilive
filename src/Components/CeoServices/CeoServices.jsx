@@ -71,10 +71,10 @@ const CeoServices = () => {
                             <br />
                             <p>At Tilive International LLP, we are committed to providing top-notch consultancy services in the domain of sourcing and supply chain management. Our team of experts has extensive experience in the industry and is well-equipped to help businesses optimize their sourcing and supply chain operations.</p>
                             <br />
-                            {
+                            {/* {
                                 mobileView? <div></div>: <p>We understand that managing sourcing and supply chain operations can be complex and time - consuming, and we strive to simplify the process for our clients. We work closely with businesses to identify areas of improvement and develop customized solutions to meet their specific needs and goals.
 </p>
-                            }
+                            } */}
                             <br />
                                 <Link to={"/CeoServicesWriteUp"}><div>View More</div></Link>
                             <br />

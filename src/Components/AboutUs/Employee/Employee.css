@@ -1,0 +1,7 @@
+
+.Employee img{
+    width: 100%;
+    margin: auto;
+    height: 90vh;
+    object-fit: contain;
+}
