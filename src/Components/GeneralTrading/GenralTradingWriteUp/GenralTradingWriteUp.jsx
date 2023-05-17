@@ -10,13 +10,12 @@ const GenralTradingWriteUp = () => {
         });
     })
 
-
     return(
         <div>
         <StartingPage want={false}/>
             <div className="GenralTradingWriteUp">
 
-                <h1>Genral Trading</h1>
+                <h1>General Trading</h1>
                 <br />
                 <p>Tilive International LLP offers top-notch consultancy services in sourcing and supply chain management, helping businesses optimize their operations. Our experts provide customized solutions in supplier selection, logistics, compliance, and sustainability. We prioritize collaboration and communication to ensure alignment with clients' vision and values.</p>
                 <br />

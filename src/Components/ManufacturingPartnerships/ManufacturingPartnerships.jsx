@@ -67,9 +67,15 @@ const ManufacturingPartnerships = () => {
                     
                 </Carousel>
                     <div className="SubDropPageGGGDes">
-                            <p>Tilive International LLP offers top-notch consultancy services in sourcing and supply chain management, helping businesses optimize their operations. Our experts provide customized solutions in supplier selection, logistics, compliance, and sustainability. We prioritize collaboration and communication to ensure alignment with clients' vision and values.</p>
+                            <p>Our selection process for manufacturing partners involves thorough assessments of their operational
+efficiency, quality control measures, and commitment to delivering superior products. We partner with
+companies that share our dedication to excellence and possess a track record of producing world-class
+goods.</p>
                             <br />
-                            <p>At Tilive International LLP, we are committed to providing top-notch consultancy services in the domain of sourcing and supply chain management. Our team of experts has extensive experience in the industry and is well-equipped to help businesses optimize their sourcing and supply chain operations.</p>
+                            <p>By collaborating with these highly process-oriented manufacturing firms, we leverage their expertise
+and capabilities to bring our customers the finest products available in the market. The meticulous
+attention to detail and stringent quality checks employed by our partners guarantee that every item
+meets or exceeds our customers' expectations.</p>
                             <br />
                             {/* {
                                 mobileView? <div></div>: <p>We understand that managing sourcing and supply chain operations can be complex and time - consuming, and we strive to simplify the process for our clients. We work closely with businesses to identify areas of improvement and develop customized solutions to meet their specific needs and goals.

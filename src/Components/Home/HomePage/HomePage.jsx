@@ -103,8 +103,8 @@ const HomePage =() => {
   established connections, we tailor solutions to individual needs. Our team builds strong client
   relationships for effective collaboration and communication, ensuring successful outcomes."  imgSrc={MarketingPage2} />
 
-                <HomePageComponent top={moveAmount? 36: 41} state={SourcingSupplyChain} link="Sourcing&SupplyChain" firstHead="Sourcing and Supply Chain" secondHead="Management Services" secondP="Drive Seamless Operations and Increased Profitability with Expert Sourcing &amp;
-  Supply Chain Management" firstP="Tilive International LLP offers top-notch consultancy services in sourcing and supply chain management,
+                <HomePageComponent top={moveAmount? 36: 41} state={SourcingSupplyChain} link="Sourcing&SupplyChain" firstHead="Sourcing and Supply Chain" secondHead="Management Services" firstP="Drive Seamless Operations and Increased Profitability with Expert Sourcing &amp;
+  Supply Chain Management" secondP="Tilive International LLP offers top-notch consultancy services in sourcing and supply chain management,
   helping businesses optimize their operations. Our experts provide customized solutions in supplier
   selection, logistics, compliance, and sustainability. We prioritize collaboration and communication to
   ensure alignment with clients&#39; vision and values." imgSrc={scm} />
@@ -124,10 +124,14 @@ their specific needs and goals."  imgSrc={CEOCFOServicesFound}/>
 Gauges, and Instruments." secondP="" imgSrc={Manufacturingguild}/>
                 
                 <HomePageComponent top={moveAmount? 46: 51} state={AutomotiveEngineeringParts} link="Automotive&EngineeringParts" firstHead="Automotive and Engineering Parts" secondHead="" firstP="Delivering Excellence: Your Source for World-Class Automotive and Engineering
-Parts." secondP="" imgSrc={Automotiveindustry}/>
+Parts." secondP="We specialize in supplying automotive and engineering parts for both aftermarket and original
+equipment (OE) applications. Our extensive range of products caters to the diverse needs of our
+customers in the automotive and engineering industries." imgSrc={Automotiveindustry}/>
                 
                 <HomePageComponent top={moveAmount? 46: 51} state={GeneralTrading} link="GeneralTrading" firstHead="General Trading" secondHead="" firstP="Your Trusted Source for a Comprehensive Range of Quality Products for Your
-Unique Requirements" secondP="" imgSrc={Generaltrading}/>
+Unique Requirements" secondP="We are a trusted provider of parts / products catering to a wide range of household and industrial
+applications. Our comprehensive selection of parts enables us to meet the diverse needs of our
+customers in various sectors, including house hold, automotive, manufacturing, construction, and more." imgSrc={Generaltrading}/>
           
           </Carousel>
             {/* {

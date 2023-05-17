@@ -18,7 +18,7 @@ const MarketingBusinessWriteUp = () => {
         <StartingPage want={false}/>
             <div className="MarketingBusinessWriteUp">
 
-                <h1>Marketing Business And Development</h1>
+                <h1 className="MarketingBusinessWriteUpHead">Marketing Business And Development</h1>
                 <br />
                 <img src={image1}/>
                 <img src={image2}/>

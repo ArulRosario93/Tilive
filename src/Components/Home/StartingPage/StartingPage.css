@@ -230,7 +230,7 @@
   /*text-decoration: 2px underline white;*/
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
   .startingPageContainer{
     background-color: white;
     padding-bottom: 30px;

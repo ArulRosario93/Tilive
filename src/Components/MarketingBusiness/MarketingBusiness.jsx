@@ -69,9 +69,14 @@ const MarketingBusiness = () => {
                     
                 </Carousel>
                     <div className="SubDropPageGGGDes">
-                            <p>Tilive International LLP offers top-notch consultancy services in sourcing and supply chain management, helping businesses optimize their operations. Our experts provide customized solutions in supplier selection, logistics, compliance, and sustainability. We prioritize collaboration and communication to ensure alignment with clients' vision and values.</p>
+                            <p className="SubDropPageGGGDesP">Looking to expand your business in the Automotive or Industrial domain? Look no further than Tilive
+International LLP. Our customized business development and marketing strategies are tailored to help
+you grow your business exponentially.</p>
                             <br />
-                            <p>At Tilive International LLP, we are committed to providing top-notch consultancy services in the domain of sourcing and supply chain management. Our team of experts has extensive experience in the industry and is well-equipped to help businesses optimize their sourcing and supply chain operations.</p>
+                            <p className="SubDropPageGGGDesP">With years of experience in the industry, we understand the unique challenges faced by businesses in
+the Automotive and Industrial sectors. Our team of experts will work closely with you to understand
+your business goals, target audience, and competition, to develop a custom strategy that meets your
+specific needs.</p>
                             <br />
                             {/* {
                                 mobileView? <div></div>: <p>We understand that managing sourcing and supply chain operations can be complex and time - consuming, and we strive to simplify the process for our clients. We work closely with businesses to identify areas of improvement and develop customized solutions to meet their specific needs and goals.

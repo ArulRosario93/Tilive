@@ -62,8 +62,9 @@ const ContactUsForm = () => {
                 <div className="handleCaptureFormSubmit">
                     <a className="handleCaptureFormSubmitButton">Submit</a>
                 </div>
+                <br />
+                <br />
             </form>
-            <footer></footer>
         </div>
     )
 }

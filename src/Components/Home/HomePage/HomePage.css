@@ -111,7 +111,15 @@
     .HomePageCarousel{
         height: 100vh;
     }
-
+    .HomePageDesPP{
+        width: 100%;
+        color: rgb(0, 0, 0);
+        font-size: 0.6rem;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+    }
     .HomePageDes{
         width: 80%;
         top: 20%;

@@ -68,9 +68,16 @@ const AutomobileAndEngineeringParts = () => {
                     
                 </Carousel>
                     <div className="SubDropPageGGGDes">
-                            <p>Tilive International LLP offers top-notch consultancy services in sourcing and supply chain management, helping businesses optimize their operations. Our experts provide customized solutions in supplier selection, logistics, compliance, and sustainability. We prioritize collaboration and communication to ensure alignment with clients' vision and values.</p>
+                            <p>For the aftermarket sector, we provide high-quality replacement parts that meet or exceed OEM
+specifications. Our products undergo rigorous testing to ensure their performance, reliability, and
+
+compatibility with various vehicle models. We understand the importance of delivering parts that offer
+durability and value for money to customers seeking affordable alternatives.</p>
                             <br />
-                            <p>At Tilive International LLP, we are committed to providing top-notch consultancy services in the domain of sourcing and supply chain management. Our team of experts has extensive experience in the industry and is well-equipped to help businesses optimize their sourcing and supply chain operations.</p>
+                            <p>In addition to the aftermarket, we also supply OE parts for manufacturers and assembly plants. Our OE
+parts meet the stringent standards set by original equipment manufacturers, ensuring seamless
+integration and optimal performance within their systems. We work closely with OE manufacturers to
+understand their specific requirements and deliver parts that meet their exact specifications.</p>
                             <br />
                             
                             <br />
