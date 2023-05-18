@@ -1,5 +1,24 @@
 .PlasticAndRubberParts img{
-    height: 80vh;
+    height: 60vh;
     width: 100%;
     object-fit: contain;
+}
+
+.PlasticAndRubberParts p{
+    font-size: larger;
+    text-align: center;
+    /* font-weight: bold; */
+}
+
+.spaceHEre{
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .PlasticAndRubberParts img{
+        height: 55vh;
+    }
+    .PlasticAndRubberParts p{
+        font-size: medium;
+    }
 }
