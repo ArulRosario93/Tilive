@@ -147,13 +147,13 @@ export const StartingPage = ({ want, color }) => {
                <div class="sub-dropdown">
                   <Link to={"/MarketingBusiness"}  state={{ MarketingBusiness }}><button class="sub-dropbtn">Marketing and Business Development
 Services</button></Link>
-                  <div class="sub-dropdown-content">
+                  {/* <div class="sub-dropdown-content">
                      <button className="insubdropbtn">Gears</button>
                      <button className="insubdropbtn">Tires</button>
                      <button className="insubdropbtn">Brakes</button>
                      <button className="insubdropbtn">Fuel-tanks</button>
                      <button className="insubdropbtn">Spares</button>
-                  </div>
+                  </div> */}
                </div>
             <div class="sub-dropdown">
                <Link to={"/Sourcing&SupplyChain"} state={{ SourcingSupplyChain }}><button class="sub-dropbtn">Sourcing and Supply Chain
@@ -169,21 +169,21 @@ Management Services</button></Link>
             <div class="sub-dropdown">
                <Link to={"/Merger&Acquisition"} state={{ MergerAcquisition }}><button class="sub-dropbtn">Merger &amp; Acquisition Consultancy
 Services</button></Link>
-               <div class="sub-dropdown-content" style={{top: '20%'}}>
+               {/* <div class="sub-dropdown-content" style={{top: '20%'}}>
                <button className="insubdropbtn">Red-Hair Shanks</button>
                <button className="insubdropbtn">Benn Beckman</button>
                <button className="insubdropbtn">Yasopp</button>
                <button className="insubdropbtn">Lucky Roo</button>
-               </div>
+               </div> */}
             </div>
             <div class="sub-dropdown">
                <Link to={"/CEOServices"} state={{ CEOCFOServices }}><button class="sub-dropbtn">CEO/ CFO Services</button></Link>
-               <div class="sub-dropdown-content" style={{top: '35%'}}>
+               {/* <div class="sub-dropdown-content" style={{top: '35%'}}>
                <button className="insubdropbtn">Edward Newgate</button>
                <button className="insubdropbtn">Marco</button>
                <button className="insubdropbtn">Portagaz D Ace</button>
                <button className="insubdropbtn">Kozuki Oden</button>
-               </div>
+               </div> */}
             </div>
             <div class="sub-dropdown">
                <Link to={"/ManufacturingGuild"} state={{ ManufacturingGuild }}><button class="sub-dropbtn">Manufacturing Guild</button></Link>
@@ -196,21 +196,21 @@ Services</button></Link>
             </div>
             <div class="sub-dropdown">
                <Link to={"/Automotive&EngineeringParts"} state={{ AutomotiveEngineeringParts }}><button class="sub-dropbtn">Automotive and Engineering Parts</button></Link>
-               <div class="sub-dropdown-content" style={{top: '45%'}}>
+               {/* <div class="sub-dropdown-content" style={{top: '45%'}}>
                <button className="insubdropbtn">Buggy D Clown</button>
                <button className="insubdropbtn">Dracule Mihawk</button>
                <button className="insubdropbtn">Sir Crocodile</button>
                <button className="insubdropbtn">Doflamingo</button>
-               </div>
+               </div> */}
             </div>
             <div class="sub-dropdown">
                <Link to={"/GeneralTrading"} state={{ GeneralTrading }}><button class="sub-dropbtn">General Trading</button></Link>
-               <div class="sub-dropdown-content" style={{top: '50%'}}>
+               {/* <div class="sub-dropdown-content" style={{top: '50%'}}>
                <button className="insubdropbtn">Buggy D Clown</button>
                <button className="insubdropbtn">Dracule Mihawk</button>
                <button className="insubdropbtn">Sir Crocodile</button>
                <button className="insubdropbtn">Doflamingo</button>
-               </div>
+               </div> */}
             </div>
          </div>
          </div>

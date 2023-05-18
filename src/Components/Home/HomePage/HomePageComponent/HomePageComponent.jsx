@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
  
 const HomePageComponent = ({ link, top, firstHead, secondHead, firstP, secondP, imgSrc, state }) => {
 
-    const [position, setPosition] = useState(8); // Initial position is 0
+    const [position, setPosition] = useState(30); // Initial position is 0
     const moveAmount = 10; // Adjust this value to change the amount of movement
 
     useEffect(() => {
       function handleScroll() {
-        setPosition(window.pageYOffset/30 + 8);
+        setPosition(window.pageYOffset/30 + 30);
         console.log("this is pageOFFset" + window.pageYOffset);
       }
       
@@ -25,10 +25,13 @@ const HomePageComponent = ({ link, top, firstHead, secondHead, firstP, secondP, 
 
     return(
         <div className="hnhn">
+        
           <Fade>
+
               <div className="HomePageDes"
                style={{top: `${position}%`}}
                >
+
                   <h2 className="HomePageDesHead">{firstHead}</h2>
                   <h2 className="HomePageDesHead">{secondHead}</h2>
                   <br />
@@ -37,8 +40,10 @@ const HomePageComponent = ({ link, top, firstHead, secondHead, firstP, secondP, 
                   <Link to={`/${link}`} state={{state}} className="aaaa"><div className="HomeProductsDesViewMore"><p>View More</p></div></Link>
               </div>
             </Fade>
-            
-            <img src={imgSrc}/>
+            <div>
+              <div className="overlay"></div>
+              <img src={imgSrc}/>
+            </div>
         </div>
     )
 }

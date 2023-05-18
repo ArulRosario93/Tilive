@@ -13,7 +13,7 @@ const MergerAcquisitionWriteUp = () => {
 
     return(
         <div>
-        <StartingPage want={false}/>
+        <StartingPage want={true}/>
             <div className="MergerAcquisitionWriteUp">
 
                 <h1>Merger & Acquisition Consultancy Services</h1>

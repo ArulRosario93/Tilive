@@ -15,7 +15,7 @@ const ContactUs = () => {
 
     return(
         loader? <div> 
-            <StartingPage want={false}/>
+            <StartingPage want={true}/>
             <ContactUsHome />
             <ContactUsForm />
             <Fotter />

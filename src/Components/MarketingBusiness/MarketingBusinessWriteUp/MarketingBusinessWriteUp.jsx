@@ -15,10 +15,10 @@ const MarketingBusinessWriteUp = () => {
 
     return(
         <div>
-        <StartingPage want={false}/>
+        <StartingPage want={true}/>
             <div className="MarketingBusinessWriteUp">
 
-                <h1 className="MarketingBusinessWriteUpHead">Marketing Business And Development</h1>
+                <h1 className="MarketingBusinessWriteUpHead">Marketing and Business Development</h1>
                 <br />
                 <img src={image1}/>
                 <img src={image2}/>

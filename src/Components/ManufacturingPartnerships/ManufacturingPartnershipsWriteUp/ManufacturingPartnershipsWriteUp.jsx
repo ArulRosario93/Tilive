@@ -15,7 +15,7 @@ const ManufacturingPartnershipsWriteUp = () => {
 
     return(
         <div>
-        <StartingPage want={false}/>
+        <StartingPage want={true}/>
             <div className="ManufacturingPartnershipsWriteUp">
                 <img src={image}/>
             </div>

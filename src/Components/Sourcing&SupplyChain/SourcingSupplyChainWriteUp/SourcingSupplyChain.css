@@ -1,9 +1,42 @@
 .SourcingSupplyChainWriteUp{
     padding-top: 100px;
     width: 90%;
+    height: 50vh;
     font-family: 'Poppins', sans-serif;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: space-around;
     margin-bottom: 25px;
+}
+.SourcingandsuppychainBG{
+    min-height: 100vh;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    left: 0%;
+    background: linear-gradient(0deg, rgba(22, 22, 22, 0.747), rgba(48, 48, 48, 0.247)), url("https://supplychainlabs.in/wp-content/themes/supplychainlabs/assets/images/home/home-caplogo-video-bg.jpg");
+    /* background-image: url("https://supplychainlabs.in/wp-content/themes/supplychainlabs/assets/images/home/home-caplogo-video-bg.jpg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: black; */
+    background-size: cover;
+}
+.SourcingSupplyChainWriteUpHead{
+    text-align: center;
+    color: aliceblue;
+    font-size: 2.7rem;
+    margin-top: 140px;
+    /* text-decoration: underline; */
+}
+.SourcingSupplyChainWriteUp li{
+    font-size: larger;
+    color: aliceblue;
+    line-height: 5vh;
+
+    /* text-align: center; */
 }
 
 .SourcingSupplyChainWriteUp img{
@@ -11,8 +44,20 @@
     object-fit: contain;
     width: 100%;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
     .SourcingSupplyChainWriteUpHead{
         font-size: larger;
+        margin-top: 120px;
+    }
+    .SourcingSupplyChainWriteUp{
+        padding-top: 40px;
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        margin: auto;
+    }
+    .SourcingSupplyChainWriteUp li{
+        font-size: smaller;
+        line-height: 4vh;
     }
 }

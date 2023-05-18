@@ -12,7 +12,7 @@ const GenralTradingWriteUp = () => {
 
     return(
         <div>
-        <StartingPage want={false}/>
+        <StartingPage want={true}/>
             <div className="GenralTradingWriteUp">
 
                 <h1>General Trading</h1>

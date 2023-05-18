@@ -38,7 +38,7 @@ const MarketingBusiness = () => {
         <div>
             <StartingPage want={true} color={mobileView? true: false} />
         <div className="SubDropPageforMarketing">
-                <h1 className="SubDropPageH1">Marketing Business And Development</h1>
+                <h1 className="SubDropPageH1">Marketing and Business Development</h1>
                     <br />
                 <div className="SubDropPageGGG">
                 

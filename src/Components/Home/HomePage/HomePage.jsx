@@ -9,7 +9,6 @@ import CEOCFOServicesFound from "./CEO/CFOServices.jpg";
 import MarketingPage2 from "./MarketingPage2.jpg";
 import scm from "./SCM.jpg";
 
-
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import HomePageComponent from "./HomePageComponent/HomePageComponent";
@@ -66,7 +65,7 @@ const HomePage =() => {
       SecondPara: "We specialize in supplying automotive and engineering parts for both aftermarket and original equipment (OE) applications. Our extensive range of products caters to the diverse needs of our customers in the automotive and engineering industries.",
       Desc: ["For the aftermarket sector, we provide high-quality replacement parts that meet or exceed OEM specifications. Our products undergo rigorous testing to ensure their performance, reliability, and compatibility with various vehicle models. We understand the importance of delivering parts that offer durability and value for money to customers seeking affordable alternatives.", "In addition to the aftermarket, we also supply OE parts for manufacturers and assembly plants. Our OE parts meet the stringent standards set by original equipment manufacturers, ensuring seamless integration and optimal performance within their systems. We work closely with OE manufacturers to understand their specific requirements and deliver parts that meet their exact specifications.", "With our extensive network of trusted suppliers and manufacturers, we are able to offer a comprehensive range of automotive and engineering parts to meet the diverse needs of our customers. Our commitment to quality, competitive pricing, and exceptional customer service sets us apart in the industry.", "Whether our customers require aftermarket or OE parts, they can rely on us to deliver reliable and high- performance products that meet their specific requirements. We continually strive to expand our product offerings and stay up to date with the latest advancements in the automotive and engineering sectors to better serve our customers."],
    }
-   
+
    const GeneralTrading = {
       Fhead: "General Trading",
       SHead: "",
@@ -96,6 +95,7 @@ const HomePage =() => {
 
     return(
          <div className="HomePage">
+
       <Carousel swipeable={false} transitionTime={600} autoPlay animation={"Fade"} stopOnHover={false} infiniteLoop interval={7000} autoFocus showStatus={false} className="HomePageCarousel" showIndicators={false} showArrows={true}>
 
                 <HomePageComponent top={moveAmount? 35: 40} state={MarketingBusiness} link="MarketingBusiness" firstHead="Marketing and Business" secondHead={"Development Services"} firstP="Grow Your Business Exponentially with our Customized Business Development and Marketing Strategies" secondP="Tilive International LLP offers customized business development and marketing strategies for
@@ -137,6 +137,7 @@ customers in various sectors, including house hold, automotive, manufacturing, c
             {/* {
               moveAmount? <div className="downScroll"><a href="#SubComponents">Go Down</a></div>: ""
             } */}
+
          </div>
     )
 }

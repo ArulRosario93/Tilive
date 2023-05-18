@@ -37,12 +37,11 @@ const CeoServices = () => {
         <div>
             <StartingPage want={true} color={mobileView? true: false} />
         <div className="SubDropPageforMarketing">
-                <h1 className="SubDropPageH1">Ceo Services</h1>
+                <h1 className="SubDropPageH1">CEO and CFO Services</h1>
                     <br />
                 <div className="SubDropPageGGG">
                 <Carousel autoPlay interval={7000} selectedItem={0} onChange={(i) => onChangeCaptured(i)} showArrows={false} showIndicators={false} stopOnHover={false} showStatus={false} showThumbs={false} className="CarouselForMarketBusiness" infiniteLoop>
                     {
-                        
                                     file.map((item, i) => {
 
                                         var itemNow = `${file[i]}`;

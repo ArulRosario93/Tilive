@@ -13,7 +13,7 @@ const CeoServicesWriteUp = () => {
 
     return(
         <div>
-        <StartingPage want={false}/>
+        <StartingPage want={true}/>
             <div className="CeoServicesWriteUp">
 
                 <h1>Ceo Services</h1>
