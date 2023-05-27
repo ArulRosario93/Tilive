@@ -15,8 +15,8 @@ function ScrollingComponent({ timestamp1, timestamp2, timestamp3, handleChange, 
   useEffect(() => {    
     const handleScroll = () =>  {
 
-      var secondHeight = heightStartsHere + 450;
-      var thirdHeight = secondHeight + 550;
+      var secondHeight = heightStartsHere + 250;
+      var thirdHeight = secondHeight + 450;
       
       if(window.scrollY > heightStartsHere){
         var heightHere = window.scrollY - heightStartsHere;

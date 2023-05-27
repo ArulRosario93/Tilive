@@ -18,6 +18,8 @@ const AboutUs = () => {
             <AboutUsHome />
             <WeAre />
             <Employee />
+            <br />
+            <br />
             <Fotter />
             {/* <CompanySecret /> */}
         </div>

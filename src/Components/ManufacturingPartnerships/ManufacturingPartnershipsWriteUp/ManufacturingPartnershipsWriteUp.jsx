@@ -2,7 +2,10 @@ import React, { useEffect } from "react";
 import "./ManufacturingPartnershipsWriteUp.css";
 import { StartingPage } from "../../Home/StartingPage/StartingPage";
 
-import image from "./ManufacturingGuild.jpg";
+import image1 from "./manufacturinggulid.jpg";
+import image2 from "./gg1.jpg";
+import image3 from "./gg2.jpg";
+import image4 from "./gg3.jpg";
 
 const ManufacturingPartnershipsWriteUp = () => {
 
@@ -17,7 +20,11 @@ const ManufacturingPartnershipsWriteUp = () => {
         <div>
         <StartingPage want={true}/>
             <div className="ManufacturingPartnershipsWriteUp">
-                <img src={image}/>
+                {/* <img src={image}/> */}
+                <img src={image1}/>
+                <img src={image3}/>
+                <img src={image4}/>
+                <img src={image2}/> 
             </div>
         </div>
     )

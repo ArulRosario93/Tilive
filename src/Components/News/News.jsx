@@ -56,7 +56,9 @@ const newsItems = [
                     <NewsHomeTopNews />
                 </Fade>
                 <br />
-                    <h2 className='NewsContainerHeadHere'>News</h2>
+                <br />
+                <br />
+                    <h2 className='NewsContainerHeadHere'>Events</h2>
                     <NewsContainer />
                 <Fotter />
             {/* </Fade> */}

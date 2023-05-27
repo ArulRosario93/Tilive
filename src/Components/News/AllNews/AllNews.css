@@ -126,7 +126,7 @@
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 800px) {
     .AllNewsContainerGrid{
         padding: 2vh 10px;
         display: grid;

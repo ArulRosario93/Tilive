@@ -55,8 +55,8 @@ const NewsContainer = () => {
 
                     des = data?.eventDescription?.stringValue;
 
-                    if (des.length > 650) {
-                        des = des.slice(0, 650) + "...";
+                    if (des.length > 450) {
+                        des = des.slice(0, 450) + "...";
                     } 
 
                     var itemNow = `${linkURl[0]?.stringValue}`;
@@ -80,7 +80,7 @@ const NewsContainer = () => {
                                 <div className='containerimgdiv' style={{textAlign: 'center'}}>
                                     <h1 className="containerImgdivHead1"> &gt; </h1>
                                     <br />
-                                    <h3 className="containerImgdivHead3">For More Latest News</h3>
+                                    <h3 className="containerImgdivHead3">For More News</h3>
                                 </div>
 
                             <div className="news">
@@ -99,12 +99,12 @@ const NewsContainer = () => {
                             </div>
 
                             <div className="news">
-                                <div className='newsDescription'>
                                 <Fade bottom>
+                                <div className='newsDescription'>
                                     <h3 className="newsDescriptionHead">Description</h3>
                                     <p className="newsDescriptionP">{des}</p>
-                                </Fade>
                                 </div>
+                                </Fade>
                                 
                             </div>
                             </div>

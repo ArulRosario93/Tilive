@@ -42,6 +42,7 @@
 
 .container:hover .news {
     transition: 0.4s;
+    display: block;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +129,7 @@
 }
 
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
   .NewsContainer{
     /* padding: 25px; */
     margin: auto;

@@ -10,8 +10,10 @@
 }
 
 .AllNewsHeadDes{
+    width: 90%;
+    margin: auto;
     position: absolute;
-    z-index: 100;
+    z-index: 90;
     color: azure;
     padding-top: 5px;
     top: 43vh;
@@ -27,6 +29,7 @@
 .AllNewsHeadDesHead{
     /* font-family: 'Cinzel', serif; */
     font-size: xx-large;
+    max-width: 60%;
     text-align: left;
 }
 
@@ -77,7 +80,7 @@
 
 
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
     .AllNewsHeadDesHead{
         font-size: x-large;
     }

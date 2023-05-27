@@ -45,10 +45,14 @@ const NewsHomeTopNews = () => {
 
     var des = `${docs?.eventDescription?.stringValue}`;
 
+    var head = `${docs?.eventName?.stringValue}`;
+
     if (window.screen.width < 600) {
         des = des.length > 250? des.substring(0, 250) + "...": des;
+        head = head.length > 30? head.substring(0, 30) + "...": head;
     }else{
         des = des.length > 650? des.substring(0, 640) + "...": des;
+        head = head.length > 60? head.substring(0, 60) + "...": head;
     }
 
     useEffect(() => {
@@ -57,7 +61,8 @@ const NewsHomeTopNews = () => {
 
     return(
         <div className="topNews">
-        <h1 className="topNewsHead">Top Activity</h1>
+        <h1 className="topNewsHead">Latest From Tilive</h1>
+        {/* <br /> */}
         <div className="NewsHomeTopNews">
             <h1></h1>
             <div className="NewsHomeTopNewsImage">
@@ -73,7 +78,7 @@ const NewsHomeTopNews = () => {
             </div>
             <div className="NewsHomeTopNewsContent">
                 <div className="NewsHomeTopNewsContentDes">
-                    <h1 className="NewsHomeTopNewsContentDesMainHead">{docs?.eventName?.stringValue}</h1>
+                    <h1 className="NewsHomeTopNewsContentDesMainHead">{head}</h1>
                     {/* <br /> */}
                     <h5 className="NewsHomeTopNewsContentDesHead">{docs?.eventCaption?.stringValue}</h5>
                     <br />

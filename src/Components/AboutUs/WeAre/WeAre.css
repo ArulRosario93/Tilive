@@ -56,7 +56,7 @@
     font-weight: 500;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
     .WeAreMainContentDes{
         padding: 15vh 20px 4vh;
         /* border: none; */

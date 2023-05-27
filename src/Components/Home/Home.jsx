@@ -49,7 +49,7 @@ const Home = () => {
             expires={150}
             >
             This website uses cookies to enhance the user experience.
-            View <Link color="grey" to={"/PrivacyPolicy"} state={{ PrivacyPolicy }}>Privacy Policy</Link>
+            View <Link color="grey" to={"/PrivacyPolicy"} state={{ PrivacyPolicy }}>Cookies Policy</Link>
         </CookieConsent>
            <StartingPage want={true} />
            <HomePage />

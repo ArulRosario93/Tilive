@@ -1,8 +1,29 @@
 .MergerAcquisitionWriteUp{
     padding-top: 100px;
-    width: 90%;
     font-family: 'Poppins', sans-serif;
-    margin: auto;
+    width: 90%;
+    margin: auto;   
     margin-bottom: 25px;
+}
+.MergerAcquisitionWriteUp img{
+    height: 70vh;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
 
+@media only screen and (max-width: 425px) {
+    .MergerAcquisitionWriteUp img{
+        object-fit: contain;
+        height: 40vh;
+        width:100%;
+    }
+    .SubDropPageH1{
+        width: 80%;
+        margin: auto;
+        font-size: 1.8rem;
+    }
+    .SubDropPageGGGDesP{
+        font-size: 0.9rem;
+    }
 }

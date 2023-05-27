@@ -4,6 +4,7 @@ import { StartingPage } from "../../Home/StartingPage/StartingPage";
 import image1 from "./indianCompanies1.jpg";
 import image2 from "./indianCompanies2.jpg";
 import image3 from "./InternaltionalCompanies.jpg";
+import image4 from "./forindian.jpg";
 
 const MarketingBusinessWriteUp = () => {
 
@@ -24,6 +25,7 @@ const MarketingBusinessWriteUp = () => {
                 <img src={image2}/>
                 <br />
                 <img src={image3}/>
+                <img src={image4}/>
             </div>
         </div>
     )

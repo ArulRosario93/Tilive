@@ -108,7 +108,8 @@ const AllNewsHead = () => {
                     <p style={change? {height: '0vh'}: {height: '25vh'}} onClick={() => handleClickDes()} className="AllNewsHeadDesP">{stringForP}</p>
                 </div>
 
-                 <Carousel onChange={(i) => handleCarouselChange(i)} 
+                 <Carousel onChange={(i) => {handleCarouselChange(i)}} onclick={() => handleClick()}
+                  stopOnHover={false} onClickThumb={() => handleClick()}
                     onClickItem={() => handleClick()} showStatus={true} showThumbs={false} showArrows={true} autoPlay infiniteLoop>
 
                     {

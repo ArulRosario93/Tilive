@@ -1,8 +1,9 @@
 .ContactUsHome{
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    padding: 15vh 15vh 5vh;
+    padding: 17vh 15vh 5vh;
 }
+
 .ContactUsHomeP{
     font-size: small;
     font-weight: 600;
@@ -35,13 +36,14 @@
         font-size: small;
     }
 }
+
 @media only screen and (max-width: 425px) {
     .ContactUsHome{
-        padding: 12vh 6vw 3vh;
+        padding: 16vh 6vw 3vh;
     }
     .ContactUsHomeHead {
         line-height: 5vh;
-      font-size: 1.7rem;
+        font-size: 1.7rem;
     }
     .ContactUsHomePara{
         font-size: x-small;
@@ -54,6 +56,7 @@
     }
     .ContactUsHomeHead {
         font-size: 1.5rem;
+        line-height: 4vh;
       }
       .ContactUsHomePara{
         font-size: xx-small;
