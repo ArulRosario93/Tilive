@@ -47,9 +47,10 @@
     font-family: 'Poppins', sans-serif;
     padding: 0px 6px;
 }
+
 .HomeCareersDesP{
     width: 94%;
-    letter-spacing: 1px;
+    letter-spacing: 0.6px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }

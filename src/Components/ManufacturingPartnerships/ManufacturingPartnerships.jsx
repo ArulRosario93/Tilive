@@ -67,12 +67,12 @@ const ManufacturingPartnerships = () => {
                     
                 </Carousel>
                     <div className="SubDropPageGGGDes">
-                            <p>Our selection process for manufacturing partners involves thorough assessments of their operational
+                            <p className="SubDropPageGGGDesP">Our selection process for manufacturing partners involves thorough assessments of their operational
 efficiency, quality control measures, and commitment to delivering superior products. We partner with
 companies that share our dedication to excellence and possess a track record of producing world-class
 goods.</p>
                             <br />
-                            <p>By collaborating with these highly process-oriented manufacturing firms, we leverage their expertise
+                            <p className="SubDropPageGGGDesP">By collaborating with these highly process-oriented manufacturing firms, we leverage their expertise
 and capabilities to bring our customers the finest products available in the market. The meticulous
 attention to detail and stringent quality checks employed by our partners guarantee that every item
 meets or exceeds our customers' expectations.</p>
@@ -82,7 +82,7 @@ meets or exceeds our customers' expectations.</p>
 </p>
                             } */}
                             <br />
-                                <Link to={"/ManufacturingPartnershipsWriteUp"}><div>View More</div></Link>
+                                <Link to={"/ManufacturingPartnershipsWriteUp"}><div className="MarketingBusinessWriteUpViewMore">View More</div></Link>
                             <br />
                     </div>
                 </div>

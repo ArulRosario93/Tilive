@@ -110,7 +110,7 @@ const AllNewsHead = () => {
 
                  <Carousel onChange={(i) => {handleCarouselChange(i)}} onclick={() => handleClick()}
                   stopOnHover={false} onClickThumb={() => handleClick()}
-                    onClickItem={() => handleClick()} showStatus={true} showThumbs={false} showArrows={true} autoPlay infiniteLoop>
+                    onClickItem={() => handleClick()} swipeable={false} showStatus={true} showThumbs={false} showArrows={true} autoPlay infiniteLoop>
 
                     {
                         docs?.linkURl ? docs.linkURl?.map((item, i) => {

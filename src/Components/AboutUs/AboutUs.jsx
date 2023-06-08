@@ -17,6 +17,9 @@ const AboutUs = () => {
             <StartingPage want={true}/>
             <AboutUsHome />
             <WeAre />
+            <br />
+            <br />
+            <br />
             <Employee />
             <br />
             <br />

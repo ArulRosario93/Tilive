@@ -1,6 +1,57 @@
 .Casting img{
     /* margin-top: 100px; */
-    height: 80vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
     width: 100%;
-    object-fit: contain;
+    object-fit: fill;
+}
+
+.CastingDep{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.286);
+    padding-top: 100px;
+    position: relative;
+    z-index: 10;
+}
+
+.CastingHead{
+    margin: 30px;
+    /* width: 100%; */
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+.CastingflexIT{
+    width: 80%;
+    margin-top: 6vh;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: safe;
+}
+.CastingMaterial2{
+    width: 80%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    /* padding: 60px 110px 0px 210px; */
+    text-decoration: solid;
+    list-style-type: disc;
+    color: white;
+}
+
+.CastingMaterial{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    /* padding: 60px 110px 0px 210px; */
+    text-decoration: solid;
+    list-style-type: disc;
+    color: white;
 }

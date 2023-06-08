@@ -3,6 +3,11 @@ import "./Fotter.css";
 import { Link } from "react-router-dom";
 
 const Fotter = () => {
+
+    const handleEmailClick = () => {
+        window.location.href = `mailto:info@tilive.co.in`;
+    };
+
     return(
         <div className="Fotter">
             <div className="FotterFlex">
@@ -36,7 +41,7 @@ const Fotter = () => {
                     </div>
                     <div className="FotterFlexTwoDes">
                         <p>Tel: +91 20 4932 9761 &nbsp; I &nbsp; Mob: +91 78754 44099 &nbsp; I &nbsp; 95112 68475</p>
-                        <p>Email: info@tilive.co.in &nbsp; I &nbsp;  Website: www.tilive.co.in</p>
+                        <p>Email: <a href={`mailto:info@tilive.co.in`}  onClick={handleEmailClick}>info@tilive.co.in</a> &nbsp; I &nbsp;  Website:<a href="www.tilive.co.in" target="_blank"> www.tilive.co.in</a></p>
                     </div>
                 </div>
 

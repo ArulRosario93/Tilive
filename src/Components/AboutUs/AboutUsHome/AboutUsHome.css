@@ -25,9 +25,23 @@
     font-weight: 600;
     color: white;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     animation-name: textUnderline;
     animation-timing-function: ease;
     animation-delay: 2s;
+}
+
+.AboutUsHomeDesHead{
+    /* background-color: blue; */
+}
+
+.AboutUsHomeDesHead .x{
+    /* padding: 10px 5px 20px; */
+    font-size: large;
+    /* margin-bottom: 10px; */
+    /* background-color: aqua; */
 }
 
 @keyframes textUnderline {

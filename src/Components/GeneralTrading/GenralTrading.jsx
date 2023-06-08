@@ -67,12 +67,12 @@ const GenralTrading = () => {
                     
                 </Carousel>
                     <div className="SubDropPageGGGDes">
-                            <p>As a supplier of general trading parts, we understand the importance of offering high-quality products
+                            <p className="SubDropPageGGGDesP">As a supplier of general trading parts, we understand the importance of offering high-quality products
 that meet global standards. We source our parts from reliable manufacturers and suppliers, ensuring
 that each item meets stringent quality control criteria. This allows us to deliver parts that are reliable,
 durable, and perform optimally in their intended applications.</p>
                             <br />
-                            <p>We strive to stay updated with the latest advancements and market trends, allowing us to provide
+                            <p className="SubDropPageGGGDesP">We strive to stay updated with the latest advancements and market trends, allowing us to provide
 cutting-edge solutions to our customers.</p>
                             <br />
                             {/* {
@@ -80,7 +80,7 @@ cutting-edge solutions to our customers.</p>
 </p>
                             } */}
                             <br />
-                                <Link to={"/GenralTradingWriteUp"}><div>View More</div></Link>
+                                <Link to={"/GenralTradingWriteUp"}><div className="MarketingBusinessWriteUpViewMore">View More</div></Link>
                             <br />
                     </div>
                 </div>

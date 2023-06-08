@@ -68,20 +68,20 @@ const AutomobileAndEngineeringParts = () => {
                     
                 </Carousel>
                     <div className="SubDropPageGGGDes">
-                            <p>For the aftermarket sector, we provide high-quality replacement parts that meet or exceed OEM
+                            <p className="SubDropPageGGGDesP">For the aftermarket sector, we provide high-quality replacement parts that meet or exceed OEM
 specifications. Our products undergo rigorous testing to ensure their performance, reliability, and
 
 compatibility with various vehicle models. We understand the importance of delivering parts that offer
 durability and value for money to customers seeking affordable alternatives.</p>
                             <br />
-                            <p>In addition to the aftermarket, we also supply OE parts for manufacturers and assembly plants. Our OE
+                            <p className="SubDropPageGGGDesP">In addition to the aftermarket, we also supply OE parts for manufacturers and assembly plants. Our OE
 parts meet the stringent standards set by original equipment manufacturers, ensuring seamless
 integration and optimal performance within their systems. We work closely with OE manufacturers to
 understand their specific requirements and deliver parts that meet their exact specifications.</p>
                             <br />
                             
                             <br />
-                                <Link to={"/AutomobileAndEngineeringPartsWriteUp"}><div>View More</div></Link>
+                                <Link to={"/AutomobileAndEngineeringPartsWriteUp"}><div className="MarketingBusinessWriteUpViewMore">View More</div></Link>
                             <br />
                     </div>
                 </div>

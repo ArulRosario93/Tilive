@@ -26,7 +26,7 @@ const AboutUsHome  = () => {
         <div className="AboutUsHome">
             <Fade bottom slow>
                 <div className="AboutUsHomeDes" style={{top: `${position}vh`}}>
-                    <h1 className="AboutUsHomeDesHead">Trust x Integrity x Loyalty... is our DNA</h1>
+                    <h1 className="AboutUsHomeDesHead">Trust <span className="x">x</span> Integrity <span className="x">x</span> Loyalty... is our DNA</h1>
                 </div>
             </Fade>
         </div>

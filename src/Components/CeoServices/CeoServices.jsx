@@ -66,11 +66,11 @@ const CeoServices = () => {
                     
                 </Carousel>
                     <div className="SubDropPageGGGDes">
-                            <p>Tilive International LLP offers top-notch outsourced CEO and CFO services on a short-term basis. Our
+                            <p className="SubDropPageGGGDesP">Tilive International LLP offers top-notch outsourced CEO and CFO services on a short-term basis. Our
 leadership team includes Certified Independent Directors, ensuring that our clients receive expert
 guidance and support.</p>
                             <br />
-                            <p>We understand that managing leadership positions can be challenging and time-consuming, and we
+                            <p className="SubDropPageGGGDesP">We understand that managing leadership positions can be challenging and time-consuming, and we
 strive to simplify the process for our clients. Our team of experts has extensive experience in the
 industry and is well-equipped to help businesses optimize their operations and achieve their goals.</p>
                             <br />
@@ -79,7 +79,7 @@ industry and is well-equipped to help businesses optimize their operations and a
 </p>
                             } */}
                             <br />
-                                <Link to={"/CeoServicesWriteUp"}><div>View More</div></Link>
+                                <Link to={"/CeoServicesWriteUp"}><div className="MarketingBusinessWriteUpViewMore">View More</div></Link>
                             <br />
                     </div>
                 </div>

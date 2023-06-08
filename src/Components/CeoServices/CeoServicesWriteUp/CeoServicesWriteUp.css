@@ -1,23 +1,51 @@
 .CeoServicesWriteUp{
-    padding-top: 100px;
     font-family: 'Poppins', sans-serif;
-    width: 90%;
+    width: 100%;
+    height: 100vh;
     margin: auto;   
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
 }
 .CeoServicesWriteUp img{
-    height: 70vh;
+    height: 100vh;
     width: 100%;
-    object-fit: contain;
-    border-radius: 10px;
+    top: 0%;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
 }
 
-@media only screen and (max-width: 425px) {
-    .CeoServicesWriteUp img{
-        object-fit: contain;
-        height: 40vh;
-        width:100%;
-    }
+.CeoServiceAndWriteUp{
+    background-color: rgba(0, 0, 0, 0.561);
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    font-size: larger;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+.CeoServiceAndWriteUpInner{
+    padding-top: 100px;
+    margin: auto;
+    width: 90%;
+}
+
+.CeoServiceAndWriteUpList{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CeoServiceAndWriteUpList li{
+    line-height: 6vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1105px) {
     .SubDropPageH1{
         width: 80%;
         margin: auto;
@@ -25,5 +53,89 @@
     }
     .SubDropPageGGGDesP{
         font-size: 0.9rem;
+    }
+
+    .CeoServiceAndWriteUpHead{
+        font-size: x-large;
+    }
+    .CeoServiceAndWriteUpList li{
+        line-height: 6vh;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .CeoServiceAndWriteUpHead{
+        font-size: large;
+    }
+    .CeoServiceAndWriteUpList{
+        flex-direction: row;
+        width: 100%;
+    }
+    .CeoServiceAndWriteUpList li{
+        font-size: x-small;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .CeoServiceAndWriteUpList{
+        flex-direction: column;
+        height: auto;
+        padding: 10px 15px;
+    }
+    .CeoServiceAndWriteUpHead{
+        font-size: larger;
+    }
+    .CeoServicesWriteUp{
+        height: 170vh;
+    }
+    .CeoServicesWriteUp img{
+        height: 170vh;
+    }
+    .CeoServiceAndWriteUp{
+        height: 170vh;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .CeoServicesWriteUp{
+        height: 200vh;
+    }
+    .CeoServicesWriteUp img{
+        height: 200vh;
+    }
+    .CeoServiceAndWriteUp{
+        height: 200vh;
+    }
+    .CeoServiceAndWriteUpList li{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 452px) {
+    .CeoServicesWriteUp{
+        height: 210vh;
+    }
+    .CeoServicesWriteUp img{
+        height: 210vh;
+    }
+    .CeoServiceAndWriteUp{
+        height: 210vh;
+    }
+    .CeoServiceAndWriteUpList li{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 372px) {
+    .CeoServicesWriteUp{
+        height: 240vh;
+    }
+    .CeoServicesWriteUp img{
+        height: 240vh;
+    }
+    .CeoServiceAndWriteUp{
+        height: 240vh;
     }
 }

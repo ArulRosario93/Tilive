@@ -3,9 +3,9 @@ import "./HomePage.css";
 
 import Automotiveindustry from "./Automotiveindustry.jpg";
 import Generaltrading from "./Generaltrading.jpg";
-import Manufacturingguild from "./Manufacturingguild.jpg";
+import Manufacturingguild from "./gg2.jpg";
 import MergerAndAcquisition from "./MergerAndAcquisition.jpg";
-import CEOCFOServicesFound from "./CEO/CFOServices.jpg";
+import CEOCFOServicesFound from "./CEO/ceomeet.png";
 import MarketingPage2 from "./MarketingPage2.jpg";
 import scm from "./SCM.jpg";
 
@@ -120,8 +120,11 @@ from Tilive International LLP – Featuring Certified Independent Directors!" se
 Certified Independent Directors prioritize integrity and loyalty, collaborating closely with clients to meet
 their specific needs and goals."  imgSrc={CEOCFOServicesFound}/>
                 
-                <HomePageComponent top={moveAmount? 45: 50} state={ManufacturingGuild} link="ManufacturingGuild" firstHead="Manufacturing Guild" secondHead="" firstP="Manufacturing Excellence for Rotary Unions, Pole Wheels, Forgings, Tools,
-Gauges, and Instruments." secondP="" imgSrc={Manufacturingguild}/>
+                <HomePageComponent top={moveAmount? 45: 50} state={ManufacturingGuild} link="ManufacturingGuild" firstHead="Manufacturing Guild" secondHead="" secondP="Manufacturing Excellence for Rotary Unions, Pole Wheels, Forgings, Tools,
+Gauges, and Instruments." firstP="We take pride in delivering exceptional products to our customers. To ensure the
+highest quality standards, we have established partnerships with manufacturing
+companies that are renowned for their meticulous processes and skilled
+workforce." imgSrc={Manufacturingguild}/>
                 
                 <HomePageComponent top={moveAmount? 46: 51} state={AutomotiveEngineeringParts} link="Automotive&EngineeringParts" firstHead="Automotive and Engineering Parts" secondHead="" firstP="Delivering Excellence: Your Source for World-Class Automotive and Engineering
 Parts." secondP="We specialize in supplying automotive and engineering parts for both aftermarket and original

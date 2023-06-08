@@ -67,16 +67,16 @@ const MergerAcquisition = () => {
                     
                 </Carousel>
                     <div className="SubDropPageGGGDes">
-                            <p>At Tilive International LLP, we specialize in providing top-notch Merger and Acquisition (M&A) services
+                            <p className="SubDropPageGGGDesP">At Tilive International LLP, we specialize in providing top-notch Merger and Acquisition (M&A) services
 for businesses operating in the Automotive components industry. Our team of experts has extensive
 experience in the field and is dedicated to helping clients achieve their M&A goals.</p>
                             <br />
-                            <p>We offer a range of M&A services, including market analysis, target identification, deal structuring,
+                            <p className="SubDropPageGGGDesP">We offer a range of M&A services, including market analysis, target identification, deal structuring,
 negotiations, and post-merger integration. Our focus is on providing customized solutions that are
 tailored to our clients' specific needs and goals.</p>
                             <br />
                             <br />
-                                <Link to={"/MergerAcquisitionWriteUp"}><div>View More</div></Link>
+                                <Link to={"/MergerAcquisitionWriteUp"}><div className="MarketingBusinessWriteUpViewMore">View More</div></Link>
                             <br />
                     </div>
                 </div>

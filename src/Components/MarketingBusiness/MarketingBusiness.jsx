@@ -43,31 +43,14 @@ const MarketingBusiness = () => {
                 <div className="SubDropPageGGG">
                 
                 <Carousel autoPlay interval={6000} selectedItem={0} onChange={(i) => onChangeCaptured(i)} showArrows={false} showIndicators={false} stopOnHover={false} showStatus={false} showThumbs={false} className="CarouselForMarketBusiness" infiniteLoop>
-                    {
-                        
-                                    file.map((item, i) => {
-
-                                        var itemNow = `${file[i]}`;
-
-                                        var typeImg = true;
-
-                                        {/* if(seletedFiles[i].type == "video/mp4"){
-                                            console.log(seletedFiles[i].type);
-                                            typeImg = false;
-                                        }else{
-                                            typeImg = true;
-                                            console.log('FAAALSEE');
-                                        } */}
-                                        
-                                        return(
-                                                typeImg? <img src={file[i]} className="CarouselForMarketBusinessIMg" alt="file Selected" width="250" height="200"/>: <video width="350" height="200" controls >
-                                                    <source src={file[i]} type="video/mp4"/>
-                                                </video>
-                                        )
-                                    })
-                                }
-                    
+                
+                                            <div className="iframe"><iframe src="https://www.youtube.com/embed/Ahlq4V7qA6s?autoplay=1&mute=1" title="Introduction- Marketing &amp; BD Services" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>                                     )
+                                    
+                                
                 </Carousel>
+                <br />
+                <br />
+                <br />
                     <div className="SubDropPageGGGDes">
                             <p className="SubDropPageGGGDesP">Looking to expand your business in the Automotive or Industrial domain? Look no further than Tilive
 International LLP. Our customized business development and marketing strategies are tailored to help
@@ -83,7 +66,7 @@ specific needs.</p>
 </p>
                             } */}
                             <br />
-                                <Link to={"/MarketingBusinessWriteUp"}><div>View More</div></Link>
+                                <Link to={"/MarketingBusinessWriteUp"}><div className="MarketingBusinessWriteUpViewMore">View More</div></Link>
                             <br />
                     </div>
                 </div>

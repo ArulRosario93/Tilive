@@ -10,7 +10,7 @@
 }
 
 .AllNewsHeadDes{
-    width: 90%;
+    width: 85%;
     margin: auto;
     position: absolute;
     z-index: 90;
@@ -82,8 +82,9 @@
 
 @media only screen and (max-width: 600px) {
     .AllNewsHeadDesHead{
-        font-size: x-large;
+        font-size: smaller;
     }
+
     .AllNewsHeadDesP{
         font-size: x-small;
         letter-spacing: 1px;

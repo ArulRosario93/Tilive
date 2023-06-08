@@ -39,13 +39,13 @@ const SourcingSupplyChain = () => {
             <StartingPage want={true} color={mobileView? true: false} />
         <div className="SubDropPageforMarketing">
                 <h1 className="SubDropPageH1">Sourcing & Supply Chain Management</h1>
-                    <br />
+                    {/* <br /> */}
         <br />
                 <div className="SubDropPageGGG">
                 <Carousel autoPlay interval={4000} selectedItem={0} onChange={(i) => onChangeCaptured(i)} showArrows={false} showIndicators={false} stopOnHover={false} showStatus={false} showThumbs={false} className="CarouselForMarketBusiness" infiniteLoop>
                     {
                         
-                                    file.map((item, i) => {
+                                    [""].map((item, i) => {
 
                                         var itemNow = `${file[i]}`;
 
@@ -58,22 +58,27 @@ const SourcingSupplyChain = () => {
                                             typeImg = true;
                                             console.log('FAAALSEE');
                                         } */}
+                                                {/* typeImg? <img src={file[i]} className="CarouselForMarketBusinessIMg" alt="file Selected" width="250" height="200"/>: <video width="350" height="200" controls >
+                                                    <source src={file[i]} type="video/mp4"/>
+                                                </video> */}
                                         
                                         return(
-                                                typeImg? <img src={file[i]} className="CarouselForMarketBusinessIMg" alt="file Selected" width="250" height="200"/>: <video width="350" height="200" controls >
-                                                    <source src={file[i]} type="video/mp4"/>
-                                                </video>
+                                            <div className="iframe"><iframe src="https://www.youtube.com/embed/TLyC0-6FP38?autoplay=1&mute=1" title="Tilive Sourccing and Supply Chain Managment Services" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
                                         )
                                     })
                                 }
                 </Carousel>
 
+                <br />
+                <br />
+                <br />  
+
                     <div className="SubDropPageGGGDes">
-                            <p>At Tilive International LLP, we are committed to providing top-notch consultancy services in the domain
+                            <p className="SubDropPageGGGDesP">At Tilive International LLP, we are committed to providing top-notch consultancy services in the domain
 of sourcing and supply chain management. Our team of experts has extensive experience in the industry
 and is well-equipped to help businesses optimize their sourcing and supply chain operations.</p>
                             <br />
-                            <p>We understand that managing sourcing and supply chain operations can be complex and time-
+                            <p className="SubDropPageGGGDesP">We understand that managing sourcing and supply chain operations can be complex and time-
 consuming, and we strive to simplify the process for our clients. We work closely with businesses to
 identify areas of improvement and develop customized solutions to meet their specific needs and goals.</p>
                             <br />
@@ -82,7 +87,7 @@ identify areas of improvement and develop customized solutions to meet their spe
 </p>
                             } */}
                             <br />
-                                <Link to={"/SourcingSupplyChainWriteUp"}><div>View More</div></Link>
+                                <Link to={"/SourcingSupplyChainWriteUp"}><div className="MarketingBusinessWriteUpViewMore">View More</div></Link>
                             <br />
                     </div>
                 </div>

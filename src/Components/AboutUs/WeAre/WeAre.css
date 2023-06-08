@@ -5,9 +5,9 @@
 }
 
 .WeAreHead{
-    margin-bottom: 45px;
+    margin-bottom: 20px;
     text-align: center;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     color: black;
@@ -18,30 +18,30 @@
 }
 
 .WeAreMainContentImg{
-    width: 180px;
-    height: 180px;
+    width: 220px;
+    height: 220px;
     margin: auto;
 }
 
 .WeAreMainContentImg img{
-    border-radius: 90px;
+    border-radius:110px;
     z-index: 10;
     position: relative;
-    width: 180px;
+    width: 220px;
     /* top: -9px; */
-    height: 180px;
+    height: 220px;
     object-fit: cover;
     border: 10px solid rgb(253, 253, 253);
 }
 
 .WeAreMainContentDes{
     position: relative;
-    top: -80px;
+    top: -100px;
     z-index: 1;
     margin: auto;
-    width: 88%;
+    width: 95%;
     /* height: 50vh; */
-    padding: 19vh 10vh 10vh;
+    padding: 16vh 10vh 5vh;
     border-radius: 3px;
     border: 1px solid black;
 }
@@ -50,16 +50,17 @@
     font-size: 16px;
     color: rgb(0, 0, 0);
     /* font-weight: 3px; */
-    font-size: smaller;
-    letter-spacing: 1px;
+    font-size: larger;
+    /* letter-spacing: 1px; */
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
 
 @media only screen and (max-width: 600px) {
     .WeAreMainContentDes{
-        padding: 15vh 20px 4vh;
+        padding: 17vh 20px 4vh;
         /* border: none; */
+        top: -70px;
     }
     .WeAreHead{
         margin-bottom: 20px;
@@ -76,5 +77,21 @@
         font-size: x-small;
         /* font-size: 0.7rem; */
     }
+    .WeAreMainContentImg{
+        width: 170px;
+        height: 170px;
+        margin: auto;
+    }
     
+    .WeAreMainContentImg img{
+        width: 170px;
+        height: 170px;
+    }
+    
+}
+
+@media only screen and (max-width: 430px) {
+    .WeAreMainContentDes{
+        padding: 17vh 20px 4vh;
+    }
 }

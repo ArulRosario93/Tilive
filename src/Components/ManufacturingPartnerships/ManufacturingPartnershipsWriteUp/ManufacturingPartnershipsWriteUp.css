@@ -1,13 +1,99 @@
 .ManufacturingPartnershipsWriteUp{
-    padding-top: 80px;
-    width: 90%;
+    /* padding-top: 80px; */
+    width: 100%;
     margin: auto;
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
 }
 
 .ManufacturingPartnershipsWriteUp img{
-    height: 80vh;
+    height: 100vh;
     width: 100%;
-    object-fit: contain;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    object-fit: cover;
+}
+
+.ManufacturingPartnershipsWriteUpStartsHere{
+    padding-top: 200px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.367);
+    z-index: 10;
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+.ManufacturingPartnershipsWriteUpHead{
+    padding: 25px 40px;
+}
+
+.ManufacturingPartnershipsWriteUpHeadFlex{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    flex-direction: row;
+}
+
+.ManufacturingPartnershipsWriteUpHeadFlex p{
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 7vh;
+}
+
+@media only screen and (max-width: 940px) {
+    .ManufacturingPartnershipsWriteUpHeadFlex{
+        width: 90%;
+    }
+    .ManufacturingPartnershipsWriteUpHeadFlex p{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .ManufacturingPartnershipsWriteUpHeadFlex{
+        width: 90%;
+    }
+    .ManufacturingPartnershipsWriteUpHead{
+        text-align: center;
+        font-size: x-large;
+    }
+    .ManufacturingPartnershipsWriteUpHeadFlex p{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .ManufacturingPartnershipsWriteUpHeadFlex{
+        width: 90%;
+    }
+    .ManufacturingPartnershipsWriteUpHead{
+        text-align: center;
+        font-size: x-large;
+    }
+    .ManufacturingPartnershipsWriteUpHeadFlex p{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .ManufacturingPartnershipsWriteUpHeadFlex{
+        width: 90%;
+    }
+    .ManufacturingPartnershipsWriteUpStartsHere{
+        padding-top: 100px;
+    }
+    .ManufacturingPartnershipsWriteUpHead{
+        text-align: center;
+        font-size: x-large;
+    }
+    .ManufacturingPartnershipsWriteUpHeadFlex{
+        flex-direction: column;
+    }
+    .ManufacturingPartnershipsWriteUpHeadFlex p{
+        font-size: 0.8rem;
+    }
 }
