@@ -24,9 +24,9 @@ const NewsHome = () => {
         <div className="NewsHome">
             <div className="NewsHomeDes" style={{top: `${position}vh`}}>
                 <Fade bottom>
-                    <h3 className="NewsHomeDesHead">Top Highlight Des about the company</h3>
+                    <h3 className="NewsHomeDesHead">Highlights about the company</h3>
                     <br />
-                    <p className="NewsHomeDesP"> More general info saying what the company does etc...sollicitudin id venenatis a, tempus a risus. Duis iaculis ac eros at sollicitudin.sollicitudin id venenatis a, tempus a risus. Duis iaculis ac eros at sollicitudin.sollicitudin id venenatis a, tempus a risus. Duis iaculis ac eros at sollicitudin.sollicitudin id venenatis a, tempus a risus. Duis iaculis ac eros at sollicitudin.sollicitudin id venenatis a, tempus a risus. Duis iaculis ac eros at sollicitudin.</p>
+                    {/* <p className="NewsHomeDesP"> More general info saying what the company does etc...sollicitudin id venenatis a, tempus a risus. Duis iaculis ac eros at sollicitudin.sollicitudin id venenatis a, tempus a risus. Duis iaculis ac eros at sollicitudin.sollicitudin id venenatis a, tempus a risus. Duis iaculis ac eros at sollicitudin.sollicitudin id venenatis a, tempus a risus. Duis iaculis ac eros at sollicitudin.sollicitudin id venenatis a, tempus a risus. Duis iaculis ac eros at sollicitudin.</p> */}
                 </Fade>
             </div>
         </div>

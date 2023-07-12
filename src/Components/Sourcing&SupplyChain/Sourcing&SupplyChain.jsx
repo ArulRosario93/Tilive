@@ -42,7 +42,7 @@ const SourcingSupplyChain = () => {
                     {/* <br /> */}
         <br />
                 <div className="SubDropPageGGG">
-                <Carousel autoPlay interval={4000} selectedItem={0} onChange={(i) => onChangeCaptured(i)} showArrows={false} showIndicators={false} stopOnHover={false} showStatus={false} showThumbs={false} className="CarouselForMarketBusiness" infiniteLoop>
+                <Carousel selectedItem={0} onChange={(i) => onChangeCaptured(i)} showArrows={false} showIndicators={false} stopOnHover={false} showStatus={false} showThumbs={false} className="CarouselForMarketBusiness" infiniteLoop>
                     {
                         
                                     [""].map((item, i) => {
@@ -75,12 +75,12 @@ const SourcingSupplyChain = () => {
 
                     <div className="SubDropPageGGGDes">
                             <p className="SubDropPageGGGDesP">At Tilive International LLP, we are committed to providing top-notch consultancy services in the domain
-of sourcing and supply chain management. Our team of experts has extensive experience in the industry
-and is well-equipped to help businesses optimize their sourcing and supply chain operations.</p>
+                                of sourcing and supply chain management. Our team of experts has extensive experience in the industry
+                                and is well-equipped to help businesses optimize their sourcing and supply chain operations.</p>
                             <br />
                             <p className="SubDropPageGGGDesP">We understand that managing sourcing and supply chain operations can be complex and time-
-consuming, and we strive to simplify the process for our clients. We work closely with businesses to
-identify areas of improvement and develop customized solutions to meet their specific needs and goals.</p>
+                                consuming, and we strive to simplify the process for our clients. We work closely with businesses to
+                                identify areas of improvement and develop customized solutions to meet their specific needs and goals.</p>
                             <br />
                             {/* {
                                 mobileView? <div></div>: <p>We understand that managing sourcing and supply chain operations can be complex and time - consuming, and we strive to simplify the process for our clients. We work closely with businesses to identify areas of improvement and develop customized solutions to meet their specific needs and goals.

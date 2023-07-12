@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const MergerAcquisition = () => {
 
-    const file = ["https://img.freepik.com/premium-vector/consulting-banner-web-icon-business_35632-115.jpg", "https://thumbs.dreamstime.com/b/business-consulting-concept-businessman-selecting-interface-54909168.jpg"]
+    const file = ["https://thumbs.dreamstime.com/b/business-consulting-concept-businessman-selecting-interface-54909168.jpg"]
 
     const [mobileView, setmobileView] = useState(false);
 

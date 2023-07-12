@@ -12,6 +12,7 @@ const MachinedComponents = () => {
         <br />
         <br />
             <img src={image}/>
+            {/* <h2 style={{textAlign: 'center'}}>VMCs, HMCs, Turning Centers </h2> */}
         </div>
     )
 }

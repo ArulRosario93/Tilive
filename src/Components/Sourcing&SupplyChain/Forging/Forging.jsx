@@ -30,7 +30,10 @@ const Forging = () => {
                 <div className="CastingMaterial">
                     <h2>Material</h2>
                     <ul>
-                        <li>Steel (grades as per requirements)</li>
+                        <li>Steel</li>
+                        <li>Aluminium</li>
+                        <li>Brass</li>
+                        <li>Other non-ferrous materials</li>
                     </ul>
                 </div>
             </div>

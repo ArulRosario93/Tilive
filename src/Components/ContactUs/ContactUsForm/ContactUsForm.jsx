@@ -28,6 +28,8 @@ const ContactUsForm = () => {
         setUserText(e.target.value);
     }
 
+    var emailTo = "mailto:`itsarrowhere380@gmail.com?subject='Web Contact Us'&body=${userText}`";
+
     return(
         <div className="handleCapture">
             <form onSubmit={(e) => handleCapture(e)}>
@@ -60,7 +62,7 @@ const ContactUsForm = () => {
                     {/* <p>Tilive is one of leading consulting firm in the area of biz dev, Sourcing, Marketing, Supply chain management,  Manufacturing, and supply of various of OE and aftermarket parts domestic snd international markets.</p> */}
                 </div>
                 <div className="handleCaptureFormSubmit">
-                    <a className="handleCaptureFormSubmitButton">Submit</a>
+                    <a className="handleCaptureFormSubmitButton" href="mailto:`itsarrowhere380@gmail.com?subject='Web Contact Us'&body={userText}`">Submit</a>
                 </div>
                 <br />
                 <br />

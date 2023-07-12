@@ -136,9 +136,9 @@ export const StartingPage = ({ want, color }) => {
          <Link to="/clients">
             <button type='button' className='startingPageClients startingButton'>Clients</button>
          </Link>
-         <Link to="/buyonline">
+         {/* <Link to="/buyonline">
             <button type='button' className='startingPageBuy startingButton'>Buy Online</button>
-         </Link>
+         </Link> */}
 
          <button type='button' className='startingPageNews startingButton'>
          <div class="dropdown">
@@ -187,11 +187,12 @@ Services</button></Link>
             </div>
             <div class="sub-dropdown">
                <Link to={"/ManufacturingGuild"} state={{ ManufacturingGuild }}><button class="sub-dropbtn">Manufacturing Guild</button></Link>
-               <div class="sub-dropdown-content" style={{top: '40%'}}>
-               <button className="insubdropbtn">Buggy D Clown</button>
-               <button className="insubdropbtn">Dracule Mihawk</button>
-               <button className="insubdropbtn">Sir Crocodile</button>
-               <button className="insubdropbtn">Doflamingo</button>
+               <div class="sub-dropdown-content" style={{top: '20%'}}>
+               <button className="insubdropbtn">Rotary Unions</button>
+               <button className="insubdropbtn">Pole Wheels</button>
+               <button className="insubdropbtn">Precision Machined Components</button>
+               <button className="insubdropbtn">Tyre Pressure Regulating System</button>
+               <button className="insubdropbtn">Tools Instruments and Gauges</button>
                </div>
             </div>
             <div class="sub-dropdown">

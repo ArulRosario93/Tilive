@@ -22,10 +22,6 @@ const MarketingBusinessWriteUp = () => {
                 <h1 className="MarketingBusinessWriteUpHead">Marketing and Business Development</h1>
                 <br />
                 <img src={image1}/>
-                <img src={image2}/>
-                <br />
-                <img src={image3}/>
-                <img src={image4}/>
             </div>
         </div>
     )

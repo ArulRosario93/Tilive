@@ -42,10 +42,9 @@ const MarketingBusiness = () => {
                     <br />
                 <div className="SubDropPageGGG">
                 
-                <Carousel autoPlay interval={6000} selectedItem={0} onChange={(i) => onChangeCaptured(i)} showArrows={false} showIndicators={false} stopOnHover={false} showStatus={false} showThumbs={false} className="CarouselForMarketBusiness" infiniteLoop>
+                <Carousel selectedItem={0} onChange={(i) => onChangeCaptured(i)} showArrows={false} showIndicators={false} stopOnHover={false} showStatus={false} showThumbs={false} className="CarouselForMarketBusiness">
                 
-                                            <div className="iframe"><iframe src="https://www.youtube.com/embed/Ahlq4V7qA6s?autoplay=1&mute=1" title="Introduction- Marketing &amp; BD Services" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>                                     )
-                                    
+                    <div className="iframe"><iframe src="https://www.youtube.com/embed/Ahlq4V7qA6s?autoplay=1&mute=1" title="Introduction- Marketing &amp; BD Services" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>                                     )                
                                 
                 </Carousel>
                 <br />
