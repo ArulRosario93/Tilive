@@ -32,7 +32,7 @@ const NewsForm = () => {
       const handleSubmit = (e) => {
         e.preventDefault();
         
-        if (secretKey == 123456) {
+        if (secretKey == 210412) {
           console.log("Submitted " + selectedOpt);
             setAccepted(true);
         }else{

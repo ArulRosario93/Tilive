@@ -101,6 +101,7 @@
 
 .handleCaptureFormSubmitButton{
     background-color: transparent;
+    font-family: 'Poppins', sans-serif;
     outline: none;
     border: none;
     color: white;

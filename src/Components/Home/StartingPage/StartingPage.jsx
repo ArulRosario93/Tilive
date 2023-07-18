@@ -176,15 +176,15 @@ Services</button></Link>
                <button className="insubdropbtn">Lucky Roo</button>
                </div> */}
             </div>
-            <div class="sub-dropdown">
+            {/* <div class="sub-dropdown">
                <Link to={"/CEOServices"} state={{ CEOCFOServices }}><button class="sub-dropbtn">CEO/ CFO Services</button></Link>
-               {/* <div class="sub-dropdown-content" style={{top: '35%'}}>
+               <div class="sub-dropdown-content" style={{top: '35%'}}>
                <button className="insubdropbtn">Edward Newgate</button>
                <button className="insubdropbtn">Marco</button>
                <button className="insubdropbtn">Portagaz D Ace</button>
                <button className="insubdropbtn">Kozuki Oden</button>
-               </div> */}
-            </div>
+               </div>
+            </div> */}
             <div class="sub-dropdown">
                <Link to={"/ManufacturingGuild"} state={{ ManufacturingGuild }}><button class="sub-dropbtn">Manufacturing Guild</button></Link>
                <div class="sub-dropdown-content" style={{top: '20%'}}>
